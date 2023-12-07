@@ -24,6 +24,6 @@ jobs:
         with:
           fetch-depth: 1
       - name: Run code generation
-        run: (bash /usr/local/bin/docker-entrypoint.sh generate -i blob/v0.0.1.json --additional-properties moduleName=VultRuby --skip-validate-spec -g ruby )
+        run: (bash /usr/local/bin/docker-entrypoint.sh generate -i blob/v0.0.1.json --additional-properties moduleName=VultrRuby --skip-validate-spec -g ruby )
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
