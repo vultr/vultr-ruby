@@ -12,14 +12,14 @@ OpenAPI Generator version: 7.2.0-SNAPSHOT
 
 require 'spec_helper'
 
-describe VultRuby::Configuration do
-  let(:config) { VultRuby::Configuration.default }
+describe VultrRuby::Configuration do
+  let(:config) { VultrRuby::Configuration.default }
 
   before(:each) do
     # uncomment below to setup host and base_path
     # require 'URI'
     # uri = URI.parse("https://api.vultr.com/v2")
-    # VultRuby.configure do |c|
+    # VultrRuby.configure do |c|
     #   c.host = uri.host
     #   c.base_path = uri.path
     # end

@@ -1,4 +1,4 @@
-# VultRuby::StartMaintenanceUpdates200Response
+# VultrRuby::StartMaintenanceUpdates200Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::StartMaintenanceUpdates200Response.new(
+instance = VultrRuby::StartMaintenanceUpdates200Response.new(
   message: null
 )
 ```

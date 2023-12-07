@@ -1,4 +1,4 @@
-# VultRuby::UpdateDatabaseUserRequest
+# VultrRuby::UpdateDatabaseUserRequest
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::UpdateDatabaseUserRequest.new(
+instance = VultrRuby::UpdateDatabaseUserRequest.new(
   password: null
 )
 ```

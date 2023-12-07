@@ -1,4 +1,4 @@
-# VultRuby::Startup
+# VultrRuby::Startup
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::Startup.new(
+instance = VultrRuby::Startup.new(
   id: null,
   date_created: null,
   date_modified: null,

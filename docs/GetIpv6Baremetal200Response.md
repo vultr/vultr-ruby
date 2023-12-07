@@ -1,4 +1,4 @@
-# VultRuby::GetIpv6Baremetal200Response
+# VultrRuby::GetIpv6Baremetal200Response
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetIpv6Baremetal200Response.new(
+instance = VultrRuby::GetIpv6Baremetal200Response.new(
   ipv6s: null,
   meta: null
 )

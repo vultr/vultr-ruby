@@ -1,4 +1,4 @@
-# VultRuby::CreateObjectStorage202Response
+# VultrRuby::CreateObjectStorage202Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateObjectStorage202Response.new(
+instance = VultrRuby::CreateObjectStorage202Response.new(
   object_storage: null
 )
 ```

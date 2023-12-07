@@ -1,4 +1,4 @@
-# VultRuby::GetBareMetalsUpgrades200Response
+# VultrRuby::GetBareMetalsUpgrades200Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetBareMetalsUpgrades200Response.new(
+instance = VultrRuby::GetBareMetalsUpgrades200Response.new(
   upgrades: null
 )
 ```

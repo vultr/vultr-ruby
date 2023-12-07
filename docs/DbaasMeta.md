@@ -1,4 +1,4 @@
-# VultRuby::DbaasMeta
+# VultrRuby::DbaasMeta
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::DbaasMeta.new(
+instance = VultrRuby::DbaasMeta.new(
   total: null
 )
 ```

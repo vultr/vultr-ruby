@@ -1,4 +1,4 @@
-# VultRuby::ListStartupScripts200Response
+# VultrRuby::ListStartupScripts200Response
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ListStartupScripts200Response.new(
+instance = VultrRuby::ListStartupScripts200Response.new(
   startup_scripts: null,
   meta: null
 )

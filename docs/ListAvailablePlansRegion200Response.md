@@ -1,4 +1,4 @@
-# VultRuby::ListAvailablePlansRegion200Response
+# VultrRuby::ListAvailablePlansRegion200Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ListAvailablePlansRegion200Response.new(
+instance = VultrRuby::ListAvailablePlansRegion200Response.new(
   available_plans: null
 )
 ```

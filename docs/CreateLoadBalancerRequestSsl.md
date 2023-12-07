@@ -1,4 +1,4 @@
-# VultRuby::CreateLoadBalancerRequestSsl
+# VultrRuby::CreateLoadBalancerRequestSsl
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateLoadBalancerRequestSsl.new(
+instance = VultrRuby::CreateLoadBalancerRequestSsl.new(
   private_key: null,
   certificate: null,
   chain: null,

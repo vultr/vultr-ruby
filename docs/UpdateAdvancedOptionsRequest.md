@@ -1,4 +1,4 @@
-# VultRuby::UpdateAdvancedOptionsRequest
+# VultrRuby::UpdateAdvancedOptionsRequest
 
 ## Properties
 
@@ -52,9 +52,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::UpdateAdvancedOptionsRequest.new(
+instance = VultrRuby::UpdateAdvancedOptionsRequest.new(
   autovacuum_analyze_scale_factor: null,
   autovacuum_analyze_threshold: null,
   autovacuum_freeze_max_age: null,

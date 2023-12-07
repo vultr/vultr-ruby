@@ -1,4 +1,4 @@
-# VultRuby::ListDnsDomains200Response
+# VultrRuby::ListDnsDomains200Response
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ListDnsDomains200Response.new(
+instance = VultrRuby::ListDnsDomains200Response.new(
   domains: null,
   meta: null
 )

@@ -1,4 +1,4 @@
-# VultRuby::GetInstanceUpgrades200Response
+# VultrRuby::GetInstanceUpgrades200Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetInstanceUpgrades200Response.new(
+instance = VultrRuby::GetInstanceUpgrades200Response.new(
   upgrades: null
 )
 ```

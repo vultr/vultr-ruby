@@ -1,4 +1,4 @@
-# VultRuby::FirewallApi
+# VultrRuby::FirewallApi
 
 All URIs are relative to *https://api.vultr.com/v2*
 
@@ -27,23 +27,23 @@ Create a new Firewall Group.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::FirewallApi.new
+api_instance = VultrRuby::FirewallApi.new
 opts = {
-  create_firewall_group_request: VultRuby::CreateFirewallGroupRequest.new # CreateFirewallGroupRequest | Include a JSON object in the request body with a content type of **application/json**.
+  create_firewall_group_request: VultrRuby::CreateFirewallGroupRequest.new # CreateFirewallGroupRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create Firewall Group
   result = api_instance.create_firewall_group(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling FirewallApi->create_firewall_group: #{e}"
 end
 ```
@@ -61,7 +61,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateFirewallGroup201Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling FirewallApi->create_firewall_group_with_http_info: #{e}"
 end
 ```
@@ -98,20 +98,20 @@ Delete a Firewall Group.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::FirewallApi.new
+api_instance = VultrRuby::FirewallApi.new
 firewall_group_id = 'firewall_group_id_example' # String | The [Firewall Group id](#operation/list-firewall-groups).
 
 begin
   # Delete Firewall Group
   api_instance.delete_firewall_group(firewall_group_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling FirewallApi->delete_firewall_group: #{e}"
 end
 ```
@@ -129,7 +129,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling FirewallApi->delete_firewall_group_with_http_info: #{e}"
 end
 ```
@@ -166,21 +166,21 @@ Delete a Firewall Rule.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::FirewallApi.new
+api_instance = VultrRuby::FirewallApi.new
 firewall_group_id = 'firewall_group_id_example' # String | The [Firewall Group id](#operation/list-firewall-groups).
 firewall_rule_id = 'firewall_rule_id_example' # String | The [Firewall Rule id](#operation/list-firewall-group-rules).
 
 begin
   # Delete Firewall Rule
   api_instance.delete_firewall_group_rule(firewall_group_id, firewall_rule_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling FirewallApi->delete_firewall_group_rule: #{e}"
 end
 ```
@@ -198,7 +198,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling FirewallApi->delete_firewall_group_rule_with_http_info: #{e}"
 end
 ```
@@ -236,21 +236,21 @@ Get information for a Firewall Group.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::FirewallApi.new
+api_instance = VultrRuby::FirewallApi.new
 firewall_group_id = 'firewall_group_id_example' # String | The [Firewall Group id](#operation/list-firewall-groups).
 
 begin
   # Get Firewall Group
   result = api_instance.get_firewall_group(firewall_group_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling FirewallApi->get_firewall_group: #{e}"
 end
 ```
@@ -268,7 +268,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateFirewallGroup201Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling FirewallApi->get_firewall_group_with_http_info: #{e}"
 end
 ```
@@ -305,14 +305,14 @@ Get a Firewall Rule.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::FirewallApi.new
+api_instance = VultrRuby::FirewallApi.new
 firewall_group_id = 'firewall_group_id_example' # String | The [Firewall Group id](#operation/list-firewall-groups).
 firewall_rule_id = 'firewall_rule_id_example' # String | The [Firewall Rule id](#operation/list-firewall-group-rules).
 
@@ -320,7 +320,7 @@ begin
   # Get Firewall Rule
   result = api_instance.get_firewall_group_rule(firewall_group_id, firewall_rule_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling FirewallApi->get_firewall_group_rule: #{e}"
 end
 ```
@@ -338,7 +338,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PostFirewallsFirewallGroupIdRules201Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling FirewallApi->get_firewall_group_rule_with_http_info: #{e}"
 end
 ```
@@ -376,14 +376,14 @@ Get the Firewall Rules for a Firewall Group.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::FirewallApi.new
+api_instance = VultrRuby::FirewallApi.new
 firewall_group_id = 'firewall_group_id_example' # String | The [Firewall Group id](#operation/list-firewall-groups).
 opts = {
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500.
@@ -394,7 +394,7 @@ begin
   # List Firewall Rules
   result = api_instance.list_firewall_group_rules(firewall_group_id, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling FirewallApi->list_firewall_group_rules: #{e}"
 end
 ```
@@ -412,7 +412,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListFirewallGroupRules200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling FirewallApi->list_firewall_group_rules_with_http_info: #{e}"
 end
 ```
@@ -451,14 +451,14 @@ Get a list of all Firewall Groups.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::FirewallApi.new
+api_instance = VultrRuby::FirewallApi.new
 opts = {
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500.
   cursor: 'cursor_example' # String | Cursor for paging. See [Meta and Pagination](#section/Introduction/Meta-and-Pagination).
@@ -468,7 +468,7 @@ begin
   # List Firewall Groups
   result = api_instance.list_firewall_groups(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling FirewallApi->list_firewall_groups: #{e}"
 end
 ```
@@ -486,7 +486,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListFirewallGroups200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling FirewallApi->list_firewall_groups_with_http_info: #{e}"
 end
 ```
@@ -524,24 +524,24 @@ Create a Firewall Rule for a Firewall Group. The attributes `ip_type`, `protocol
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::FirewallApi.new
+api_instance = VultrRuby::FirewallApi.new
 firewall_group_id = 'firewall_group_id_example' # String | The [Firewall Group id](#operation/list-firewall-groups).
 opts = {
-  post_firewalls_firewall_group_id_rules_request: VultRuby::PostFirewallsFirewallGroupIdRulesRequest.new({ip_type: 'ip_type_example', protocol: 'protocol_example', subnet: 'subnet_example', subnet_size: 37}) # PostFirewallsFirewallGroupIdRulesRequest | Include a JSON object in the request body with a content type of **application/json**.
+  post_firewalls_firewall_group_id_rules_request: VultrRuby::PostFirewallsFirewallGroupIdRulesRequest.new({ip_type: 'ip_type_example', protocol: 'protocol_example', subnet: 'subnet_example', subnet_size: 37}) # PostFirewallsFirewallGroupIdRulesRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create Firewall Rules
   result = api_instance.post_firewalls_firewall_group_id_rules(firewall_group_id, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling FirewallApi->post_firewalls_firewall_group_id_rules: #{e}"
 end
 ```
@@ -559,7 +559,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <PostFirewallsFirewallGroupIdRules201Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling FirewallApi->post_firewalls_firewall_group_id_rules_with_http_info: #{e}"
 end
 ```
@@ -597,23 +597,23 @@ Update information for a Firewall Group.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::FirewallApi.new
+api_instance = VultrRuby::FirewallApi.new
 firewall_group_id = 'firewall_group_id_example' # String | The [Firewall Group id](#operation/list-firewall-groups).
 opts = {
-  update_firewall_group_request: VultRuby::UpdateFirewallGroupRequest.new({description: 'description_example'}) # UpdateFirewallGroupRequest | Include a JSON object in the request body with a content type of **application/json**.
+  update_firewall_group_request: VultrRuby::UpdateFirewallGroupRequest.new({description: 'description_example'}) # UpdateFirewallGroupRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Update Firewall Group
   api_instance.update_firewall_group(firewall_group_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling FirewallApi->update_firewall_group: #{e}"
 end
 ```
@@ -631,7 +631,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling FirewallApi->update_firewall_group_with_http_info: #{e}"
 end
 ```

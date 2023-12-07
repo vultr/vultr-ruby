@@ -1,4 +1,4 @@
-# VultRuby::CreateLoadBalancerRequest
+# VultrRuby::CreateLoadBalancerRequest
 
 ## Properties
 
@@ -23,9 +23,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateLoadBalancerRequest.new(
+instance = VultrRuby::CreateLoadBalancerRequest.new(
   region: null,
   balancing_algorithm: null,
   ssl_redirect: null,

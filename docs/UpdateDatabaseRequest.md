@@ -1,4 +1,4 @@
-# VultRuby::UpdateDatabaseRequest
+# VultrRuby::UpdateDatabaseRequest
 
 ## Properties
 
@@ -22,9 +22,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::UpdateDatabaseRequest.new(
+instance = VultrRuby::UpdateDatabaseRequest.new(
   region: null,
   plan: null,
   label: null,

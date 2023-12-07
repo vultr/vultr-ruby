@@ -1,4 +1,4 @@
-# VultRuby::GetInstanceBackupSchedule200Response
+# VultrRuby::GetInstanceBackupSchedule200Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetInstanceBackupSchedule200Response.new(
+instance = VultrRuby::GetInstanceBackupSchedule200Response.new(
   backup_schedule: null
 )
 ```

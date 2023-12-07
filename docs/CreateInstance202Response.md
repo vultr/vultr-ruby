@@ -1,4 +1,4 @@
-# VultRuby::CreateInstance202Response
+# VultrRuby::CreateInstance202Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateInstance202Response.new(
+instance = VultrRuby::CreateInstance202Response.new(
   instance: null
 )
 ```

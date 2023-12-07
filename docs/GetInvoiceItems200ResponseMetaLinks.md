@@ -1,4 +1,4 @@
-# VultRuby::GetInvoiceItems200ResponseMetaLinks
+# VultrRuby::GetInvoiceItems200ResponseMetaLinks
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetInvoiceItems200ResponseMetaLinks.new(
+instance = VultrRuby::GetInvoiceItems200ResponseMetaLinks.new(
   _next: null,
   prev: null
 )

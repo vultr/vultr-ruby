@@ -1,4 +1,4 @@
-# VultRuby::DatabaseLatestBackup
+# VultrRuby::DatabaseLatestBackup
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::DatabaseLatestBackup.new(
+instance = VultrRuby::DatabaseLatestBackup.new(
   date: null,
   time: null
 )

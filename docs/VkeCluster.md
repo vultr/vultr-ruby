@@ -1,4 +1,4 @@
-# VultRuby::VkeCluster
+# VultrRuby::VkeCluster
 
 ## Properties
 
@@ -21,9 +21,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::VkeCluster.new(
+instance = VultrRuby::VkeCluster.new(
   id: null,
   firewall_group_id: null,
   label: null,

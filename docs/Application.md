@@ -1,4 +1,4 @@
-# VultRuby::Application
+# VultrRuby::Application
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::Application.new(
+instance = VultrRuby::Application.new(
   id: null,
   name: null,
   short_name: null,

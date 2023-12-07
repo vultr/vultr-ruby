@@ -1,4 +1,4 @@
-# VultRuby::CreateBaremetalRequest
+# VultrRuby::CreateBaremetalRequest
 
 ## Properties
 
@@ -29,9 +29,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateBaremetalRequest.new(
+instance = VultrRuby::CreateBaremetalRequest.new(
   region: null,
   plan: null,
   script_id: null,

@@ -1,4 +1,4 @@
-# VultRuby::BaremetalIpv6
+# VultrRuby::BaremetalIpv6
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::BaremetalIpv6.new(
+instance = VultrRuby::BaremetalIpv6.new(
   ip: null,
   network: null,
   network_size: null,

@@ -1,4 +1,4 @@
-# VultRuby::CreateIsoRequest
+# VultrRuby::CreateIsoRequest
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateIsoRequest.new(
+instance = VultrRuby::CreateIsoRequest.new(
   url: null
 )
 ```

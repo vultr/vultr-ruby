@@ -1,4 +1,4 @@
-# VultRuby::LoadbalancerForwardRulesInner
+# VultrRuby::LoadbalancerForwardRulesInner
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::LoadbalancerForwardRulesInner.new(
+instance = VultrRuby::LoadbalancerForwardRulesInner.new(
   id: null,
   frontend_protocol: null,
   frontend_port: null,

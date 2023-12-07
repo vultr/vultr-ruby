@@ -1,4 +1,4 @@
-# VultRuby::ContainerRegistryApi
+# VultrRuby::ContainerRegistryApi
 
 All URIs are relative to *https://api.vultr.com/v2*
 
@@ -31,23 +31,23 @@ Create a new Container Registry Subscription
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ContainerRegistryApi.new
+api_instance = VultrRuby::ContainerRegistryApi.new
 opts = {
-  create_registry_request: VultRuby::CreateRegistryRequest.new({name: TODO, public: TODO, region: 'region_example', plan: 'plan_example'}) # CreateRegistryRequest | 
+  create_registry_request: VultrRuby::CreateRegistryRequest.new({name: TODO, public: TODO, region: 'region_example', plan: 'plan_example'}) # CreateRegistryRequest | 
 }
 
 begin
   # Create Container Registry
   result = api_instance.create_registry(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ContainerRegistryApi->create_registry: #{e}"
 end
 ```
@@ -65,7 +65,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Registry>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ContainerRegistryApi->create_registry_with_http_info: #{e}"
 end
 ```
@@ -102,14 +102,14 @@ Create a fresh set of Docker Credentials for this Container Registry Subscriptio
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ContainerRegistryApi.new
+api_instance = VultrRuby::ContainerRegistryApi.new
 registry_id = 'registry_id_example' # String | The [Registry ID](#components/schemas/registry/properties/id). Which can be found by [List Registries](#operation/list-registries).
 opts = {
   expiry_seconds: 56, # Integer | The seconds until these credentials expire. When set to 0, credentials do not expire. The default value is 0
@@ -120,7 +120,7 @@ begin
   # Create Docker Credentials
   result = api_instance.create_registry_docker_credentials(registry_id, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ContainerRegistryApi->create_registry_docker_credentials: #{e}"
 end
 ```
@@ -138,7 +138,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RegistryDockerCredentials>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ContainerRegistryApi->create_registry_docker_credentials_with_http_info: #{e}"
 end
 ```
@@ -177,14 +177,14 @@ Create a fresh set of Docker Credentials for this Container Registry Subscriptio
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ContainerRegistryApi.new
+api_instance = VultrRuby::ContainerRegistryApi.new
 registry_id = 'registry_id_example' # String | The [Registry ID](#components/schemas/registry/properties/id). Which can be found by [List Registries](#operation/list-registries).
 opts = {
   expiry_seconds: 56, # Integer | The seconds until these credentials expire. When set to 0, credentials do not expire. The default value is 0
@@ -196,7 +196,7 @@ begin
   # Create Docker Credentials for Kubernetes
   result = api_instance.create_registry_kubernetes_docker_credentials(registry_id, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ContainerRegistryApi->create_registry_kubernetes_docker_credentials: #{e}"
 end
 ```
@@ -214,7 +214,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RegistryKubernetesDockerCredentials>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ContainerRegistryApi->create_registry_kubernetes_docker_credentials_with_http_info: #{e}"
 end
 ```
@@ -254,20 +254,20 @@ Deletes a Container Registry Subscription
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ContainerRegistryApi.new
+api_instance = VultrRuby::ContainerRegistryApi.new
 registry_id = 'registry_id_example' # String | The [Registry ID](#components/schemas/registry/properties/id). Which can be found by [List Registries](#operation/list-registries).
 
 begin
   # Delete Container Registry
   api_instance.delete_registry(registry_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ContainerRegistryApi->delete_registry: #{e}"
 end
 ```
@@ -285,7 +285,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ContainerRegistryApi->delete_registry_with_http_info: #{e}"
 end
 ```
@@ -322,21 +322,21 @@ Deletes a Repository from a Container Registry Subscription
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ContainerRegistryApi.new
+api_instance = VultrRuby::ContainerRegistryApi.new
 registry_id = 'registry_id_example' # String | The [Registry ID](#components/schemas/registry/properties/id). Which can be found by [List Registries](#operation/list-registries).
 repository_image = 'repository_image_example' # String | The [Repository Image](#components/schemas/registry-repository/properties/image). Which can be found by [List Repositories](#operation/list-registry-repositories).
 
 begin
   # Delete Repository
   api_instance.delete_repository(registry_id, repository_image)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ContainerRegistryApi->delete_repository: #{e}"
 end
 ```
@@ -354,7 +354,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ContainerRegistryApi->delete_repository_with_http_info: #{e}"
 end
 ```
@@ -392,20 +392,20 @@ List All Container Registry Subscriptions for this account
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ContainerRegistryApi.new
+api_instance = VultrRuby::ContainerRegistryApi.new
 
 begin
   # List Container Registries
   result = api_instance.list_registries
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ContainerRegistryApi->list_registries: #{e}"
 end
 ```
@@ -423,7 +423,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListRegistries200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ContainerRegistryApi->list_registries_with_http_info: #{e}"
 end
 ```
@@ -458,20 +458,20 @@ List All Plans to help choose which one is the best fit for your Container Regis
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ContainerRegistryApi.new
+api_instance = VultrRuby::ContainerRegistryApi.new
 
 begin
   # List Registry Plans
   result = api_instance.list_registry_plans
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ContainerRegistryApi->list_registry_plans: #{e}"
 end
 ```
@@ -489,7 +489,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListRegistryPlans200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ContainerRegistryApi->list_registry_plans_with_http_info: #{e}"
 end
 ```
@@ -524,20 +524,20 @@ List All Regions where a Container Registry can be deployed
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ContainerRegistryApi.new
+api_instance = VultrRuby::ContainerRegistryApi.new
 
 begin
   # List Registry Regions
   result = api_instance.list_registry_regions
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ContainerRegistryApi->list_registry_regions: #{e}"
 end
 ```
@@ -555,7 +555,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListRegistryRegions200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ContainerRegistryApi->list_registry_regions_with_http_info: #{e}"
 end
 ```
@@ -590,21 +590,21 @@ List All Repositories in a Container Registry Subscription
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ContainerRegistryApi.new
+api_instance = VultrRuby::ContainerRegistryApi.new
 registry_id = 'registry_id_example' # String | The [Registry ID](#components/schemas/registry/properties/id). Which can be found by [List Registries](#operation/list-registries).
 
 begin
   # List Repositories
   result = api_instance.list_registry_repositories(registry_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ContainerRegistryApi->list_registry_repositories: #{e}"
 end
 ```
@@ -622,7 +622,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListRegistryRepositories200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ContainerRegistryApi->list_registry_repositories_with_http_info: #{e}"
 end
 ```
@@ -659,21 +659,21 @@ Get a single Container Registry Subscription
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ContainerRegistryApi.new
+api_instance = VultrRuby::ContainerRegistryApi.new
 registry_id = 'registry_id_example' # String | The [Registry ID](#components/schemas/registry/properties/id). Which can be found by [List Registries](#operation/list-registries).
 
 begin
   # Read Container Registry
   result = api_instance.read_registry(registry_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ContainerRegistryApi->read_registry: #{e}"
 end
 ```
@@ -691,7 +691,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Registry>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ContainerRegistryApi->read_registry_with_http_info: #{e}"
 end
 ```
@@ -728,14 +728,14 @@ Get a single Repository in a Container Registry Subscription
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ContainerRegistryApi.new
+api_instance = VultrRuby::ContainerRegistryApi.new
 registry_id = 'registry_id_example' # String | The [Registry ID](#components/schemas/registry/properties/id). Which can be found by [List Registries](#operation/list-registries).
 repository_image = 'repository_image_example' # String | The [Repository Image](#components/schemas/registry-repository/properties/image). Which can be found by [List Repositories](#operation/list-registry-repositories).
 
@@ -743,7 +743,7 @@ begin
   # Read Repository
   result = api_instance.read_registry_repository(registry_id, repository_image)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ContainerRegistryApi->read_registry_repository: #{e}"
 end
 ```
@@ -761,7 +761,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RegistryRepository>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ContainerRegistryApi->read_registry_repository_with_http_info: #{e}"
 end
 ```
@@ -799,24 +799,24 @@ Update a Container Registry Subscription
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ContainerRegistryApi.new
+api_instance = VultrRuby::ContainerRegistryApi.new
 registry_id = 'registry_id_example' # String | The [Registry ID](#components/schemas/registry/properties/id). Which can be found by [List Registries](#operation/list-registries).
 opts = {
-  update_registry_request: VultRuby::UpdateRegistryRequest.new # UpdateRegistryRequest | 
+  update_registry_request: VultrRuby::UpdateRegistryRequest.new # UpdateRegistryRequest | 
 }
 
 begin
   # Update Container Registry
   result = api_instance.update_registry(registry_id, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ContainerRegistryApi->update_registry: #{e}"
 end
 ```
@@ -834,7 +834,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Registry>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ContainerRegistryApi->update_registry_with_http_info: #{e}"
 end
 ```
@@ -872,25 +872,25 @@ Update a Repository in a Container Registry Subscription
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ContainerRegistryApi.new
+api_instance = VultrRuby::ContainerRegistryApi.new
 registry_id = 'registry_id_example' # String | The [Registry ID](#components/schemas/registry/properties/id). Which can be found by [List Registries](#operation/list-registries).
 repository_image = 'repository_image_example' # String | The [Repository Image](#components/schemas/registry-repository/properties/image). Which can be found by [List Repositories](#operation/list-registry-repositories).
 opts = {
-  update_repository_request: VultRuby::UpdateRepositoryRequest.new # UpdateRepositoryRequest | 
+  update_repository_request: VultrRuby::UpdateRepositoryRequest.new # UpdateRepositoryRequest | 
 }
 
 begin
   # Update Repository
   result = api_instance.update_repository(registry_id, repository_image, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ContainerRegistryApi->update_repository: #{e}"
 end
 ```
@@ -908,7 +908,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RegistryRepository>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ContainerRegistryApi->update_repository_with_http_info: #{e}"
 end
 ```

@@ -1,4 +1,4 @@
-# VultRuby::GetBareMetalVnc200ResponseVnc
+# VultrRuby::GetBareMetalVnc200ResponseVnc
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetBareMetalVnc200ResponseVnc.new(
+instance = VultrRuby::GetBareMetalVnc200ResponseVnc.new(
   url: null
 )
 ```

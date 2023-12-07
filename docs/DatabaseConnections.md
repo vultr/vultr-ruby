@@ -1,4 +1,4 @@
-# VultRuby::DatabaseConnections
+# VultrRuby::DatabaseConnections
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::DatabaseConnections.new(
+instance = VultrRuby::DatabaseConnections.new(
   used: null,
   available: null,
   max: null

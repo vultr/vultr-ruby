@@ -1,4 +1,4 @@
-# VultRuby::CreateDatabaseUserRequest
+# VultrRuby::CreateDatabaseUserRequest
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateDatabaseUserRequest.new(
+instance = VultrRuby::CreateDatabaseUserRequest.new(
   username: null,
   password: null,
   encryption: null

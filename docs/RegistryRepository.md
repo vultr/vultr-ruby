@@ -1,4 +1,4 @@
-# VultRuby::RegistryRepository
+# VultrRuby::RegistryRepository
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::RegistryRepository.new(
+instance = VultrRuby::RegistryRepository.new(
   name: null,
   image: null,
   description: null,

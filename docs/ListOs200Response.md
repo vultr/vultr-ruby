@@ -1,4 +1,4 @@
-# VultRuby::ListOs200Response
+# VultrRuby::ListOs200Response
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ListOs200Response.new(
+instance = VultrRuby::ListOs200Response.new(
   os: null,
   meta: null
 )

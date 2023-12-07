@@ -1,4 +1,4 @@
-# VultRuby::CreateInstanceIpv4Request
+# VultrRuby::CreateInstanceIpv4Request
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateInstanceIpv4Request.new(
+instance = VultrRuby::CreateInstanceIpv4Request.new(
   reboot: null
 )
 ```

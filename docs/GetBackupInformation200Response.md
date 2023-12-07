@@ -1,4 +1,4 @@
-# VultRuby::GetBackupInformation200Response
+# VultrRuby::GetBackupInformation200Response
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetBackupInformation200Response.new(
+instance = VultrRuby::GetBackupInformation200Response.new(
   latest_backup: null,
   oldest_backup: null
 )

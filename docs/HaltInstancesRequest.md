@@ -1,4 +1,4 @@
-# VultRuby::HaltInstancesRequest
+# VultrRuby::HaltInstancesRequest
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::HaltInstancesRequest.new(
+instance = VultrRuby::HaltInstancesRequest.new(
   instance_ids: null
 )
 ```

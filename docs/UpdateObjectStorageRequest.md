@@ -1,4 +1,4 @@
-# VultRuby::UpdateObjectStorageRequest
+# VultrRuby::UpdateObjectStorageRequest
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::UpdateObjectStorageRequest.new(
+instance = VultrRuby::UpdateObjectStorageRequest.new(
   label: null
 )
 ```

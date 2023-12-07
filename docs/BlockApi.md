@@ -1,4 +1,4 @@
-# VultRuby::BlockApi
+# VultrRuby::BlockApi
 
 All URIs are relative to *https://api.vultr.com/v2*
 
@@ -25,23 +25,23 @@ Attach Block Storage to Instance `instance_id`.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BlockApi.new
+api_instance = VultrRuby::BlockApi.new
 block_id = 'block_id_example' # String | The [Block Storage id](#operation/list-blocks).
 opts = {
-  attach_block_request: VultRuby::AttachBlockRequest.new({instance_id: 'instance_id_example'}) # AttachBlockRequest | Include a JSON object in the request body with a content type of **application/json**.
+  attach_block_request: VultrRuby::AttachBlockRequest.new({instance_id: 'instance_id_example'}) # AttachBlockRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Attach Block Storage
   api_instance.attach_block(block_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BlockApi->attach_block: #{e}"
 end
 ```
@@ -59,7 +59,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BlockApi->attach_block_with_http_info: #{e}"
 end
 ```
@@ -97,23 +97,23 @@ Create new Block Storage in a `region` with a size of `size_gb`. Size may range 
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BlockApi.new
+api_instance = VultrRuby::BlockApi.new
 opts = {
-  create_block_request: VultRuby::CreateBlockRequest.new({region: 'region_example', size_gb: 37}) # CreateBlockRequest | Include a JSON object in the request body with a content type of **application/json**.
+  create_block_request: VultrRuby::CreateBlockRequest.new({region: 'region_example', size_gb: 37}) # CreateBlockRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create Block Storage
   result = api_instance.create_block(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BlockApi->create_block: #{e}"
 end
 ```
@@ -131,7 +131,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateBlock202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BlockApi->create_block_with_http_info: #{e}"
 end
 ```
@@ -168,20 +168,20 @@ Delete Block Storage.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BlockApi.new
+api_instance = VultrRuby::BlockApi.new
 block_id = 'block_id_example' # String | The [Block Storage id](#operation/list-blocks).
 
 begin
   # Delete Block Storage
   api_instance.delete_block(block_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BlockApi->delete_block: #{e}"
 end
 ```
@@ -199,7 +199,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BlockApi->delete_block_with_http_info: #{e}"
 end
 ```
@@ -236,23 +236,23 @@ Detach Block Storage.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BlockApi.new
+api_instance = VultrRuby::BlockApi.new
 block_id = 'block_id_example' # String | The [Block Storage id](#operation/list-blocks).
 opts = {
-  detach_block_request: VultRuby::DetachBlockRequest.new # DetachBlockRequest | Include a JSON object in the request body with a content type of **application/json**.
+  detach_block_request: VultrRuby::DetachBlockRequest.new # DetachBlockRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Detach Block Storage
   api_instance.detach_block(block_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BlockApi->detach_block: #{e}"
 end
 ```
@@ -270,7 +270,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BlockApi->detach_block_with_http_info: #{e}"
 end
 ```
@@ -308,21 +308,21 @@ Get information for Block Storage.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BlockApi.new
+api_instance = VultrRuby::BlockApi.new
 block_id = 'block_id_example' # String | The [Block Storage id](#operation/list-blocks).
 
 begin
   # Get Block Storage
   result = api_instance.get_block(block_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BlockApi->get_block: #{e}"
 end
 ```
@@ -340,7 +340,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateBlock202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BlockApi->get_block_with_http_info: #{e}"
 end
 ```
@@ -377,14 +377,14 @@ List all Block Storage in your account.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BlockApi.new
+api_instance = VultrRuby::BlockApi.new
 opts = {
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500.
   cursor: 'cursor_example' # String | Cursor for paging. See [Meta and Pagination](#section/Introduction/Meta-and-Pagination).
@@ -394,7 +394,7 @@ begin
   # List Block storages
   result = api_instance.list_blocks(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BlockApi->list_blocks: #{e}"
 end
 ```
@@ -412,7 +412,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListBlocks200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BlockApi->list_blocks_with_http_info: #{e}"
 end
 ```
@@ -450,23 +450,23 @@ Update information for Block Storage.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BlockApi.new
+api_instance = VultrRuby::BlockApi.new
 block_id = 'block_id_example' # String | The [Block Storage id](#operation/list-blocks).
 opts = {
-  update_block_request: VultRuby::UpdateBlockRequest.new # UpdateBlockRequest | Include a JSON object in the request body with a content type of **application/json**.
+  update_block_request: VultrRuby::UpdateBlockRequest.new # UpdateBlockRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Update Block Storage
   api_instance.update_block(block_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BlockApi->update_block: #{e}"
 end
 ```
@@ -484,7 +484,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BlockApi->update_block_with_http_info: #{e}"
 end
 ```

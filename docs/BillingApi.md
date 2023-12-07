@@ -1,4 +1,4 @@
-# VultRuby::BillingApi
+# VultrRuby::BillingApi
 
 All URIs are relative to *https://api.vultr.com/v2*
 
@@ -22,21 +22,21 @@ Retrieve specified invoice
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BillingApi.new
+api_instance = VultrRuby::BillingApi.new
 invoice_id = 'invoice_id_example' # String | ID of invoice
 
 begin
   # Get Invoice
   result = api_instance.get_invoice(invoice_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BillingApi->get_invoice: #{e}"
 end
 ```
@@ -54,7 +54,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetInvoice200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BillingApi->get_invoice_with_http_info: #{e}"
 end
 ```
@@ -91,21 +91,21 @@ Retrieve full specified invoice
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BillingApi.new
+api_instance = VultrRuby::BillingApi.new
 invoice_id = 'invoice_id_example' # String | ID of invoice
 
 begin
   # Get Invoice Items
   result = api_instance.get_invoice_items(invoice_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BillingApi->get_invoice_items: #{e}"
 end
 ```
@@ -123,7 +123,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetInvoiceItems200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BillingApi->get_invoice_items_with_http_info: #{e}"
 end
 ```
@@ -160,20 +160,20 @@ Retrieve list of billing history
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BillingApi.new
+api_instance = VultrRuby::BillingApi.new
 
 begin
   # List Billing History
   result = api_instance.list_billing_history
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BillingApi->list_billing_history: #{e}"
 end
 ```
@@ -191,7 +191,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListBillingHistory200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BillingApi->list_billing_history_with_http_info: #{e}"
 end
 ```
@@ -226,20 +226,20 @@ Retrieve a list of invoices
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BillingApi.new
+api_instance = VultrRuby::BillingApi.new
 
 begin
   # List Invoices
   result = api_instance.list_invoices
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BillingApi->list_invoices: #{e}"
 end
 ```
@@ -257,7 +257,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListInvoices200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BillingApi->list_invoices_with_http_info: #{e}"
 end
 ```

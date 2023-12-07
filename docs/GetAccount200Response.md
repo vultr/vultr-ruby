@@ -1,4 +1,4 @@
-# VultRuby::GetAccount200Response
+# VultrRuby::GetAccount200Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetAccount200Response.new(
+instance = VultrRuby::GetAccount200Response.new(
   account: null
 )
 ```

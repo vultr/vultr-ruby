@@ -1,4 +1,4 @@
-# VultRuby::AccountApi
+# VultrRuby::AccountApi
 
 All URIs are relative to *https://api.vultr.com/v2*
 
@@ -19,20 +19,20 @@ Get your Vultr account, permission, and billing information.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::AccountApi.new
+api_instance = VultrRuby::AccountApi.new
 
 begin
   # Get Account Info
   result = api_instance.get_account
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling AccountApi->get_account: #{e}"
 end
 ```
@@ -50,7 +50,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetAccount200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling AccountApi->get_account_with_http_info: #{e}"
 end
 ```

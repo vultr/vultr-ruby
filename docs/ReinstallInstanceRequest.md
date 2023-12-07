@@ -1,4 +1,4 @@
-# VultRuby::ReinstallInstanceRequest
+# VultrRuby::ReinstallInstanceRequest
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ReinstallInstanceRequest.new(
+instance = VultrRuby::ReinstallInstanceRequest.new(
   hostname: null
 )
 ```

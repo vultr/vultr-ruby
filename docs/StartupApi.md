@@ -1,4 +1,4 @@
-# VultRuby::StartupApi
+# VultrRuby::StartupApi
 
 All URIs are relative to *https://api.vultr.com/v2*
 
@@ -23,23 +23,23 @@ Create a new Startup Script. The `name` and `script` attributes are required, an
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::StartupApi.new
+api_instance = VultrRuby::StartupApi.new
 opts = {
-  create_startup_script_request: VultRuby::CreateStartupScriptRequest.new({name: 'name_example', script: 'script_example'}) # CreateStartupScriptRequest | Include a JSON object in the request body with a content type of **application/json**.
+  create_startup_script_request: VultrRuby::CreateStartupScriptRequest.new({name: 'name_example', script: 'script_example'}) # CreateStartupScriptRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create Startup Script
   result = api_instance.create_startup_script(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling StartupApi->create_startup_script: #{e}"
 end
 ```
@@ -57,7 +57,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetStartupScript200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling StartupApi->create_startup_script_with_http_info: #{e}"
 end
 ```
@@ -94,20 +94,20 @@ Delete a Startup Script.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::StartupApi.new
+api_instance = VultrRuby::StartupApi.new
 startup_id = 'startup_id_example' # String | The [Startup Script id](#operation/list-startup-scripts).
 
 begin
   # Delete Startup Script
   api_instance.delete_startup_script(startup_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling StartupApi->delete_startup_script: #{e}"
 end
 ```
@@ -125,7 +125,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling StartupApi->delete_startup_script_with_http_info: #{e}"
 end
 ```
@@ -162,21 +162,21 @@ Get information for a Startup Script.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::StartupApi.new
+api_instance = VultrRuby::StartupApi.new
 startup_id = 'startup_id_example' # String | The [Startup Script id](#operation/list-startup-scripts).
 
 begin
   # Get Startup Script
   result = api_instance.get_startup_script(startup_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling StartupApi->get_startup_script: #{e}"
 end
 ```
@@ -194,7 +194,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetStartupScript200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling StartupApi->get_startup_script_with_http_info: #{e}"
 end
 ```
@@ -231,14 +231,14 @@ Get a list of all Startup Scripts.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::StartupApi.new
+api_instance = VultrRuby::StartupApi.new
 opts = {
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500.
   cursor: 'cursor_example' # String | Cursor for paging. See [Meta and Pagination](#section/Introduction/Meta-and-Pagination).
@@ -248,7 +248,7 @@ begin
   # List Startup Scripts
   result = api_instance.list_startup_scripts(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling StartupApi->list_startup_scripts: #{e}"
 end
 ```
@@ -266,7 +266,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListStartupScripts200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling StartupApi->list_startup_scripts_with_http_info: #{e}"
 end
 ```
@@ -304,23 +304,23 @@ Update a Startup Script. The attributes `name` and `script` are optional. If not
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::StartupApi.new
+api_instance = VultrRuby::StartupApi.new
 startup_id = 'startup_id_example' # String | The [Startup Script id](#operation/list-startup-scripts).
 opts = {
-  update_startup_script_request: VultRuby::UpdateStartupScriptRequest.new # UpdateStartupScriptRequest | Include a JSON object in the request body with a content type of **application/json**.
+  update_startup_script_request: VultrRuby::UpdateStartupScriptRequest.new # UpdateStartupScriptRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Update Startup Script
   api_instance.update_startup_script(startup_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling StartupApi->update_startup_script: #{e}"
 end
 ```
@@ -338,7 +338,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling StartupApi->update_startup_script_with_http_info: #{e}"
 end
 ```

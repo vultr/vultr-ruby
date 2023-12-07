@@ -1,4 +1,4 @@
-# VultRuby::UpdateNodepoolRequest
+# VultrRuby::UpdateNodepoolRequest
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::UpdateNodepoolRequest.new(
+instance = VultrRuby::UpdateNodepoolRequest.new(
   node_quantity: null,
   tag: null,
   auto_scaler: null,

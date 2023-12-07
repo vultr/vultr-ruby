@@ -1,4 +1,4 @@
-# VultRuby::GetInvoiceItems200Response
+# VultrRuby::GetInvoiceItems200Response
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetInvoiceItems200Response.new(
+instance = VultrRuby::GetInvoiceItems200Response.new(
   invoice_items: null,
   meta: null
 )

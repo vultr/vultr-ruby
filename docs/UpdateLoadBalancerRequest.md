@@ -1,4 +1,4 @@
-# VultRuby::UpdateLoadBalancerRequest
+# VultrRuby::UpdateLoadBalancerRequest
 
 ## Properties
 
@@ -22,9 +22,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::UpdateLoadBalancerRequest.new(
+instance = VultrRuby::UpdateLoadBalancerRequest.new(
   ssl: null,
   sticky_session: null,
   forwarding_rules: null,

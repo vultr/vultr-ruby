@@ -1,4 +1,4 @@
-# VultRuby::GetDatabaseUsage200Response
+# VultrRuby::GetDatabaseUsage200Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetDatabaseUsage200Response.new(
+instance = VultrRuby::GetDatabaseUsage200Response.new(
   usage: null
 )
 ```

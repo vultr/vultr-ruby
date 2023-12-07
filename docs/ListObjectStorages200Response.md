@@ -1,4 +1,4 @@
-# VultRuby::ListObjectStorages200Response
+# VultrRuby::ListObjectStorages200Response
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ListObjectStorages200Response.new(
+instance = VultrRuby::ListObjectStorages200Response.new(
   object_storages: null,
   meta: null
 )

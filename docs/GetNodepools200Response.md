@@ -1,4 +1,4 @@
-# VultRuby::GetNodepools200Response
+# VultrRuby::GetNodepools200Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetNodepools200Response.new(
+instance = VultrRuby::GetNodepools200Response.new(
   node_pools: null
 )
 ```

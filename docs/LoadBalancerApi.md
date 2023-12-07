@@ -1,4 +1,4 @@
-# VultRuby::LoadBalancerApi
+# VultrRuby::LoadBalancerApi
 
 All URIs are relative to *https://api.vultr.com/v2*
 
@@ -30,23 +30,23 @@ Create a new Load Balancer in a particular `region`.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::LoadBalancerApi.new
+api_instance = VultrRuby::LoadBalancerApi.new
 opts = {
-  create_load_balancer_request: VultRuby::CreateLoadBalancerRequest.new({region: 'region_example'}) # CreateLoadBalancerRequest | Include a JSON object in the request body with a content type of **application/json**.
+  create_load_balancer_request: VultrRuby::CreateLoadBalancerRequest.new({region: 'region_example'}) # CreateLoadBalancerRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create Load Balancer
   result = api_instance.create_load_balancer(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling LoadBalancerApi->create_load_balancer: #{e}"
 end
 ```
@@ -64,7 +64,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateLoadBalancer202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling LoadBalancerApi->create_load_balancer_with_http_info: #{e}"
 end
 ```
@@ -101,23 +101,23 @@ Create a new forwarding rule for a Load Balancer.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::LoadBalancerApi.new
+api_instance = VultrRuby::LoadBalancerApi.new
 load_balancer_id = 'load_balancer_id_example' # String | The [Load Balancer id](#operation/list-load-balancers).
 opts = {
-  create_load_balancer_forwarding_rules_request: VultRuby::CreateLoadBalancerForwardingRulesRequest.new({frontend_protocol: 'frontend_protocol_example', frontend_port: 37, backend_protocol: 'backend_protocol_example', backend_port: 37}) # CreateLoadBalancerForwardingRulesRequest | Include a JSON object in the request body with a content type of **application/json**.
+  create_load_balancer_forwarding_rules_request: VultrRuby::CreateLoadBalancerForwardingRulesRequest.new({frontend_protocol: 'frontend_protocol_example', frontend_port: 37, backend_protocol: 'backend_protocol_example', backend_port: 37}) # CreateLoadBalancerForwardingRulesRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create Forwarding Rule
   api_instance.create_load_balancer_forwarding_rules(load_balancer_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling LoadBalancerApi->create_load_balancer_forwarding_rules: #{e}"
 end
 ```
@@ -135,7 +135,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling LoadBalancerApi->create_load_balancer_forwarding_rules_with_http_info: #{e}"
 end
 ```
@@ -173,20 +173,20 @@ Delete a Load Balancer.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::LoadBalancerApi.new
+api_instance = VultrRuby::LoadBalancerApi.new
 load_balancer_id = 'load_balancer_id_example' # String | The [Load Balancer id](#operation/list-load-balancers).
 
 begin
   # Delete Load Balancer
   api_instance.delete_load_balancer(load_balancer_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling LoadBalancerApi->delete_load_balancer: #{e}"
 end
 ```
@@ -204,7 +204,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling LoadBalancerApi->delete_load_balancer_with_http_info: #{e}"
 end
 ```
@@ -241,21 +241,21 @@ Delete a Forwarding Rule on a Load Balancer.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::LoadBalancerApi.new
+api_instance = VultrRuby::LoadBalancerApi.new
 load_balancer_id = 'load_balancer_id_example' # String | The [Load Balancer id](#operation/list-load-balancers).
 forwarding_rule_id = 'forwarding_rule_id_example' # String | The [Forwarding Rule id](#operation/list-load-balancer-forwarding-rules).
 
 begin
   # Delete Forwarding Rule
   api_instance.delete_load_balancer_forwarding_rule(load_balancer_id, forwarding_rule_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling LoadBalancerApi->delete_load_balancer_forwarding_rule: #{e}"
 end
 ```
@@ -273,7 +273,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling LoadBalancerApi->delete_load_balancer_forwarding_rule_with_http_info: #{e}"
 end
 ```
@@ -311,20 +311,20 @@ Delete a Load Balancer SSL.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::LoadBalancerApi.new
+api_instance = VultrRuby::LoadBalancerApi.new
 load_balancer_id = 'load_balancer_id_example' # String | The [Load Balancer id](#operation/delete-load-balancer-ssl).
 
 begin
   # Delete Load Balancer SSL
   api_instance.delete_load_balancer_ssl(load_balancer_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling LoadBalancerApi->delete_load_balancer_ssl: #{e}"
 end
 ```
@@ -342,7 +342,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling LoadBalancerApi->delete_load_balancer_ssl_with_http_info: #{e}"
 end
 ```
@@ -379,21 +379,21 @@ Get information for a Load Balancer.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::LoadBalancerApi.new
+api_instance = VultrRuby::LoadBalancerApi.new
 load_balancer_id = 'load_balancer_id_example' # String | The [Load Balancer id](#operation/list-load-balancers).
 
 begin
   # Get Load Balancer
   result = api_instance.get_load_balancer(load_balancer_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling LoadBalancerApi->get_load_balancer: #{e}"
 end
 ```
@@ -411,7 +411,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateLoadBalancer202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling LoadBalancerApi->get_load_balancer_with_http_info: #{e}"
 end
 ```
@@ -448,14 +448,14 @@ Get information for a Forwarding Rule on a Load Balancer.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::LoadBalancerApi.new
+api_instance = VultrRuby::LoadBalancerApi.new
 load_balancer_id = 'load_balancer_id_example' # String | The [Load Balancer id](#operation/list-load-balancers).
 forwarding_rule_id = 'forwarding_rule_id_example' # String | The [Forwarding Rule id](#operation/list-load-balancer-forwarding-rules).
 
@@ -463,7 +463,7 @@ begin
   # Get Forwarding Rule
   result = api_instance.get_load_balancer_forwarding_rule(load_balancer_id, forwarding_rule_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling LoadBalancerApi->get_load_balancer_forwarding_rule: #{e}"
 end
 ```
@@ -481,7 +481,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetLoadBalancerForwardingRule200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling LoadBalancerApi->get_load_balancer_forwarding_rule_with_http_info: #{e}"
 end
 ```
@@ -519,14 +519,14 @@ Get a firewall rule for a Load Balancer.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::LoadBalancerApi.new
+api_instance = VultrRuby::LoadBalancerApi.new
 loadbalancer_id = 'loadbalancer_id_example' # String | 
 firewall_rule_id = 'firewall_rule_id_example' # String | 
 
@@ -534,7 +534,7 @@ begin
   # Get Firewall Rule
   result = api_instance.get_loadbalancer_firewall_rule(loadbalancer_id, firewall_rule_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling LoadBalancerApi->get_loadbalancer_firewall_rule: #{e}"
 end
 ```
@@ -552,7 +552,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <LoadbalancerFirewallRule>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling LoadBalancerApi->get_loadbalancer_firewall_rule_with_http_info: #{e}"
 end
 ```
@@ -590,14 +590,14 @@ List the fowarding rules for a Load Balancer.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::LoadBalancerApi.new
+api_instance = VultrRuby::LoadBalancerApi.new
 load_balancer_id = 'load_balancer_id_example' # String | The [Load Balancer id](#operation/list-load-balancers).
 opts = {
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500.
@@ -608,7 +608,7 @@ begin
   # List Forwarding Rules
   result = api_instance.list_load_balancer_forwarding_rules(load_balancer_id, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling LoadBalancerApi->list_load_balancer_forwarding_rules: #{e}"
 end
 ```
@@ -626,7 +626,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListLoadBalancerForwardingRules200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling LoadBalancerApi->list_load_balancer_forwarding_rules_with_http_info: #{e}"
 end
 ```
@@ -665,14 +665,14 @@ List the Load Balancers in your account.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::LoadBalancerApi.new
+api_instance = VultrRuby::LoadBalancerApi.new
 opts = {
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500. 
   cursor: 'cursor_example' # String | Cursor for paging. See [Meta and Pagination](#section/Introduction/Meta-and-Pagination).
@@ -682,7 +682,7 @@ begin
   # List Load Balancers
   result = api_instance.list_load_balancers(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling LoadBalancerApi->list_load_balancers: #{e}"
 end
 ```
@@ -700,7 +700,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListLoadBalancers200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling LoadBalancerApi->list_load_balancers_with_http_info: #{e}"
 end
 ```
@@ -738,14 +738,14 @@ List the firewall rules for a Load Balancer.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::LoadBalancerApi.new
+api_instance = VultrRuby::LoadBalancerApi.new
 loadbalancer_id = 'loadbalancer_id_example' # String | 
 opts = {
   per_page: 'per_page_example', # String | Number of items requested per page. Default is 100 and Max is 500.
@@ -756,7 +756,7 @@ begin
   # List Firewall Rules
   result = api_instance.list_loadbalancer_firewall_rules(loadbalancer_id, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling LoadBalancerApi->list_loadbalancer_firewall_rules: #{e}"
 end
 ```
@@ -774,7 +774,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <LoadbalancerFirewallRule>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling LoadBalancerApi->list_loadbalancer_firewall_rules_with_http_info: #{e}"
 end
 ```
@@ -813,23 +813,23 @@ Update information for a Load Balancer. All attributes are optional. If not set,
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::LoadBalancerApi.new
+api_instance = VultrRuby::LoadBalancerApi.new
 load_balancer_id = 'load_balancer_id_example' # String | The [Load Balancer id](#operation/list-load-balancers).
 opts = {
-  update_load_balancer_request: VultRuby::UpdateLoadBalancerRequest.new # UpdateLoadBalancerRequest | Include a JSON object in the request body with a content type of **application/json**.
+  update_load_balancer_request: VultrRuby::UpdateLoadBalancerRequest.new # UpdateLoadBalancerRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Update Load Balancer
   api_instance.update_load_balancer(load_balancer_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling LoadBalancerApi->update_load_balancer: #{e}"
 end
 ```
@@ -847,7 +847,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling LoadBalancerApi->update_load_balancer_with_http_info: #{e}"
 end
 ```

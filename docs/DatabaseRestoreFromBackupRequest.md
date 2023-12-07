@@ -1,4 +1,4 @@
-# VultRuby::DatabaseRestoreFromBackupRequest
+# VultrRuby::DatabaseRestoreFromBackupRequest
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::DatabaseRestoreFromBackupRequest.new(
+instance = VultrRuby::DatabaseRestoreFromBackupRequest.new(
   label: null,
   type: null,
   date: null,

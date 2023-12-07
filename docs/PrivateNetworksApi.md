@@ -1,4 +1,4 @@
-# VultRuby::PrivateNetworksApi
+# VultrRuby::PrivateNetworksApi
 
 All URIs are relative to *https://api.vultr.com/v2*
 
@@ -23,23 +23,23 @@ Create a new Private Network in a `region`.  **Deprecated**: Use [Create VPC](#o
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::PrivateNetworksApi.new
+api_instance = VultrRuby::PrivateNetworksApi.new
 opts = {
-  create_network_request: VultRuby::CreateNetworkRequest.new({region: 'region_example'}) # CreateNetworkRequest | Include a JSON object in the request body with a content type of **application/json**.
+  create_network_request: VultrRuby::CreateNetworkRequest.new({region: 'region_example'}) # CreateNetworkRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create a Private Network
   result = api_instance.create_network(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling PrivateNetworksApi->create_network: #{e}"
 end
 ```
@@ -57,7 +57,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetNetwork200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling PrivateNetworksApi->create_network_with_http_info: #{e}"
 end
 ```
@@ -94,20 +94,20 @@ Delete a Private Network.<br><br>**Deprecated**: Use [Delete VPC](#operation/del
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::PrivateNetworksApi.new
+api_instance = VultrRuby::PrivateNetworksApi.new
 network_id = 'network_id_example' # String | The [Network id](#operation/list-networks).
 
 begin
   # Delete a private network
   api_instance.delete_network(network_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling PrivateNetworksApi->delete_network: #{e}"
 end
 ```
@@ -125,7 +125,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling PrivateNetworksApi->delete_network_with_http_info: #{e}"
 end
 ```
@@ -162,21 +162,21 @@ Get information about a Private Network.<br><br>**Deprecated**: Use [Get VPC](#o
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::PrivateNetworksApi.new
+api_instance = VultrRuby::PrivateNetworksApi.new
 network_id = 'network_id_example' # String | The [Network id](#operation/list-networks).
 
 begin
   # Get a private network
   result = api_instance.get_network(network_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling PrivateNetworksApi->get_network: #{e}"
 end
 ```
@@ -194,7 +194,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetNetwork200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling PrivateNetworksApi->get_network_with_http_info: #{e}"
 end
 ```
@@ -231,14 +231,14 @@ Get a list of all Private Networks in your account.<br><br>**Deprecated**: Use [
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::PrivateNetworksApi.new
+api_instance = VultrRuby::PrivateNetworksApi.new
 opts = {
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500.
   cursor: 'cursor_example' # String | Cursor for paging. See [Meta and Pagination](#section/Introduction/Meta-and-Pagination).
@@ -248,7 +248,7 @@ begin
   # List Private Networks
   result = api_instance.list_networks(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling PrivateNetworksApi->list_networks: #{e}"
 end
 ```
@@ -266,7 +266,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListNetworks200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling PrivateNetworksApi->list_networks_with_http_info: #{e}"
 end
 ```
@@ -304,23 +304,23 @@ Update information for a Private Network.<br><br>**Deprecated**: Use [Update VPC
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::PrivateNetworksApi.new
+api_instance = VultrRuby::PrivateNetworksApi.new
 network_id = 'network_id_example' # String | The [Network id](#operation/list-networks).
 opts = {
-  update_network_request: VultRuby::UpdateNetworkRequest.new({description: 'description_example'}) # UpdateNetworkRequest | Include a JSON object in the request body with a content type of **application/json**.
+  update_network_request: VultrRuby::UpdateNetworkRequest.new({description: 'description_example'}) # UpdateNetworkRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Update a Private Network
   api_instance.update_network(network_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling PrivateNetworksApi->update_network: #{e}"
 end
 ```
@@ -338,7 +338,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling PrivateNetworksApi->update_network_with_http_info: #{e}"
 end
 ```

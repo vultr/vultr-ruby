@@ -1,4 +1,4 @@
-# VultRuby::ListInstanceIpv6Reverse200Response
+# VultrRuby::ListInstanceIpv6Reverse200Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ListInstanceIpv6Reverse200Response.new(
+instance = VultrRuby::ListInstanceIpv6Reverse200Response.new(
   reverse_ipv6s: null
 )
 ```

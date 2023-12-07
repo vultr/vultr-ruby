@@ -1,4 +1,4 @@
-# VultRuby::GetReservedIp200Response
+# VultrRuby::GetReservedIp200Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetReservedIp200Response.new(
+instance = VultrRuby::GetReservedIp200Response.new(
   reserved_ip: null
 )
 ```

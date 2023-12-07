@@ -1,4 +1,4 @@
-# VultRuby::UpdateUserRequest
+# VultrRuby::UpdateUserRequest
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::UpdateUserRequest.new(
+instance = VultrRuby::UpdateUserRequest.new(
   email: null,
   name: null,
   password: null,

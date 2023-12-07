@@ -1,4 +1,4 @@
-# VultRuby::ReservedIp
+# VultrRuby::ReservedIp
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ReservedIp.new(
+instance = VultrRuby::ReservedIp.new(
   id: null,
   region: null,
   ip_type: null,

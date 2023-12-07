@@ -1,4 +1,4 @@
-# VultRuby::ListApplications200Response
+# VultrRuby::ListApplications200Response
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ListApplications200Response.new(
+instance = VultrRuby::ListApplications200Response.new(
   applications: null,
   meta: null
 )

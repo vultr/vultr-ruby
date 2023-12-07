@@ -1,4 +1,4 @@
-# VultRuby::DatabaseUsageCpu
+# VultrRuby::DatabaseUsageCpu
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::DatabaseUsageCpu.new(
+instance = VultrRuby::DatabaseUsageCpu.new(
   percentage: null
 )
 ```

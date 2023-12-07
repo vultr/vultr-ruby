@@ -1,4 +1,4 @@
-# VultRuby::PatchReservedIpsReservedIpRequest
+# VultrRuby::PatchReservedIpsReservedIpRequest
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::PatchReservedIpsReservedIpRequest.new(
+instance = VultrRuby::PatchReservedIpsReservedIpRequest.new(
   label: null
 )
 ```

@@ -1,4 +1,4 @@
-# VultRuby::Plans
+# VultrRuby::Plans
 
 ## Properties
 
@@ -18,9 +18,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::Plans.new(
+instance = VultrRuby::Plans.new(
   id: null,
   name: null,
   vcpu_count: null,

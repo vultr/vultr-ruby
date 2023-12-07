@@ -1,4 +1,4 @@
-# VultRuby::UpdateBlockRequest
+# VultrRuby::UpdateBlockRequest
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::UpdateBlockRequest.new(
+instance = VultrRuby::UpdateBlockRequest.new(
   label: null,
   size_gb: null
 )

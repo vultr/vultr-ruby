@@ -1,4 +1,4 @@
-# VultRuby::ReinstallBaremetalRequest
+# VultrRuby::ReinstallBaremetalRequest
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ReinstallBaremetalRequest.new(
+instance = VultrRuby::ReinstallBaremetalRequest.new(
   hostname: null
 )
 ```

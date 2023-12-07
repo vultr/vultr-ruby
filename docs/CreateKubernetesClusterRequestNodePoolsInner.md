@@ -1,4 +1,4 @@
-# VultRuby::CreateKubernetesClusterRequestNodePoolsInner
+# VultrRuby::CreateKubernetesClusterRequestNodePoolsInner
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateKubernetesClusterRequestNodePoolsInner.new(
+instance = VultrRuby::CreateKubernetesClusterRequestNodePoolsInner.new(
   node_quantity: null,
   label: null,
   plan: null,

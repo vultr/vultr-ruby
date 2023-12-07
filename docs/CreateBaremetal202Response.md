@@ -1,4 +1,4 @@
-# VultRuby::CreateBaremetal202Response
+# VultrRuby::CreateBaremetal202Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateBaremetal202Response.new(
+instance = VultrRuby::CreateBaremetal202Response.new(
   baremetal: null
 )
 ```

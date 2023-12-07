@@ -1,4 +1,4 @@
-# VultRuby::CreateNetworkRequest
+# VultrRuby::CreateNetworkRequest
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateNetworkRequest.new(
+instance = VultrRuby::CreateNetworkRequest.new(
   region: null,
   description: null,
   v4_subnet: null,

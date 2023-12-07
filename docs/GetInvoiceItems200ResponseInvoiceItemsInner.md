@@ -1,4 +1,4 @@
-# VultRuby::GetInvoiceItems200ResponseInvoiceItemsInner
+# VultrRuby::GetInvoiceItems200ResponseInvoiceItemsInner
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetInvoiceItems200ResponseInvoiceItemsInner.new(
+instance = VultrRuby::GetInvoiceItems200ResponseInvoiceItemsInner.new(
   description: null,
   product: null,
   start_date: null,

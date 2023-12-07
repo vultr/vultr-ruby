@@ -1,4 +1,4 @@
-# VultRuby::Region
+# VultrRuby::Region
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::Region.new(
+instance = VultrRuby::Region.new(
   id: null,
   country: null,
   options: null,

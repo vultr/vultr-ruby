@@ -1,4 +1,4 @@
-# VultRuby::CreateConnectionPoolRequest
+# VultrRuby::CreateConnectionPoolRequest
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateConnectionPoolRequest.new(
+instance = VultrRuby::CreateConnectionPoolRequest.new(
   name: null,
   database: null,
   username: null,

@@ -1,4 +1,4 @@
-# VultRuby::DbaasAlerts
+# VultrRuby::DbaasAlerts
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::DbaasAlerts.new(
+instance = VultrRuby::DbaasAlerts.new(
   timestamp: null,
   message_type: null,
   description: null,

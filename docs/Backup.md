@@ -1,4 +1,4 @@
-# VultRuby::Backup
+# VultrRuby::Backup
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::Backup.new(
+instance = VultrRuby::Backup.new(
   id: null,
   date_created: null,
   description: null,

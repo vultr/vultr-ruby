@@ -1,4 +1,4 @@
-# VultRuby::RegistryKubernetesDockerCredentials
+# VultrRuby::RegistryKubernetesDockerCredentials
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::RegistryKubernetesDockerCredentials.new(
+instance = VultrRuby::RegistryKubernetesDockerCredentials.new(
   api_version: null,
   kind: null,
   metadata: null,

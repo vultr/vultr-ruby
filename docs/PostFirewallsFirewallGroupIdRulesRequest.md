@@ -1,4 +1,4 @@
-# VultRuby::PostFirewallsFirewallGroupIdRulesRequest
+# VultrRuby::PostFirewallsFirewallGroupIdRulesRequest
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::PostFirewallsFirewallGroupIdRulesRequest.new(
+instance = VultrRuby::PostFirewallsFirewallGroupIdRulesRequest.new(
   ip_type: null,
   protocol: null,
   subnet: null,

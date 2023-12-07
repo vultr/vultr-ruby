@@ -1,4 +1,4 @@
-# VultRuby::CreateSnapshotCreateFromUrlRequest
+# VultrRuby::CreateSnapshotCreateFromUrlRequest
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateSnapshotCreateFromUrlRequest.new(
+instance = VultrRuby::CreateSnapshotCreateFromUrlRequest.new(
   url: null,
   description: null,
   uefi: null

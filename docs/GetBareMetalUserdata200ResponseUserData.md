@@ -1,4 +1,4 @@
-# VultRuby::GetBareMetalUserdata200ResponseUserData
+# VultrRuby::GetBareMetalUserdata200ResponseUserData
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetBareMetalUserdata200ResponseUserData.new(
+instance = VultrRuby::GetBareMetalUserdata200ResponseUserData.new(
   data: null
 )
 ```

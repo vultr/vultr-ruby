@@ -1,4 +1,4 @@
-# VultRuby::GetSshKey200Response
+# VultrRuby::GetSshKey200Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetSshKey200Response.new(
+instance = VultrRuby::GetSshKey200Response.new(
   ssh_key: null
 )
 ```

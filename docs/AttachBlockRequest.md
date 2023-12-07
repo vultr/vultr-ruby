@@ -1,4 +1,4 @@
-# VultRuby::AttachBlockRequest
+# VultrRuby::AttachBlockRequest
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::AttachBlockRequest.new(
+instance = VultrRuby::AttachBlockRequest.new(
   instance_id: null,
   live: null
 )

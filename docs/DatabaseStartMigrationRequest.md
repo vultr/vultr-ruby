@@ -1,4 +1,4 @@
-# VultRuby::DatabaseStartMigrationRequest
+# VultrRuby::DatabaseStartMigrationRequest
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::DatabaseStartMigrationRequest.new(
+instance = VultrRuby::DatabaseStartMigrationRequest.new(
   host: null,
   port: null,
   username: null,

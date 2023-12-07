@@ -1,4 +1,4 @@
-# VultRuby::GetDnsDomainDnssec200Response
+# VultrRuby::GetDnsDomainDnssec200Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetDnsDomainDnssec200Response.new(
+instance = VultrRuby::GetDnsDomainDnssec200Response.new(
   dns_sec: null
 )
 ```

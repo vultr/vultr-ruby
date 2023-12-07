@@ -1,4 +1,4 @@
-# VultRuby::RegistryRegion
+# VultrRuby::RegistryRegion
 
 ## Properties
 
@@ -16,9 +16,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::RegistryRegion.new(
+instance = VultrRuby::RegistryRegion.new(
   id: null,
   name: null,
   urn: null,

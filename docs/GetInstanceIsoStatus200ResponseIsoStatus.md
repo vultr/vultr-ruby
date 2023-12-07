@@ -1,4 +1,4 @@
-# VultRuby::GetInstanceIsoStatus200ResponseIsoStatus
+# VultrRuby::GetInstanceIsoStatus200ResponseIsoStatus
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetInstanceIsoStatus200ResponseIsoStatus.new(
+instance = VultrRuby::GetInstanceIsoStatus200ResponseIsoStatus.new(
   iso_id: null,
   state: null
 )

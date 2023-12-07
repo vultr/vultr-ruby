@@ -1,4 +1,4 @@
-# VultRuby::ApplicationApi
+# VultrRuby::ApplicationApi
 
 All URIs are relative to *https://api.vultr.com/v2*
 
@@ -19,9 +19,9 @@ Get a list of all available Applications.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 
-api_instance = VultRuby::ApplicationApi.new
+api_instance = VultrRuby::ApplicationApi.new
 opts = {
   type: 'type_example', # String | Filter the results by type.  |   | Type | Description | | - | ------ | ------------- | |   | all | All available application types | |   | marketplace | Marketplace applications | |   | one-click | Vultr One-Click applications |
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500.
@@ -32,7 +32,7 @@ begin
   # List Applications
   result = api_instance.list_applications(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ApplicationApi->list_applications: #{e}"
 end
 ```
@@ -50,7 +50,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListApplications200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ApplicationApi->list_applications_with_http_info: #{e}"
 end
 ```

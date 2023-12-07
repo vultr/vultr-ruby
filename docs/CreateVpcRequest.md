@@ -1,4 +1,4 @@
-# VultRuby::CreateVpcRequest
+# VultrRuby::CreateVpcRequest
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateVpcRequest.new(
+instance = VultrRuby::CreateVpcRequest.new(
   region: null,
   description: null,
   v4_subnet: null,

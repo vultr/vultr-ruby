@@ -1,4 +1,4 @@
-# VultRuby::UsersApi
+# VultrRuby::UsersApi
 
 All URIs are relative to *https://api.vultr.com/v2*
 
@@ -23,23 +23,23 @@ Create a new User. The `email`, `name`, and `password` attributes are required.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::UsersApi.new
+api_instance = VultrRuby::UsersApi.new
 opts = {
-  create_user_request: VultRuby::CreateUserRequest.new({email: 'email_example', name: 'name_example', password: 'password_example'}) # CreateUserRequest | Include a JSON object in the request body with a content type of **application/json**.
+  create_user_request: VultrRuby::CreateUserRequest.new({email: 'email_example', name: 'name_example', password: 'password_example'}) # CreateUserRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create User
   result = api_instance.create_user(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling UsersApi->create_user: #{e}"
 end
 ```
@@ -57,7 +57,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <User>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling UsersApi->create_user_with_http_info: #{e}"
 end
 ```
@@ -94,20 +94,20 @@ Delete a User.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::UsersApi.new
+api_instance = VultrRuby::UsersApi.new
 user_id = 'user_id_example' # String | The [User id](#operation/list-users).
 
 begin
   # Delete User
   api_instance.delete_user(user_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling UsersApi->delete_user: #{e}"
 end
 ```
@@ -125,7 +125,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling UsersApi->delete_user_with_http_info: #{e}"
 end
 ```
@@ -162,21 +162,21 @@ Get information about a User.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::UsersApi.new
+api_instance = VultrRuby::UsersApi.new
 user_id = 'user_id_example' # String | The [User id](#operation/list-users).
 
 begin
   # Get User
   result = api_instance.get_user(user_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling UsersApi->get_user: #{e}"
 end
 ```
@@ -194,7 +194,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <User>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling UsersApi->get_user_with_http_info: #{e}"
 end
 ```
@@ -231,14 +231,14 @@ Get a list of all Users in your account.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::UsersApi.new
+api_instance = VultrRuby::UsersApi.new
 opts = {
   per_page: 8.14, # Float | Number of items requested per page. Default is 100 and Max is 500.
   cursor: 'cursor_example' # String | Cursor for paging. See [Meta and Pagination](#section/Introduction/Meta-and-Pagination).
@@ -248,7 +248,7 @@ begin
   # Get Users
   result = api_instance.list_users(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling UsersApi->list_users: #{e}"
 end
 ```
@@ -266,7 +266,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListUsers200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling UsersApi->list_users_with_http_info: #{e}"
 end
 ```
@@ -304,23 +304,23 @@ Update information for a User. All attributes are optional. If not set, the attr
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::UsersApi.new
+api_instance = VultrRuby::UsersApi.new
 user_id = 'user_id_example' # String | The [User id](#operation/list-users).
 opts = {
-  update_user_request: VultRuby::UpdateUserRequest.new # UpdateUserRequest | Include a JSON object in the request body with a content type of **application/json**.
+  update_user_request: VultrRuby::UpdateUserRequest.new # UpdateUserRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Update User
   api_instance.update_user(user_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling UsersApi->update_user: #{e}"
 end
 ```
@@ -338,7 +338,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling UsersApi->update_user_with_http_info: #{e}"
 end
 ```

@@ -1,4 +1,4 @@
-# VultRuby::ForwardingRule
+# VultrRuby::ForwardingRule
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ForwardingRule.new(
+instance = VultrRuby::ForwardingRule.new(
   id: null,
   frontend_protocol: null,
   frontend_port: null,

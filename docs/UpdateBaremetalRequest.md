@@ -1,4 +1,4 @@
-# VultRuby::UpdateBaremetalRequest
+# VultrRuby::UpdateBaremetalRequest
 
 ## Properties
 
@@ -20,9 +20,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::UpdateBaremetalRequest.new(
+instance = VultrRuby::UpdateBaremetalRequest.new(
   user_data: null,
   label: null,
   tag: null,

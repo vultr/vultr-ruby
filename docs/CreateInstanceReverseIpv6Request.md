@@ -1,4 +1,4 @@
-# VultRuby::CreateInstanceReverseIpv6Request
+# VultrRuby::CreateInstanceReverseIpv6Request
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateInstanceReverseIpv6Request.new(
+instance = VultrRuby::CreateInstanceReverseIpv6Request.new(
   ip: null,
   reverse: null
 )

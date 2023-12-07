@@ -1,4 +1,4 @@
-# VultRuby::RegistryStorage
+# VultrRuby::RegistryStorage
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::RegistryStorage.new(
+instance = VultrRuby::RegistryStorage.new(
   used: null,
   allowed: null
 )

@@ -1,4 +1,4 @@
-# VultRuby::Loadbalancer
+# VultrRuby::Loadbalancer
 
 ## Properties
 
@@ -23,9 +23,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::Loadbalancer.new(
+instance = VultrRuby::Loadbalancer.new(
   id: null,
   date_created: null,
   region: null,

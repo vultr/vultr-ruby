@@ -1,4 +1,4 @@
-# VultRuby::GetKubernetesResources200ResponseResourcesBlockStorageInner
+# VultrRuby::GetKubernetesResources200ResponseResourcesBlockStorageInner
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetKubernetesResources200ResponseResourcesBlockStorageInner.new(
+instance = VultrRuby::GetKubernetesResources200ResponseResourcesBlockStorageInner.new(
   id: null,
   label: null,
   date_created: null,

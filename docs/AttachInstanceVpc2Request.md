@@ -1,4 +1,4 @@
-# VultRuby::AttachInstanceVpc2Request
+# VultrRuby::AttachInstanceVpc2Request
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::AttachInstanceVpc2Request.new(
+instance = VultrRuby::AttachInstanceVpc2Request.new(
   vpc_id: null,
   ip_address: null
 )

@@ -1,4 +1,4 @@
-# VultRuby::GetKubernetesVersions200Response
+# VultrRuby::GetKubernetesVersions200Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetKubernetesVersions200Response.new(
+instance = VultrRuby::GetKubernetesVersions200Response.new(
   versions: null
 )
 ```

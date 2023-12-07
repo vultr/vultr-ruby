@@ -1,4 +1,4 @@
-# VultRuby::S3Api
+# VultrRuby::S3Api
 
 All URIs are relative to *https://api.vultr.com/v2*
 
@@ -25,23 +25,23 @@ Create new Object Storage. The `cluster_id` attribute is required.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::S3Api.new
+api_instance = VultrRuby::S3Api.new
 opts = {
-  create_object_storage_request: VultRuby::CreateObjectStorageRequest.new({cluster_id: 37}) # CreateObjectStorageRequest | Include a JSON object in the request body with a content type of **application/json**.
+  create_object_storage_request: VultrRuby::CreateObjectStorageRequest.new({cluster_id: 37}) # CreateObjectStorageRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create Object Storage
   result = api_instance.create_object_storage(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling S3Api->create_object_storage: #{e}"
 end
 ```
@@ -59,7 +59,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateObjectStorage202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling S3Api->create_object_storage_with_http_info: #{e}"
 end
 ```
@@ -96,20 +96,20 @@ Delete an Object Storage.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::S3Api.new
+api_instance = VultrRuby::S3Api.new
 object_storage_id = 'object_storage_id_example' # String | The [Object Storage id](#operation/list-object-storages).
 
 begin
   # Delete Object Storage
   api_instance.delete_object_storage(object_storage_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling S3Api->delete_object_storage: #{e}"
 end
 ```
@@ -127,7 +127,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling S3Api->delete_object_storage_with_http_info: #{e}"
 end
 ```
@@ -164,21 +164,21 @@ Get information about an Object Storage.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::S3Api.new
+api_instance = VultrRuby::S3Api.new
 object_storage_id = 'object_storage_id_example' # String | The [Object Storage id](#operation/list-object-storages).
 
 begin
   # Get Object Storage
   result = api_instance.get_object_storage(object_storage_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling S3Api->get_object_storage: #{e}"
 end
 ```
@@ -196,7 +196,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateObjectStorage202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling S3Api->get_object_storage_with_http_info: #{e}"
 end
 ```
@@ -233,9 +233,9 @@ Get a list of all Object Storage Clusters.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 
-api_instance = VultRuby::S3Api.new
+api_instance = VultrRuby::S3Api.new
 opts = {
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500.
   cursor: 'cursor_example' # String | Cursor for paging. See [Meta and Pagination](#section/Introduction/Meta-and-Pagination).
@@ -245,7 +245,7 @@ begin
   # Get All Clusters
   result = api_instance.list_object_storage_clusters(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling S3Api->list_object_storage_clusters: #{e}"
 end
 ```
@@ -263,7 +263,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListObjectStorageClusters200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling S3Api->list_object_storage_clusters_with_http_info: #{e}"
 end
 ```
@@ -301,14 +301,14 @@ Get a list of all Object Storage in your account.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::S3Api.new
+api_instance = VultrRuby::S3Api.new
 opts = {
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500.
   cursor: 'cursor_example' # String | Cursor for paging. See [Meta and Pagination](#section/Introduction/Meta-and-Pagination).
@@ -318,7 +318,7 @@ begin
   # List Object Storages
   result = api_instance.list_object_storages(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling S3Api->list_object_storages: #{e}"
 end
 ```
@@ -336,7 +336,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListObjectStorages200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling S3Api->list_object_storages_with_http_info: #{e}"
 end
 ```
@@ -374,21 +374,21 @@ Regenerate the keys for an Object Storage.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::S3Api.new
+api_instance = VultrRuby::S3Api.new
 object_storage_id = 'object_storage_id_example' # String | The [Object Storage id](#operation/list-object-storages).
 
 begin
   # Regenerate Object Storage Keys
   result = api_instance.regenerate_object_storage_keys(object_storage_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling S3Api->regenerate_object_storage_keys: #{e}"
 end
 ```
@@ -406,7 +406,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RegenerateObjectStorageKeys201Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling S3Api->regenerate_object_storage_keys_with_http_info: #{e}"
 end
 ```
@@ -443,23 +443,23 @@ Update the label for an Object Storage.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::S3Api.new
+api_instance = VultrRuby::S3Api.new
 object_storage_id = 'object_storage_id_example' # String | The [Object Storage id](#operation/list-object-storages).
 opts = {
-  update_object_storage_request: VultRuby::UpdateObjectStorageRequest.new({label: 'label_example'}) # UpdateObjectStorageRequest | Include a JSON object in the request body with a content type of **application/json**.
+  update_object_storage_request: VultrRuby::UpdateObjectStorageRequest.new({label: 'label_example'}) # UpdateObjectStorageRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Update Object Storage
   api_instance.update_object_storage(object_storage_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling S3Api->update_object_storage: #{e}"
 end
 ```
@@ -477,7 +477,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling S3Api->update_object_storage_with_http_info: #{e}"
 end
 ```

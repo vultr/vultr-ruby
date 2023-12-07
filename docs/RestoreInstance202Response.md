@@ -1,4 +1,4 @@
-# VultRuby::RestoreInstance202Response
+# VultrRuby::RestoreInstance202Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::RestoreInstance202Response.new(
+instance = VultrRuby::RestoreInstance202Response.new(
   status: null
 )
 ```

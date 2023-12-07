@@ -1,4 +1,4 @@
-# VultRuby::DetachBlockRequest
+# VultrRuby::DetachBlockRequest
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::DetachBlockRequest.new(
+instance = VultrRuby::DetachBlockRequest.new(
   live: null
 )
 ```

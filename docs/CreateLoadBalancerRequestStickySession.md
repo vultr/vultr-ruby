@@ -1,4 +1,4 @@
-# VultRuby::CreateLoadBalancerRequestStickySession
+# VultrRuby::CreateLoadBalancerRequestStickySession
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateLoadBalancerRequestStickySession.new(
+instance = VultrRuby::CreateLoadBalancerRequestStickySession.new(
   cookie_name: null
 )
 ```

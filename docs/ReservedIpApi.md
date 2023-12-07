@@ -1,4 +1,4 @@
-# VultRuby::ReservedIpApi
+# VultrRuby::ReservedIpApi
 
 All URIs are relative to *https://api.vultr.com/v2*
 
@@ -26,23 +26,23 @@ Attach a Reserved IP to an compute instance or a baremetal instance - `instance_
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ReservedIpApi.new
+api_instance = VultrRuby::ReservedIpApi.new
 reserved_ip = 'reserved_ip_example' # String | The [Reserved IP id](#operation/list-reserved-ips)
 opts = {
-  attach_reserved_ip_request: VultRuby::AttachReservedIpRequest.new({instance_id: 'instance_id_example'}) # AttachReservedIpRequest | Include a JSON object in the request body with a content type of **application/json**.
+  attach_reserved_ip_request: VultrRuby::AttachReservedIpRequest.new({instance_id: 'instance_id_example'}) # AttachReservedIpRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Attach Reserved IP
   api_instance.attach_reserved_ip(reserved_ip, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ReservedIpApi->attach_reserved_ip: #{e}"
 end
 ```
@@ -60,7 +60,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ReservedIpApi->attach_reserved_ip_with_http_info: #{e}"
 end
 ```
@@ -98,23 +98,23 @@ Convert the `ip_address` of an existing [instance](#operation/list-instances) in
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ReservedIpApi.new
+api_instance = VultrRuby::ReservedIpApi.new
 opts = {
-  convert_reserved_ip_request: VultRuby::ConvertReservedIpRequest.new({ip_address: 'ip_address_example'}) # ConvertReservedIpRequest | Include a JSON object in the request body with a content type of **application/json**.
+  convert_reserved_ip_request: VultrRuby::ConvertReservedIpRequest.new({ip_address: 'ip_address_example'}) # ConvertReservedIpRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Convert Instance IP to Reserved IP
   result = api_instance.convert_reserved_ip(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ReservedIpApi->convert_reserved_ip: #{e}"
 end
 ```
@@ -132,7 +132,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetReservedIp200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ReservedIpApi->convert_reserved_ip_with_http_info: #{e}"
 end
 ```
@@ -169,23 +169,23 @@ Create a new Reserved IP. The `region` and `ip_type` attributes are required.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ReservedIpApi.new
+api_instance = VultrRuby::ReservedIpApi.new
 opts = {
-  create_reserved_ip_request: VultRuby::CreateReservedIpRequest.new({region: 'region_example', ip_type: 'ip_type_example'}) # CreateReservedIpRequest | Include a JSON object in the request body with a content type of **application/json**.
+  create_reserved_ip_request: VultrRuby::CreateReservedIpRequest.new({region: 'region_example', ip_type: 'ip_type_example'}) # CreateReservedIpRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create Reserved IP
   result = api_instance.create_reserved_ip(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ReservedIpApi->create_reserved_ip: #{e}"
 end
 ```
@@ -203,7 +203,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetReservedIp200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ReservedIpApi->create_reserved_ip_with_http_info: #{e}"
 end
 ```
@@ -240,20 +240,20 @@ Delete a Reserved IP.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ReservedIpApi.new
+api_instance = VultrRuby::ReservedIpApi.new
 reserved_ip = 'reserved_ip_example' # String | The [Reserved IP id](#operation/list-reserved-ips).
 
 begin
   # Delete Reserved IP
   api_instance.delete_reserved_ip(reserved_ip)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ReservedIpApi->delete_reserved_ip: #{e}"
 end
 ```
@@ -271,7 +271,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ReservedIpApi->delete_reserved_ip_with_http_info: #{e}"
 end
 ```
@@ -308,20 +308,20 @@ Detach a Reserved IP.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ReservedIpApi.new
+api_instance = VultrRuby::ReservedIpApi.new
 reserved_ip = 'reserved_ip_example' # String | The [Reserved IP id](#operation/list-reserved-ips)
 
 begin
   # Detach Reserved IP
   api_instance.detach_reserved_ip(reserved_ip)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ReservedIpApi->detach_reserved_ip: #{e}"
 end
 ```
@@ -339,7 +339,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ReservedIpApi->detach_reserved_ip_with_http_info: #{e}"
 end
 ```
@@ -376,21 +376,21 @@ Get information about a Reserved IP.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ReservedIpApi.new
+api_instance = VultrRuby::ReservedIpApi.new
 reserved_ip = 'reserved_ip_example' # String | The [Reserved IP id](#operation/list-reserved-ips).
 
 begin
   # Get Reserved IP
   result = api_instance.get_reserved_ip(reserved_ip)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ReservedIpApi->get_reserved_ip: #{e}"
 end
 ```
@@ -408,7 +408,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetReservedIp200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ReservedIpApi->get_reserved_ip_with_http_info: #{e}"
 end
 ```
@@ -445,14 +445,14 @@ List all Reserved IPs in your account.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ReservedIpApi.new
+api_instance = VultrRuby::ReservedIpApi.new
 opts = {
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500.
   cursor: 'cursor_example' # String | Cursor for paging. See [Meta and Pagination](#section/Introduction/Meta-and-Pagination).
@@ -462,7 +462,7 @@ begin
   # List Reserved IPs
   result = api_instance.list_reserved_ips(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ReservedIpApi->list_reserved_ips: #{e}"
 end
 ```
@@ -480,7 +480,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListReservedIps200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ReservedIpApi->list_reserved_ips_with_http_info: #{e}"
 end
 ```
@@ -518,24 +518,24 @@ Update information on a Reserved IP.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ReservedIpApi.new
+api_instance = VultrRuby::ReservedIpApi.new
 reserved_ip = 'reserved_ip_example' # String | The [Reserved IP id](#operation/list-reserved-ips).
 opts = {
-  patch_reserved_ips_reserved_ip_request: VultRuby::PatchReservedIpsReservedIpRequest.new({label: 'label_example'}) # PatchReservedIpsReservedIpRequest | Include a JSON object in the request body with a content type of **application/json**.
+  patch_reserved_ips_reserved_ip_request: VultrRuby::PatchReservedIpsReservedIpRequest.new({label: 'label_example'}) # PatchReservedIpsReservedIpRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Update Reserved IP
   result = api_instance.patch_reserved_ips_reserved_ip(reserved_ip, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ReservedIpApi->patch_reserved_ips_reserved_ip: #{e}"
 end
 ```
@@ -553,7 +553,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetReservedIp200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ReservedIpApi->patch_reserved_ips_reserved_ip_with_http_info: #{e}"
 end
 ```

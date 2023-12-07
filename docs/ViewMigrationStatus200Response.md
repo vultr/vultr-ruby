@@ -1,4 +1,4 @@
-# VultRuby::ViewMigrationStatus200Response
+# VultrRuby::ViewMigrationStatus200Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ViewMigrationStatus200Response.new(
+instance = VultrRuby::ViewMigrationStatus200Response.new(
   migration: null
 )
 ```

@@ -1,4 +1,4 @@
-# VultRuby::StartInstancesRequest
+# VultrRuby::StartInstancesRequest
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::StartInstancesRequest.new(
+instance = VultrRuby::StartInstancesRequest.new(
   instance_ids: null
 )
 ```

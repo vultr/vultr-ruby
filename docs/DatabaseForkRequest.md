@@ -1,4 +1,4 @@
-# VultRuby::DatabaseForkRequest
+# VultrRuby::DatabaseForkRequest
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::DatabaseForkRequest.new(
+instance = VultrRuby::DatabaseForkRequest.new(
   label: null,
   region: null,
   plan: null,

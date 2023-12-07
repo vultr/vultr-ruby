@@ -1,4 +1,4 @@
-# VultRuby::DnsApi
+# VultrRuby::DnsApi
 
 All URIs are relative to *https://api.vultr.com/v2*
 
@@ -31,23 +31,23 @@ Create a DNS Domain for `domain`. If no `ip` address is supplied a domain with n
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::DnsApi.new
+api_instance = VultrRuby::DnsApi.new
 opts = {
-  create_dns_domain_request: VultRuby::CreateDnsDomainRequest.new({domain: 'domain_example'}) # CreateDnsDomainRequest | Include a JSON object in the request body with a content type of **application/json**.
+  create_dns_domain_request: VultrRuby::CreateDnsDomainRequest.new({domain: 'domain_example'}) # CreateDnsDomainRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create DNS Domain
   result = api_instance.create_dns_domain(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling DnsApi->create_dns_domain: #{e}"
 end
 ```
@@ -65,7 +65,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateDnsDomain200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling DnsApi->create_dns_domain_with_http_info: #{e}"
 end
 ```
@@ -102,24 +102,24 @@ Create a DNS record.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::DnsApi.new
+api_instance = VultrRuby::DnsApi.new
 dns_domain = 'dns_domain_example' # String | The [DNS Domain](#operation/list-dns-domains).
 opts = {
-  create_dns_domain_record_request: VultRuby::CreateDnsDomainRecordRequest.new({name: 'name_example', type: 'type_example', data: 'data_example'}) # CreateDnsDomainRecordRequest | Include a JSON object in the request body with a content type of **application/json**.
+  create_dns_domain_record_request: VultrRuby::CreateDnsDomainRecordRequest.new({name: 'name_example', type: 'type_example', data: 'data_example'}) # CreateDnsDomainRecordRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create Record
   result = api_instance.create_dns_domain_record(dns_domain, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling DnsApi->create_dns_domain_record: #{e}"
 end
 ```
@@ -137,7 +137,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateDnsDomainRecord201Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling DnsApi->create_dns_domain_record_with_http_info: #{e}"
 end
 ```
@@ -175,20 +175,20 @@ Delete the DNS Domain.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::DnsApi.new
+api_instance = VultrRuby::DnsApi.new
 dns_domain = 'dns_domain_example' # String | The [DNS Domain](#operation/list-dns-domains).
 
 begin
   # Delete Domain
   api_instance.delete_dns_domain(dns_domain)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling DnsApi->delete_dns_domain: #{e}"
 end
 ```
@@ -206,7 +206,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling DnsApi->delete_dns_domain_with_http_info: #{e}"
 end
 ```
@@ -243,21 +243,21 @@ Delete the DNS record.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::DnsApi.new
+api_instance = VultrRuby::DnsApi.new
 dns_domain = 'dns_domain_example' # String | The [DNS Domain](#operation/list-dns-domains).
 record_id = 'record_id_example' # String | The [DNS Record id](#operation/list-dns-domain-records).
 
 begin
   # Delete Record
   api_instance.delete_dns_domain_record(dns_domain, record_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling DnsApi->delete_dns_domain_record: #{e}"
 end
 ```
@@ -275,7 +275,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling DnsApi->delete_dns_domain_record_with_http_info: #{e}"
 end
 ```
@@ -313,21 +313,21 @@ Get information for the DNS Domain.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::DnsApi.new
+api_instance = VultrRuby::DnsApi.new
 dns_domain = 'dns_domain_example' # String | The [DNS Domain](#operation/list-dns-domains).
 
 begin
   # Get DNS Domain
   result = api_instance.get_dns_domain(dns_domain)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling DnsApi->get_dns_domain: #{e}"
 end
 ```
@@ -345,7 +345,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateDnsDomain200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling DnsApi->get_dns_domain_with_http_info: #{e}"
 end
 ```
@@ -382,21 +382,21 @@ Get the DNSSEC information for the DNS Domain.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::DnsApi.new
+api_instance = VultrRuby::DnsApi.new
 dns_domain = 'dns_domain_example' # String | The [DNS Domain](#operation/list-dns-domains).
 
 begin
   # Get DNSSec Info
   result = api_instance.get_dns_domain_dnssec(dns_domain)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling DnsApi->get_dns_domain_dnssec: #{e}"
 end
 ```
@@ -414,7 +414,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetDnsDomainDnssec200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling DnsApi->get_dns_domain_dnssec_with_http_info: #{e}"
 end
 ```
@@ -451,14 +451,14 @@ Get information for a DNS Record.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::DnsApi.new
+api_instance = VultrRuby::DnsApi.new
 dns_domain = 'dns_domain_example' # String | The [DNS Domain](#operation/list-dns-domains).
 record_id = 'record_id_example' # String | The [DNS Record id](#operation/list-dns-domain-records).
 
@@ -466,7 +466,7 @@ begin
   # Get Record
   result = api_instance.get_dns_domain_record(dns_domain, record_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling DnsApi->get_dns_domain_record: #{e}"
 end
 ```
@@ -484,7 +484,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateDnsDomainRecord201Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling DnsApi->get_dns_domain_record_with_http_info: #{e}"
 end
 ```
@@ -522,21 +522,21 @@ Get SOA information for the DNS Domain.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::DnsApi.new
+api_instance = VultrRuby::DnsApi.new
 dns_domain = 'dns_domain_example' # String | The [DNS Domain](#operation/list-dns-domains).
 
 begin
   # Get SOA information
   result = api_instance.get_dns_domain_soa(dns_domain)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling DnsApi->get_dns_domain_soa: #{e}"
 end
 ```
@@ -554,7 +554,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetDnsDomainSoa200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling DnsApi->get_dns_domain_soa_with_http_info: #{e}"
 end
 ```
@@ -591,14 +591,14 @@ Get the DNS records for the Domain.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::DnsApi.new
+api_instance = VultrRuby::DnsApi.new
 dns_domain = 'dns_domain_example' # String | The [DNS Domain](#operation/list-dns-domains).
 opts = {
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500.
@@ -609,7 +609,7 @@ begin
   # List Records
   result = api_instance.list_dns_domain_records(dns_domain, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling DnsApi->list_dns_domain_records: #{e}"
 end
 ```
@@ -627,7 +627,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListDnsDomainRecords200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling DnsApi->list_dns_domain_records_with_http_info: #{e}"
 end
 ```
@@ -666,14 +666,14 @@ List all DNS Domains in your account.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::DnsApi.new
+api_instance = VultrRuby::DnsApi.new
 opts = {
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500. 
   cursor: 'cursor_example' # String | Cursor for paging. See [Meta and Pagination](#section/Introduction/Meta-and-Pagination).
@@ -683,7 +683,7 @@ begin
   # List DNS Domains
   result = api_instance.list_dns_domains(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling DnsApi->list_dns_domains: #{e}"
 end
 ```
@@ -701,7 +701,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListDnsDomains200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling DnsApi->list_dns_domains_with_http_info: #{e}"
 end
 ```
@@ -739,23 +739,23 @@ Update the DNS Domain.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::DnsApi.new
+api_instance = VultrRuby::DnsApi.new
 dns_domain = 'dns_domain_example' # String | The [DNS Domain](#operation/list-dns-domains).
 opts = {
-  update_dns_domain_request: VultRuby::UpdateDnsDomainRequest.new({dns_sec: 'dns_sec_example'}) # UpdateDnsDomainRequest | Include a JSON object in the request body with a content type of **application/json**.
+  update_dns_domain_request: VultrRuby::UpdateDnsDomainRequest.new({dns_sec: 'dns_sec_example'}) # UpdateDnsDomainRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Update a DNS Domain
   api_instance.update_dns_domain(dns_domain, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling DnsApi->update_dns_domain: #{e}"
 end
 ```
@@ -773,7 +773,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling DnsApi->update_dns_domain_with_http_info: #{e}"
 end
 ```
@@ -811,24 +811,24 @@ Update the information for a DNS record. All attributes are optional. If not set
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::DnsApi.new
+api_instance = VultrRuby::DnsApi.new
 dns_domain = 'dns_domain_example' # String | The [DNS Domain](#operation/list-dns-domains).
 record_id = 'record_id_example' # String | The [DNS Record id](#operation/list-dns-domain-records).
 opts = {
-  update_dns_domain_record_request: VultRuby::UpdateDnsDomainRecordRequest.new # UpdateDnsDomainRecordRequest | Include a JSON object in the request body with a content type of **application/json**.
+  update_dns_domain_record_request: VultrRuby::UpdateDnsDomainRecordRequest.new # UpdateDnsDomainRecordRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Update Record
   api_instance.update_dns_domain_record(dns_domain, record_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling DnsApi->update_dns_domain_record: #{e}"
 end
 ```
@@ -846,7 +846,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling DnsApi->update_dns_domain_record_with_http_info: #{e}"
 end
 ```
@@ -885,23 +885,23 @@ Update the SOA information for the DNS Domain. All attributes are optional. If n
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::DnsApi.new
+api_instance = VultrRuby::DnsApi.new
 dns_domain = 'dns_domain_example' # String | The [DNS Domain](#operation/list-dns-domains).
 opts = {
-  update_dns_domain_soa_request: VultRuby::UpdateDnsDomainSoaRequest.new # UpdateDnsDomainSoaRequest | Include a JSON object in the request body with a content type of **application/json**.
+  update_dns_domain_soa_request: VultrRuby::UpdateDnsDomainSoaRequest.new # UpdateDnsDomainSoaRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Update SOA information
   api_instance.update_dns_domain_soa(dns_domain, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling DnsApi->update_dns_domain_soa: #{e}"
 end
 ```
@@ -919,7 +919,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling DnsApi->update_dns_domain_soa_with_http_info: #{e}"
 end
 ```

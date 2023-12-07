@@ -1,4 +1,4 @@
-# VultRuby::ManagedDatabasesApi
+# VultrRuby::ManagedDatabasesApi
 
 All URIs are relative to *https://api.vultr.com/v2*
 
@@ -55,23 +55,23 @@ Create a new connection pool within the Managed Database (PostgreSQL engine type
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 opts = {
-  create_connection_pool_request: VultRuby::CreateConnectionPoolRequest.new({name: 'name_example', database: 'database_example', username: 'username_example', mode: 'mode_example', size: 37}) # CreateConnectionPoolRequest | Include a JSON object in the request body with a content type of **application/json**.
+  create_connection_pool_request: VultrRuby::CreateConnectionPoolRequest.new({name: 'name_example', database: 'database_example', username: 'username_example', mode: 'mode_example', size: 37}) # CreateConnectionPoolRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create Connection Pool
   result = api_instance.create_connection_pool(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->create_connection_pool: #{e}"
 end
 ```
@@ -89,7 +89,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateConnectionPool202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->create_connection_pool_with_http_info: #{e}"
 end
 ```
@@ -126,23 +126,23 @@ Create a new Managed Database in a `region` with the desired `plan`. Supply opti
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 opts = {
-  create_database_request: VultRuby::CreateDatabaseRequest.new({database_engine: 'database_engine_example', database_engine_version: 'database_engine_version_example', region: 'region_example', plan: 'plan_example', label: 'label_example'}) # CreateDatabaseRequest | Include a JSON object in the request body with a content type of **application/json**.
+  create_database_request: VultrRuby::CreateDatabaseRequest.new({database_engine: 'database_engine_example', database_engine_version: 'database_engine_version_example', region: 'region_example', plan: 'plan_example', label: 'label_example'}) # CreateDatabaseRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create Managed Database
   result = api_instance.create_database(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->create_database: #{e}"
 end
 ```
@@ -160,7 +160,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateDatabase202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->create_database_with_http_info: #{e}"
 end
 ```
@@ -197,23 +197,23 @@ Create a new logical database within the Managed Database (MySQL and PostgreSQL 
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 opts = {
-  create_database_db_request: VultRuby::CreateDatabaseDbRequest.new({name: 'name_example'}) # CreateDatabaseDbRequest | Include a JSON object in the request body with a content type of **application/json**.
+  create_database_db_request: VultrRuby::CreateDatabaseDbRequest.new({name: 'name_example'}) # CreateDatabaseDbRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create Logical Database
   result = api_instance.create_database_db(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->create_database_db: #{e}"
 end
 ```
@@ -231,7 +231,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateDatabaseDb202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->create_database_db_with_http_info: #{e}"
 end
 ```
@@ -268,23 +268,23 @@ Create a new database user within the Managed Database. Supply optional attribut
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 opts = {
-  create_database_user_request: VultRuby::CreateDatabaseUserRequest.new({username: 'username_example'}) # CreateDatabaseUserRequest | Include a JSON object in the request body with a content type of **application/json**.
+  create_database_user_request: VultrRuby::CreateDatabaseUserRequest.new({username: 'username_example'}) # CreateDatabaseUserRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create Database User
   result = api_instance.create_database_user(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->create_database_user: #{e}"
 end
 ```
@@ -302,7 +302,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateDatabaseUser202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->create_database_user_with_http_info: #{e}"
 end
 ```
@@ -339,23 +339,23 @@ Create a read-only replica node for the Managed Database.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 opts = {
-  database_add_read_replica_request: VultRuby::DatabaseAddReadReplicaRequest.new({region: 'region_example', label: 'label_example'}) # DatabaseAddReadReplicaRequest | Include a JSON object in the request body with a content type of **application/json**.
+  database_add_read_replica_request: VultrRuby::DatabaseAddReadReplicaRequest.new({region: 'region_example', label: 'label_example'}) # DatabaseAddReadReplicaRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Add Read-Only Replica
   result = api_instance.database_add_read_replica(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->database_add_read_replica: #{e}"
 end
 ```
@@ -373,7 +373,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateDatabase202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->database_add_read_replica_with_http_info: #{e}"
 end
 ```
@@ -410,19 +410,19 @@ Detach a migration from the Managed Database.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 
 begin
   # Detach Migration
   api_instance.database_detach_migration
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->database_detach_migration: #{e}"
 end
 ```
@@ -440,7 +440,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->database_detach_migration_with_http_info: #{e}"
 end
 ```
@@ -475,23 +475,23 @@ Fork a Managed Database to a new subscription from a backup.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 opts = {
-  database_fork_request: VultRuby::DatabaseForkRequest.new({label: 'label_example', region: 'region_example', plan: 'plan_example'}) # DatabaseForkRequest | Include a JSON object in the request body with a content type of **application/json**.
+  database_fork_request: VultrRuby::DatabaseForkRequest.new({label: 'label_example', region: 'region_example', plan: 'plan_example'}) # DatabaseForkRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Fork Managed Database
   result = api_instance.database_fork(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->database_fork: #{e}"
 end
 ```
@@ -509,7 +509,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateDatabase202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->database_fork_with_http_info: #{e}"
 end
 ```
@@ -546,19 +546,19 @@ Promote a read-only replica node to its own primary Managed Database.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 
 begin
   # Promote Read-Only Replica
   api_instance.database_promote_read_replica
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->database_promote_read_replica: #{e}"
 end
 ```
@@ -576,7 +576,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->database_promote_read_replica_with_http_info: #{e}"
 end
 ```
@@ -611,23 +611,23 @@ Create a new Managed Database from a backup.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 opts = {
-  database_restore_from_backup_request: VultRuby::DatabaseRestoreFromBackupRequest.new({label: 'label_example'}) # DatabaseRestoreFromBackupRequest | Include a JSON object in the request body with a content type of **application/json**.
+  database_restore_from_backup_request: VultrRuby::DatabaseRestoreFromBackupRequest.new({label: 'label_example'}) # DatabaseRestoreFromBackupRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Restore from Backup
   result = api_instance.database_restore_from_backup(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->database_restore_from_backup: #{e}"
 end
 ```
@@ -645,7 +645,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateDatabase202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->database_restore_from_backup_with_http_info: #{e}"
 end
 ```
@@ -682,23 +682,23 @@ Start a migration to the Managed Database.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 opts = {
-  database_start_migration_request: VultRuby::DatabaseStartMigrationRequest.new({host: 'host_example', port: 3.56, username: 'username_example', password: 'password_example', ssl: false}) # DatabaseStartMigrationRequest | Include a JSON object in the request body with a content type of **application/json**.
+  database_start_migration_request: VultrRuby::DatabaseStartMigrationRequest.new({host: 'host_example', port: 3.56, username: 'username_example', password: 'password_example', ssl: false}) # DatabaseStartMigrationRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Start Migration
   result = api_instance.database_start_migration(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->database_start_migration: #{e}"
 end
 ```
@@ -716,7 +716,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ViewMigrationStatus200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->database_start_migration_with_http_info: #{e}"
 end
 ```
@@ -753,21 +753,21 @@ Delete a connection pool within a Managed Database (PostgreSQL engine types only
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 database_id = 'database_id_example' # String | The [Managed Database ID](#operation/list-databases).
 pool_name = 'pool_name_example' # String | The [connection pool name](#operation/list-connection-pools).
 
 begin
   # Delete Connection Pool
   api_instance.delete_connection_pool(database_id, pool_name)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->delete_connection_pool: #{e}"
 end
 ```
@@ -785,7 +785,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->delete_connection_pool_with_http_info: #{e}"
 end
 ```
@@ -823,20 +823,20 @@ Delete a Managed Database.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 database_id = 'database_id_example' # String | The [Managed Database ID](#operation/list-databases).
 
 begin
   # Delete Managed Database
   api_instance.delete_database(database_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->delete_database: #{e}"
 end
 ```
@@ -854,7 +854,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->delete_database_with_http_info: #{e}"
 end
 ```
@@ -891,21 +891,21 @@ Delete a logical database within a Managed Database (MySQL and PostgreSQL only).
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 database_id = 'database_id_example' # String | The [Managed Database ID](#operation/list-databases).
 db_name = 'db_name_example' # String | The [logical database name](#operation/list-database-dbs).
 
 begin
   # Delete Logical Database
   api_instance.delete_database_db(database_id, db_name)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->delete_database_db: #{e}"
 end
 ```
@@ -923,7 +923,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->delete_database_db_with_http_info: #{e}"
 end
 ```
@@ -961,21 +961,21 @@ Delete a database user within a Managed Database.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 database_id = 'database_id_example' # String | The [Managed Database ID](#operation/list-databases).
 username = 'username_example' # String | The [database user](#operation/list-database-users).
 
 begin
   # Delete Database User
   api_instance.delete_database_user(database_id, username)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->delete_database_user: #{e}"
 end
 ```
@@ -993,7 +993,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->delete_database_user_with_http_info: #{e}"
 end
 ```
@@ -1031,20 +1031,20 @@ Get backup information for the Managed Database.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 
 begin
   # Get Backup Information
   result = api_instance.get_backup_information
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->get_backup_information: #{e}"
 end
 ```
@@ -1062,7 +1062,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetBackupInformation200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->get_backup_information_with_http_info: #{e}"
 end
 ```
@@ -1097,14 +1097,14 @@ Get information about a Managed Database connection pool (PostgreSQL engine type
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 database_id = 'database_id_example' # String | The [Managed Database ID](#operation/list-databases).
 pool_name = 'pool_name_example' # String | The [connection pool name](#operation/list-connection-pools).
 
@@ -1112,7 +1112,7 @@ begin
   # Get Connection Pool
   result = api_instance.get_connection_pool(database_id, pool_name)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->get_connection_pool: #{e}"
 end
 ```
@@ -1130,7 +1130,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateConnectionPool202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->get_connection_pool_with_http_info: #{e}"
 end
 ```
@@ -1168,21 +1168,21 @@ Get information about a Managed Database.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 database_id = 'database_id_example' # String | The [Managed Database ID](#operation/list-databases).
 
 begin
   # Get Managed Database
   result = api_instance.get_database(database_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->get_database: #{e}"
 end
 ```
@@ -1200,7 +1200,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateDatabase202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->get_database_with_http_info: #{e}"
 end
 ```
@@ -1237,14 +1237,14 @@ Get information about a logical database within a Managed Database (MySQL and Po
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 database_id = 'database_id_example' # String | The [Managed Database ID](#operation/list-databases).
 db_name = 'db_name_example' # String | The [logical database name](#operation/list-database-dbs).
 
@@ -1252,7 +1252,7 @@ begin
   # Get Logical Database
   result = api_instance.get_database_db(database_id, db_name)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->get_database_db: #{e}"
 end
 ```
@@ -1270,7 +1270,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateDatabaseDb202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->get_database_db_with_http_info: #{e}"
 end
 ```
@@ -1308,20 +1308,20 @@ Get disk, memory, and vCPU usage information for a Managed Database.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 
 begin
   # Get Database Usage Information
   result = api_instance.get_database_usage
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->get_database_usage: #{e}"
 end
 ```
@@ -1339,7 +1339,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetDatabaseUsage200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->get_database_usage_with_http_info: #{e}"
 end
 ```
@@ -1374,14 +1374,14 @@ Get information about a Managed Database user.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 database_id = 'database_id_example' # String | The [Managed Database ID](#operation/list-databases).
 username = 'username_example' # String | The [database user](#operation/list-database-users).
 
@@ -1389,7 +1389,7 @@ begin
   # Get Database User
   result = api_instance.get_database_user(database_id, username)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->get_database_user: #{e}"
 end
 ```
@@ -1407,7 +1407,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateDatabaseUser202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->get_database_user_with_http_info: #{e}"
 end
 ```
@@ -1445,20 +1445,20 @@ List all configured and available advanced options for the Managed Database (Pos
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 
 begin
   # List Advanced Options
   result = api_instance.list_advanced_options
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->list_advanced_options: #{e}"
 end
 ```
@@ -1476,7 +1476,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListAdvancedOptions200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->list_advanced_options_with_http_info: #{e}"
 end
 ```
@@ -1511,20 +1511,20 @@ List all available version upgrades within the Managed Database (PostgreSQL engi
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 
 begin
   # List Available Versions
   result = api_instance.list_available_versions
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->list_available_versions: #{e}"
 end
 ```
@@ -1542,7 +1542,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListAvailableVersions200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->list_available_versions_with_http_info: #{e}"
 end
 ```
@@ -1577,20 +1577,20 @@ List all connection pools within the Managed Database (PostgreSQL engine types o
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 
 begin
   # List Connection Pools
   result = api_instance.list_connection_pools
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->list_connection_pools: #{e}"
 end
 ```
@@ -1608,7 +1608,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListConnectionPools200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->list_connection_pools_with_http_info: #{e}"
 end
 ```
@@ -1643,20 +1643,20 @@ List all logical databases within the Managed Database (MySQL and PostgreSQL onl
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 
 begin
   # List Logical Databases
   result = api_instance.list_database_dbs
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->list_database_dbs: #{e}"
 end
 ```
@@ -1674,7 +1674,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListDatabaseDbs200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->list_database_dbs_with_http_info: #{e}"
 end
 ```
@@ -1709,14 +1709,14 @@ List all Managed Databases plans.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 opts = {
   engine: 'engine_example', # String | Filter by engine type  * `mysql` * `pg` * `redis`.
   nodes: 56, # Integer | Filter by number of nodes.
@@ -1727,7 +1727,7 @@ begin
   # List Managed Database Plans
   result = api_instance.list_database_plans(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->list_database_plans: #{e}"
 end
 ```
@@ -1745,7 +1745,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListDatabasePlans200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->list_database_plans_with_http_info: #{e}"
 end
 ```
@@ -1784,20 +1784,20 @@ List all database users within the Managed Database.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 
 begin
   # List Database Users
   result = api_instance.list_database_users
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->list_database_users: #{e}"
 end
 ```
@@ -1815,7 +1815,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListDatabaseUsers200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->list_database_users_with_http_info: #{e}"
 end
 ```
@@ -1850,14 +1850,14 @@ List all Managed Databases in your account.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 opts = {
   label: 'label_example', # String | Filter by label.
   tag: 'tag_example', # String | Filter by specific tag.
@@ -1868,7 +1868,7 @@ begin
   # List Managed Databases
   result = api_instance.list_databases(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->list_databases: #{e}"
 end
 ```
@@ -1886,7 +1886,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListDatabases200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->list_databases_with_http_info: #{e}"
 end
 ```
@@ -1925,20 +1925,20 @@ List all available version upgrades within the Managed Database.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 
 begin
   # List Maintenance Updates
   result = api_instance.list_maintenance_updates
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->list_maintenance_updates: #{e}"
 end
 ```
@@ -1956,7 +1956,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListMaintenanceUpdates200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->list_maintenance_updates_with_http_info: #{e}"
 end
 ```
@@ -1991,23 +1991,23 @@ List service alert messages for the Managed Database.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 opts = {
-  list_service_alerts_request: VultRuby::ListServiceAlertsRequest.new({period: 'period_example'}) # ListServiceAlertsRequest | Include a JSON object in the request body with a content type of **application/json**.
+  list_service_alerts_request: VultrRuby::ListServiceAlertsRequest.new({period: 'period_example'}) # ListServiceAlertsRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # List Service Alerts
   result = api_instance.list_service_alerts(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->list_service_alerts: #{e}"
 end
 ```
@@ -2025,7 +2025,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListServiceAlerts200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->list_service_alerts_with_http_info: #{e}"
 end
 ```
@@ -2062,25 +2062,25 @@ Configure access control settings for a Managed Database user (Redis engine type
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 database_id = 'database_id_example' # String | The [Managed Database ID](#operation/list-databases).
 username = 'username_example' # String | The [database user](#operation/list-database-users).
 opts = {
-  set_database_user_acl_request: VultRuby::SetDatabaseUserAclRequest.new # SetDatabaseUserAclRequest | Include a JSON object in the request body with a content type of **application/json**.
+  set_database_user_acl_request: VultrRuby::SetDatabaseUserAclRequest.new # SetDatabaseUserAclRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Set Database User Access Control
   result = api_instance.set_database_user_acl(database_id, username, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->set_database_user_acl: #{e}"
 end
 ```
@@ -2098,7 +2098,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateDatabaseUser202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->set_database_user_acl_with_http_info: #{e}"
 end
 ```
@@ -2137,20 +2137,20 @@ Start maintenance updates for the Managed Database.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 
 begin
   # Start Maintenance Updates
   result = api_instance.start_maintenance_updates
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->start_maintenance_updates: #{e}"
 end
 ```
@@ -2168,7 +2168,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <StartMaintenanceUpdates200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->start_maintenance_updates_with_http_info: #{e}"
 end
 ```
@@ -2203,23 +2203,23 @@ Start a version upgrade for the Managed Database (PostgreSQL engine types only).
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 opts = {
-  start_version_upgrade_request: VultRuby::StartVersionUpgradeRequest.new({version: 'version_example'}) # StartVersionUpgradeRequest | Include a JSON object in the request body with a content type of **application/json**.
+  start_version_upgrade_request: VultrRuby::StartVersionUpgradeRequest.new({version: 'version_example'}) # StartVersionUpgradeRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Start Version Upgrade
   result = api_instance.start_version_upgrade(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->start_version_upgrade: #{e}"
 end
 ```
@@ -2237,7 +2237,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <StartVersionUpgrade200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->start_version_upgrade_with_http_info: #{e}"
 end
 ```
@@ -2274,23 +2274,23 @@ Updates an advanced configuration option for the Managed Database (PostgreSQL en
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 opts = {
-  update_advanced_options_request: VultRuby::UpdateAdvancedOptionsRequest.new # UpdateAdvancedOptionsRequest | Include a JSON object in the request body with a content type of **application/json**.
+  update_advanced_options_request: VultrRuby::UpdateAdvancedOptionsRequest.new # UpdateAdvancedOptionsRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Update Advanced Options
   result = api_instance.update_advanced_options(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->update_advanced_options: #{e}"
 end
 ```
@@ -2308,7 +2308,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListAdvancedOptions200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->update_advanced_options_with_http_info: #{e}"
 end
 ```
@@ -2345,25 +2345,25 @@ Update connection-pool information within a Managed Database (PostgreSQL engine 
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 database_id = 'database_id_example' # String | The [Managed Database ID](#operation/list-databases).
 pool_name = 'pool_name_example' # String | The [connection pool name](#operation/list-connection-pools).
 opts = {
-  update_connection_pool_request: VultRuby::UpdateConnectionPoolRequest.new # UpdateConnectionPoolRequest | Include a JSON object in the request body with a content type of **application/json**.
+  update_connection_pool_request: VultrRuby::UpdateConnectionPoolRequest.new # UpdateConnectionPoolRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Update Connection Pool
   result = api_instance.update_connection_pool(database_id, pool_name, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->update_connection_pool: #{e}"
 end
 ```
@@ -2381,7 +2381,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateConnectionPool202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->update_connection_pool_with_http_info: #{e}"
 end
 ```
@@ -2420,24 +2420,24 @@ Update information for a Managed Database. All attributes are optional. If not s
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 database_id = 'database_id_example' # String | The [Managed Database ID](#operation/list-databases).
 opts = {
-  update_database_request: VultRuby::UpdateDatabaseRequest.new # UpdateDatabaseRequest | Include a JSON object in the request body with a content type of **application/json**.
+  update_database_request: VultrRuby::UpdateDatabaseRequest.new # UpdateDatabaseRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Update Managed Database
   result = api_instance.update_database(database_id, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->update_database: #{e}"
 end
 ```
@@ -2455,7 +2455,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateDatabase202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->update_database_with_http_info: #{e}"
 end
 ```
@@ -2493,25 +2493,25 @@ Update database user information within a Managed Database.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 database_id = 'database_id_example' # String | The [Managed Database ID](#operation/list-databases).
 username = 'username_example' # String | The [database user](#operation/list-database-users).
 opts = {
-  update_database_user_request: VultRuby::UpdateDatabaseUserRequest.new({password: 'password_example'}) # UpdateDatabaseUserRequest | Include a JSON object in the request body with a content type of **application/json**.
+  update_database_user_request: VultrRuby::UpdateDatabaseUserRequest.new({password: 'password_example'}) # UpdateDatabaseUserRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Update Database User
   result = api_instance.update_database_user(database_id, username, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->update_database_user: #{e}"
 end
 ```
@@ -2529,7 +2529,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateDatabaseUser202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->update_database_user_with_http_info: #{e}"
 end
 ```
@@ -2568,20 +2568,20 @@ View the status of a migration attached to the Managed Database.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::ManagedDatabasesApi.new
+api_instance = VultrRuby::ManagedDatabasesApi.new
 
 begin
   # Get Migration Status
   result = api_instance.view_migration_status
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->view_migration_status: #{e}"
 end
 ```
@@ -2599,7 +2599,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ViewMigrationStatus200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling ManagedDatabasesApi->view_migration_status_with_http_info: #{e}"
 end
 ```

@@ -1,4 +1,4 @@
-# VultRuby::Domain
+# VultrRuby::Domain
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::Domain.new(
+instance = VultrRuby::Domain.new(
   domain: null,
   date_created: null,
   dns_sec: null

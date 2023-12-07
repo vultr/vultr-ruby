@@ -1,4 +1,4 @@
-# VultRuby::RegistryMetadataSubscriptionBilling
+# VultrRuby::RegistryMetadataSubscriptionBilling
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::RegistryMetadataSubscriptionBilling.new(
+instance = VultrRuby::RegistryMetadataSubscriptionBilling.new(
   monthly_price: null,
   pending_charges: null
 )

@@ -1,4 +1,4 @@
-# VultRuby::GetKubernetesClustersConfig200Response
+# VultrRuby::GetKubernetesClustersConfig200Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetKubernetesClustersConfig200Response.new(
+instance = VultrRuby::GetKubernetesClustersConfig200Response.new(
   kube_config: null
 )
 ```

@@ -1,4 +1,4 @@
-# VultRuby::ListUsers200Response
+# VultrRuby::ListUsers200Response
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ListUsers200Response.new(
+instance = VultrRuby::ListUsers200Response.new(
   users: null,
   meta: null
 )

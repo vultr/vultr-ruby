@@ -1,4 +1,4 @@
-# VultRuby::ListBillingHistory200Response
+# VultrRuby::ListBillingHistory200Response
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ListBillingHistory200Response.new(
+instance = VultrRuby::ListBillingHistory200Response.new(
   billing_history: null,
   meta: null
 )

@@ -1,4 +1,4 @@
-# VultRuby::ListNetworks200Response
+# VultrRuby::ListNetworks200Response
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ListNetworks200Response.new(
+instance = VultrRuby::ListNetworks200Response.new(
   networks: null,
   meta: null
 )

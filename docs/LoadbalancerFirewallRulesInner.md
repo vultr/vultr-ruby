@@ -1,4 +1,4 @@
-# VultRuby::LoadbalancerFirewallRulesInner
+# VultrRuby::LoadbalancerFirewallRulesInner
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::LoadbalancerFirewallRulesInner.new(
+instance = VultrRuby::LoadbalancerFirewallRulesInner.new(
   id: null,
   port: null,
   source: null,

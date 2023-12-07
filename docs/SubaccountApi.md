@@ -1,4 +1,4 @@
-# VultRuby::SubaccountApi
+# VultrRuby::SubaccountApi
 
 All URIs are relative to *https://api.vultr.com/v2*
 
@@ -20,23 +20,23 @@ Create a new subaccount.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::SubaccountApi.new
+api_instance = VultrRuby::SubaccountApi.new
 opts = {
-  create_subaccount_request: VultRuby::CreateSubaccountRequest.new({email: 'email_example'}) # CreateSubaccountRequest | Include a JSON object in the request body with a content type of **application/json**.
+  create_subaccount_request: VultrRuby::CreateSubaccountRequest.new({email: 'email_example'}) # CreateSubaccountRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create Sub-Account
   result = api_instance.create_subaccount(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling SubaccountApi->create_subaccount: #{e}"
 end
 ```
@@ -54,7 +54,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateSubaccount201Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling SubaccountApi->create_subaccount_with_http_info: #{e}"
 end
 ```
@@ -91,14 +91,14 @@ Get information about all sub-accounts for your account.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::SubaccountApi.new
+api_instance = VultrRuby::SubaccountApi.new
 opts = {
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500.
   cursor: 'cursor_example' # String | Cursor for paging. See [Meta and Pagination](#section/Introduction/Meta-and-Pagination).
@@ -108,7 +108,7 @@ begin
   # List Sub-Accounts
   result = api_instance.list_subaccounts(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling SubaccountApi->list_subaccounts: #{e}"
 end
 ```
@@ -126,7 +126,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListSubaccounts200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling SubaccountApi->list_subaccounts_with_http_info: #{e}"
 end
 ```
