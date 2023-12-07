@@ -1,0 +1,24 @@
+name: "Code Generation"
+
+on:
+  push:
+    tags:
+      - *
+
+permissions:
+  contents: write
+
+jobs:
+  generation-job:
+    runs-on: ubuntu-latest
+    container:
+      image: openapitools/openapi-generator-cli:latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Run code generation
+        run: (bash /usr/local/bin/docker-entrypoint.sh generate -i blob:https://www.vultr.com/ddc5a3ba-302d-4eec-8908-5a72f58c999b --additional-properties moduleName=VultRuby -g ruby -o ./vendor/vultr_ruby)
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
