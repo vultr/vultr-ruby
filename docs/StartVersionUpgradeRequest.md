@@ -1,4 +1,4 @@
-# VultRuby::StartVersionUpgradeRequest
+# VultrRuby::StartVersionUpgradeRequest
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::StartVersionUpgradeRequest.new(
+instance = VultrRuby::StartVersionUpgradeRequest.new(
   version: null
 )
 ```

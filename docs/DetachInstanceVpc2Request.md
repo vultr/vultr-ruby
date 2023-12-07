@@ -1,4 +1,4 @@
-# VultRuby::DetachInstanceVpc2Request
+# VultrRuby::DetachInstanceVpc2Request
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::DetachInstanceVpc2Request.new(
+instance = VultrRuby::DetachInstanceVpc2Request.new(
   vpc_id: null
 )
 ```

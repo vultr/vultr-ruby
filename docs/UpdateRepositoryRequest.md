@@ -1,4 +1,4 @@
-# VultRuby::UpdateRepositoryRequest
+# VultrRuby::UpdateRepositoryRequest
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::UpdateRepositoryRequest.new(
+instance = VultrRuby::UpdateRepositoryRequest.new(
   description: null
 )
 ```

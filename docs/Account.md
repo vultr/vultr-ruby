@@ -1,4 +1,4 @@
-# VultRuby::Account
+# VultrRuby::Account
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::Account.new(
+instance = VultrRuby::Account.new(
   name: null,
   email: null,
   acls: null,

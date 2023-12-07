@@ -1,4 +1,4 @@
-# VultRuby::Bandwidth
+# VultrRuby::Bandwidth
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::Bandwidth.new(
+instance = VultrRuby::Bandwidth.new(
   incoming_bytes: null,
   outgoing_bytes: null
 )

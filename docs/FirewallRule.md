@@ -1,4 +1,4 @@
-# VultRuby::FirewallRule
+# VultrRuby::FirewallRule
 
 ## Properties
 
@@ -18,9 +18,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::FirewallRule.new(
+instance = VultrRuby::FirewallRule.new(
   id: null,
   type: null,
   ip_type: null,

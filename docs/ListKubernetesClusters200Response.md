@@ -1,4 +1,4 @@
-# VultRuby::ListKubernetesClusters200Response
+# VultrRuby::ListKubernetesClusters200Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ListKubernetesClusters200Response.new(
+instance = VultrRuby::ListKubernetesClusters200Response.new(
   vke_clusters: null
 )
 ```

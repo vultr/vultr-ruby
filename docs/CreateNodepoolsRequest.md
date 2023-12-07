@@ -1,4 +1,4 @@
-# VultRuby::CreateNodepoolsRequest
+# VultrRuby::CreateNodepoolsRequest
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateNodepoolsRequest.new(
+instance = VultrRuby::CreateNodepoolsRequest.new(
   node_quantity: null,
   label: null,
   plan: null,

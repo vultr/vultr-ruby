@@ -1,4 +1,4 @@
-# VultRuby::UserUser
+# VultrRuby::UserUser
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::UserUser.new(
+instance = VultrRuby::UserUser.new(
   id: null,
   name: null,
   api_enabled: null,

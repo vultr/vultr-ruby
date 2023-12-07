@@ -1,4 +1,4 @@
-# VultRuby::Vpc
+# VultrRuby::Vpc
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::Vpc.new(
+instance = VultrRuby::Vpc.new(
   id: null,
   region: null,
   date_created: null,

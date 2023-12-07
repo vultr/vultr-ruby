@@ -1,4 +1,4 @@
-# VultRuby::BackupApi
+# VultrRuby::BackupApi
 
 All URIs are relative to *https://api.vultr.com/v2*
 
@@ -20,21 +20,21 @@ Get the information for the Backup.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BackupApi.new
+api_instance = VultrRuby::BackupApi.new
 backup_id = 'backup_id_example' # String | The [Backup id](#operation/list-backups).
 
 begin
   # Get a Backup
   result = api_instance.get_backup(backup_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BackupApi->get_backup: #{e}"
 end
 ```
@@ -52,7 +52,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetBackup200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BackupApi->get_backup_with_http_info: #{e}"
 end
 ```
@@ -89,14 +89,14 @@ Get information about Backups in your account.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BackupApi.new
+api_instance = VultrRuby::BackupApi.new
 opts = {
   instance_id: 'instance_id_example', # String | Filter the backup list by [Instance id](#operation/list-instances).
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500.
@@ -107,7 +107,7 @@ begin
   # List Backups
   result = api_instance.list_backups(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BackupApi->list_backups: #{e}"
 end
 ```
@@ -125,7 +125,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListBackups200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BackupApi->list_backups_with_http_info: #{e}"
 end
 ```

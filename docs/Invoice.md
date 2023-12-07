@@ -1,4 +1,4 @@
-# VultRuby::Invoice
+# VultrRuby::Invoice
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::Invoice.new(
+instance = VultrRuby::Invoice.new(
   id: null,
   date: null,
   description: null,

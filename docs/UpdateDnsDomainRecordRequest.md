@@ -1,4 +1,4 @@
-# VultRuby::UpdateDnsDomainRecordRequest
+# VultrRuby::UpdateDnsDomainRecordRequest
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::UpdateDnsDomainRecordRequest.new(
+instance = VultrRuby::UpdateDnsDomainRecordRequest.new(
   name: null,
   data: null,
   ttl: null,

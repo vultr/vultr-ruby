@@ -1,4 +1,4 @@
-# VultRuby::Instance
+# VultrRuby::Instance
 
 ## Properties
 
@@ -37,9 +37,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::Instance.new(
+instance = VultrRuby::Instance.new(
   id: null,
   os: null,
   ram: null,

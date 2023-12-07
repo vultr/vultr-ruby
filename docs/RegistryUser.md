@@ -1,4 +1,4 @@
-# VultRuby::RegistryUser
+# VultrRuby::RegistryUser
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::RegistryUser.new(
+instance = VultrRuby::RegistryUser.new(
   id: null,
   username: null,
   password: null,

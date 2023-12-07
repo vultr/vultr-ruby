@@ -1,4 +1,4 @@
-# VultRuby::CreateLoadBalancerRequestHealthCheck
+# VultrRuby::CreateLoadBalancerRequestHealthCheck
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateLoadBalancerRequestHealthCheck.new(
+instance = VultrRuby::CreateLoadBalancerRequestHealthCheck.new(
   protocol: null,
   port: null,
   path: null,

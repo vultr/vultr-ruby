@@ -1,4 +1,4 @@
-# VultRuby::ListAvailableVersions200Response
+# VultrRuby::ListAvailableVersions200Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ListAvailableVersions200Response.new(
+instance = VultrRuby::ListAvailableVersions200Response.new(
   available_versions: null
 )
 ```

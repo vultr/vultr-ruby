@@ -1,4 +1,4 @@
-# VultRuby::SshApi
+# VultrRuby::SshApi
 
 All URIs are relative to *https://api.vultr.com/v2*
 
@@ -23,23 +23,23 @@ Create a new SSH Key for use with future instances. This does not update any run
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::SshApi.new
+api_instance = VultrRuby::SshApi.new
 opts = {
-  create_ssh_key_request: VultRuby::CreateSshKeyRequest.new({name: 'name_example', ssh_key: 'ssh_key_example'}) # CreateSshKeyRequest | Include a JSON object in the request body with a content type of **application/json**.
+  create_ssh_key_request: VultrRuby::CreateSshKeyRequest.new({name: 'name_example', ssh_key: 'ssh_key_example'}) # CreateSshKeyRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create SSH key
   result = api_instance.create_ssh_key(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling SshApi->create_ssh_key: #{e}"
 end
 ```
@@ -57,7 +57,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetSshKey200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling SshApi->create_ssh_key_with_http_info: #{e}"
 end
 ```
@@ -94,20 +94,20 @@ Delete an SSH Key.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::SshApi.new
+api_instance = VultrRuby::SshApi.new
 ssh_key_id = 'ssh_key_id_example' # String | The [SSH Key id](#operation/list-ssh-keys).
 
 begin
   # Delete SSH Key
   api_instance.delete_ssh_key(ssh_key_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling SshApi->delete_ssh_key: #{e}"
 end
 ```
@@ -125,7 +125,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling SshApi->delete_ssh_key_with_http_info: #{e}"
 end
 ```
@@ -162,21 +162,21 @@ Get information about an SSH Key.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::SshApi.new
+api_instance = VultrRuby::SshApi.new
 ssh_key_id = 'ssh_key_id_example' # String | The [SSH Key id](#operation/list-ssh-keys).
 
 begin
   # Get SSH Key
   result = api_instance.get_ssh_key(ssh_key_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling SshApi->get_ssh_key: #{e}"
 end
 ```
@@ -194,7 +194,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetSshKey200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling SshApi->get_ssh_key_with_http_info: #{e}"
 end
 ```
@@ -231,14 +231,14 @@ List all SSH Keys in your account.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::SshApi.new
+api_instance = VultrRuby::SshApi.new
 opts = {
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500. 
   cursor: 'cursor_example' # String | Cursor for paging. See [Meta and Pagination](#section/Introduction/Meta-and-Pagination).
@@ -248,7 +248,7 @@ begin
   # List SSH Keys
   result = api_instance.list_ssh_keys(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling SshApi->list_ssh_keys: #{e}"
 end
 ```
@@ -266,7 +266,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListSshKeys200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling SshApi->list_ssh_keys_with_http_info: #{e}"
 end
 ```
@@ -304,23 +304,23 @@ Update an SSH Key. The attributes `name` and `ssh_key` are optional. If not set,
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::SshApi.new
+api_instance = VultrRuby::SshApi.new
 ssh_key_id = 'ssh_key_id_example' # String | The [SSH Key id](#operation/list-ssh-keys).
 opts = {
-  update_ssh_key_request: VultRuby::UpdateSshKeyRequest.new # UpdateSshKeyRequest | Include a JSON object in the request body with a content type of **application/json**.
+  update_ssh_key_request: VultrRuby::UpdateSshKeyRequest.new # UpdateSshKeyRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Update SSH Key
   api_instance.update_ssh_key(ssh_key_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling SshApi->update_ssh_key: #{e}"
 end
 ```
@@ -338,7 +338,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling SshApi->update_ssh_key_with_http_info: #{e}"
 end
 ```

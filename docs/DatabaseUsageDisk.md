@@ -1,4 +1,4 @@
-# VultRuby::DatabaseUsageDisk
+# VultrRuby::DatabaseUsageDisk
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::DatabaseUsageDisk.new(
+instance = VultrRuby::DatabaseUsageDisk.new(
   current_gb: null,
   max_gb: null,
   percentage: null

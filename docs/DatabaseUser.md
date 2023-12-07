@@ -1,4 +1,4 @@
-# VultRuby::DatabaseUser
+# VultrRuby::DatabaseUser
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::DatabaseUser.new(
+instance = VultrRuby::DatabaseUser.new(
   username: null,
   password: null,
   encryption: null,

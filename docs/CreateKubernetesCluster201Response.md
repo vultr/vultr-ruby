@@ -1,4 +1,4 @@
-# VultRuby::CreateKubernetesCluster201Response
+# VultrRuby::CreateKubernetesCluster201Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateKubernetesCluster201Response.new(
+instance = VultrRuby::CreateKubernetesCluster201Response.new(
   vke_cluster: null
 )
 ```

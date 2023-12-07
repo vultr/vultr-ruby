@@ -1,4 +1,4 @@
-# VultRuby::DbaasAvailableOptions
+# VultrRuby::DbaasAvailableOptions
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::DbaasAvailableOptions.new(
+instance = VultrRuby::DbaasAvailableOptions.new(
   name: null,
   type: null,
   enumerals: null,

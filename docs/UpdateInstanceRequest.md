@@ -1,4 +1,4 @@
-# VultRuby::UpdateInstanceRequest
+# VultrRuby::UpdateInstanceRequest
 
 ## Properties
 
@@ -30,9 +30,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::UpdateInstanceRequest.new(
+instance = VultrRuby::UpdateInstanceRequest.new(
   app_id: null,
   image_id: null,
   backups: null,

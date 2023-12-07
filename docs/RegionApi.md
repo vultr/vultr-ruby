@@ -1,4 +1,4 @@
-# VultRuby::RegionApi
+# VultrRuby::RegionApi
 
 All URIs are relative to *https://api.vultr.com/v2*
 
@@ -20,9 +20,9 @@ Get a list of the available plans in Region `region-id`. Not all plans are avail
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 
-api_instance = VultRuby::RegionApi.new
+api_instance = VultrRuby::RegionApi.new
 region_id = 'region_id_example' # String | The [Region id](#operation/list-regions).
 opts = {
   type: 'type_example' # String | Filter the results by type.  | **Type** | **Description** | |----------|-----------------| | all | All available types | | vc2 | Cloud Compute | | vdc | Dedicated Cloud | | vhf | High Frequency Compute | | vhp | High Performance | | voc | All Optimized Cloud types | | voc-g | General Purpose Optimized Cloud | | voc-c | CPU Optimized Cloud | | voc-m | Memory Optimized Cloud | | voc-s | Storage Optimized Cloud | | vbm | Bare Metal | | vcg | Cloud GPU | 
@@ -32,7 +32,7 @@ begin
   # List available plans in region
   result = api_instance.list_available_plans_region(region_id, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling RegionApi->list_available_plans_region: #{e}"
 end
 ```
@@ -50,7 +50,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListAvailablePlansRegion200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling RegionApi->list_available_plans_region_with_http_info: #{e}"
 end
 ```
@@ -88,9 +88,9 @@ List all Regions at Vultr.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 
-api_instance = VultRuby::RegionApi.new
+api_instance = VultrRuby::RegionApi.new
 opts = {
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500.
   cursor: 'cursor_example' # String | Cursor for paging. See [Meta and Pagination](#section/Introduction/Meta-and-Pagination).
@@ -100,7 +100,7 @@ begin
   # List Regions
   result = api_instance.list_regions(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling RegionApi->list_regions: #{e}"
 end
 ```
@@ -118,7 +118,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListRegions200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling RegionApi->list_regions_with_http_info: #{e}"
 end
 ```

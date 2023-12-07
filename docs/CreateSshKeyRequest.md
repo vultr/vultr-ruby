@@ -1,4 +1,4 @@
-# VultRuby::CreateSshKeyRequest
+# VultrRuby::CreateSshKeyRequest
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateSshKeyRequest.new(
+instance = VultrRuby::CreateSshKeyRequest.new(
   name: null,
   ssh_key: null
 )

@@ -1,4 +1,4 @@
-# VultRuby::ListAdvancedOptions200Response
+# VultrRuby::ListAdvancedOptions200Response
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ListAdvancedOptions200Response.new(
+instance = VultrRuby::ListAdvancedOptions200Response.new(
   configured_options: null,
   available_options: null
 )

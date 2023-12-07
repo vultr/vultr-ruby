@@ -1,4 +1,4 @@
-# VultRuby::VPC2Api
+# VultrRuby::VPC2Api
 
 All URIs are relative to *https://api.vultr.com/v2*
 
@@ -26,23 +26,23 @@ Attach nodes to a VPC 2.0 network.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::VPC2Api.new
+api_instance = VultrRuby::VPC2Api.new
 vpc_id = 'vpc_id_example' # String | The [VPC ID](#operation/list-vpcs).
 opts = {
-  attach_vpc2_nodes_request: VultRuby::AttachVpc2NodesRequest.new({nodes: 3.56}) # AttachVpc2NodesRequest | Include a JSON object in the request body with a content type of **application/json**.
+  attach_vpc2_nodes_request: VultrRuby::AttachVpc2NodesRequest.new({nodes: 3.56}) # AttachVpc2NodesRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Attach nodes to a VPC 2.0 network
   api_instance.attach_vpc2_nodes(vpc_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling VPC2Api->attach_vpc2_nodes: #{e}"
 end
 ```
@@ -60,7 +60,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling VPC2Api->attach_vpc2_nodes_with_http_info: #{e}"
 end
 ```
@@ -98,23 +98,23 @@ Create a new VPC 2.0 network in a `region`. VPCs should use [RFC1918 private add
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::VPC2Api.new
+api_instance = VultrRuby::VPC2Api.new
 opts = {
-  create_vpc2_request: VultRuby::CreateVpc2Request.new({region: 'region_example'}) # CreateVpc2Request | Include a JSON object in the request body with a content type of **application/json**.
+  create_vpc2_request: VultrRuby::CreateVpc2Request.new({region: 'region_example'}) # CreateVpc2Request | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create a VPC 2.0 network
   result = api_instance.create_vpc2(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling VPC2Api->create_vpc2: #{e}"
 end
 ```
@@ -132,7 +132,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetVpc2200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling VPC2Api->create_vpc2_with_http_info: #{e}"
 end
 ```
@@ -169,20 +169,20 @@ Delete a VPC 2.0 network.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::VPC2Api.new
+api_instance = VultrRuby::VPC2Api.new
 vpc_id = 'vpc_id_example' # String | The [VPC ID](#operation/list-vpcs).
 
 begin
   # Delete a VPC 2.0 network
   api_instance.delete_vpc2(vpc_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling VPC2Api->delete_vpc2: #{e}"
 end
 ```
@@ -200,7 +200,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling VPC2Api->delete_vpc2_with_http_info: #{e}"
 end
 ```
@@ -237,23 +237,23 @@ Remove nodes from a VPC 2.0 network.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::VPC2Api.new
+api_instance = VultrRuby::VPC2Api.new
 vpc_id = 'vpc_id_example' # String | The [VPC ID](#operation/list-vpcs).
 opts = {
-  detach_vpc2_nodes_request: VultRuby::DetachVpc2NodesRequest.new({nodes: 3.56}) # DetachVpc2NodesRequest | Include a JSON object in the request body with a content type of **application/json**.
+  detach_vpc2_nodes_request: VultrRuby::DetachVpc2NodesRequest.new({nodes: 3.56}) # DetachVpc2NodesRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Remove nodes from a VPC 2.0 network
   api_instance.detach_vpc2_nodes(vpc_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling VPC2Api->detach_vpc2_nodes: #{e}"
 end
 ```
@@ -271,7 +271,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling VPC2Api->detach_vpc2_nodes_with_http_info: #{e}"
 end
 ```
@@ -309,21 +309,21 @@ Get information about a VPC 2.0 network.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::VPC2Api.new
+api_instance = VultrRuby::VPC2Api.new
 vpc_id = 'vpc_id_example' # String | The [VPC ID](#operation/list-vpcs).
 
 begin
   # Get a VPC 2.0 network
   result = api_instance.get_vpc2(vpc_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling VPC2Api->get_vpc2: #{e}"
 end
 ```
@@ -341,7 +341,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetVpc2200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling VPC2Api->get_vpc2_with_http_info: #{e}"
 end
 ```
@@ -378,14 +378,14 @@ Get a list of all VPC 2.0 networks in your account.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::VPC2Api.new
+api_instance = VultrRuby::VPC2Api.new
 opts = {
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500.
   cursor: 'cursor_example' # String | Cursor for paging. See [Meta and Pagination](#section/Introduction/Meta-and-Pagination).
@@ -395,7 +395,7 @@ begin
   # List VPC 2.0 networks
   result = api_instance.list_vpc2(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling VPC2Api->list_vpc2: #{e}"
 end
 ```
@@ -413,7 +413,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListVpc2200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling VPC2Api->list_vpc2_with_http_info: #{e}"
 end
 ```
@@ -451,14 +451,14 @@ Get a list of nodes attached to a VPC 2.0 network.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::VPC2Api.new
+api_instance = VultrRuby::VPC2Api.new
 vpc_id = 'vpc_id_example' # String | The [VPC ID](#operation/list-vpcs).
 opts = {
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500.
@@ -469,7 +469,7 @@ begin
   # Get a list of nodes attached to a VPC 2.0 network
   result = api_instance.list_vpc2_nodes(vpc_id, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling VPC2Api->list_vpc2_nodes: #{e}"
 end
 ```
@@ -487,7 +487,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetVpc2200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling VPC2Api->list_vpc2_nodes_with_http_info: #{e}"
 end
 ```
@@ -526,23 +526,23 @@ Update information for a VPC 2.0 network.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::VPC2Api.new
+api_instance = VultrRuby::VPC2Api.new
 vpc_id = 'vpc_id_example' # String | The [VPC ID](#operation/list-vpcs).
 opts = {
-  update_vpc2_request: VultRuby::UpdateVpc2Request.new({description: 'description_example'}) # UpdateVpc2Request | Include a JSON object in the request body with a content type of **application/json**.
+  update_vpc2_request: VultrRuby::UpdateVpc2Request.new({description: 'description_example'}) # UpdateVpc2Request | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Update a VPC 2.0 network
   api_instance.update_vpc2(vpc_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling VPC2Api->update_vpc2: #{e}"
 end
 ```
@@ -560,7 +560,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling VPC2Api->update_vpc2_with_http_info: #{e}"
 end
 ```

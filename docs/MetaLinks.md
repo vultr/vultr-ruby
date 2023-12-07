@@ -1,4 +1,4 @@
-# VultRuby::MetaLinks
+# VultrRuby::MetaLinks
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::MetaLinks.new(
+instance = VultrRuby::MetaLinks.new(
   _next: null,
   prev: null
 )

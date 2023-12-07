@@ -1,4 +1,4 @@
-# VultRuby::RegistryPlan
+# VultrRuby::RegistryPlan
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::RegistryPlan.new(
+instance = VultrRuby::RegistryPlan.new(
   vanity_name: null,
   max_storage_mb: null,
   monthly_price: null

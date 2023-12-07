@@ -1,4 +1,4 @@
-# VultRuby::Baremetal
+# VultrRuby::Baremetal
 
 ## Properties
 
@@ -32,9 +32,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::Baremetal.new(
+instance = VultrRuby::Baremetal.new(
   id: null,
   os: null,
   ram: null,

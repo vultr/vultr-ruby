@@ -1,4 +1,4 @@
-# VultRuby::BackupSchedule
+# VultrRuby::BackupSchedule
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::BackupSchedule.new(
+instance = VultrRuby::BackupSchedule.new(
   enabled: null,
   type: null,
   next_scheduled_time_utc: null,

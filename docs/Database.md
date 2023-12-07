@@ -1,4 +1,4 @@
-# VultRuby::Database
+# VultrRuby::Database
 
 ## Properties
 
@@ -41,9 +41,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::Database.new(
+instance = VultrRuby::Database.new(
   id: null,
   date_created: null,
   plan: null,

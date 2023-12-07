@@ -1,4 +1,4 @@
-# VultRuby::LoadbalancerGenericInfo
+# VultrRuby::LoadbalancerGenericInfo
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::LoadbalancerGenericInfo.new(
+instance = VultrRuby::LoadbalancerGenericInfo.new(
   balancing_algorithm: null,
   ssl_redirect: null,
   sticky_sessions: null,

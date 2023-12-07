@@ -1,4 +1,4 @@
-# VultRuby::FirewallGroup
+# VultrRuby::FirewallGroup
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::FirewallGroup.new(
+instance = VultrRuby::FirewallGroup.new(
   id: null,
   description: null,
   date_created: null,

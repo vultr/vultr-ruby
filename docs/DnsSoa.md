@@ -1,4 +1,4 @@
-# VultRuby::DnsSoa
+# VultrRuby::DnsSoa
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::DnsSoa.new(
+instance = VultrRuby::DnsSoa.new(
   nsprimary: null,
   email: null
 )

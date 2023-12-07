@@ -1,4 +1,4 @@
-# VultRuby::Iso
+# VultrRuby::Iso
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::Iso.new(
+instance = VultrRuby::Iso.new(
   id: null,
   date_created: null,
   filename: null,

@@ -1,4 +1,4 @@
-# VultRuby::AttachBaremetalsVpc2Request
+# VultrRuby::AttachBaremetalsVpc2Request
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::AttachBaremetalsVpc2Request.new(
+instance = VultrRuby::AttachBaremetalsVpc2Request.new(
   vpc_id: null,
   ip_address: null
 )

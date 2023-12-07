@@ -1,4 +1,4 @@
-# VultRuby::GetKubernetesAvailableUpgrades200Response
+# VultrRuby::GetKubernetesAvailableUpgrades200Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetKubernetesAvailableUpgrades200Response.new(
+instance = VultrRuby::GetKubernetesAvailableUpgrades200Response.new(
   available_upgrades: null
 )
 ```

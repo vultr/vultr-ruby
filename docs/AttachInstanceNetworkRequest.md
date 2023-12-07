@@ -1,4 +1,4 @@
-# VultRuby::AttachInstanceNetworkRequest
+# VultrRuby::AttachInstanceNetworkRequest
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::AttachInstanceNetworkRequest.new(
+instance = VultrRuby::AttachInstanceNetworkRequest.new(
   network_id: null
 )
 ```

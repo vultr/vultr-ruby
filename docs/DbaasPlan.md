@@ -1,4 +1,4 @@
-# VultRuby::DbaasPlan
+# VultrRuby::DbaasPlan
 
 ## Properties
 
@@ -18,9 +18,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::DbaasPlan.new(
+instance = VultrRuby::DbaasPlan.new(
   id: null,
   number_of_nodes: null,
   type: null,

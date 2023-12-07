@@ -1,4 +1,4 @@
-# VultRuby::Ssh
+# VultrRuby::Ssh
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::Ssh.new(
+instance = VultrRuby::Ssh.new(
   id: null,
   date_created: null,
   name: null,

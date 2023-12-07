@@ -1,4 +1,4 @@
-# VultRuby::CreateDatabaseUser202Response
+# VultrRuby::CreateDatabaseUser202Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateDatabaseUser202Response.new(
+instance = VultrRuby::CreateDatabaseUser202Response.new(
   user: null
 )
 ```

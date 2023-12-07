@@ -1,4 +1,4 @@
-# VultRuby::DatabaseUsage
+# VultrRuby::DatabaseUsage
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::DatabaseUsage.new(
+instance = VultrRuby::DatabaseUsage.new(
   disk: null,
   memory: null,
   cpu: null

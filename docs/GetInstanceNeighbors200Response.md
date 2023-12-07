@@ -1,4 +1,4 @@
-# VultRuby::GetInstanceNeighbors200Response
+# VultrRuby::GetInstanceNeighbors200Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetInstanceNeighbors200Response.new(
+instance = VultrRuby::GetInstanceNeighbors200Response.new(
   neighbors: null
 )
 ```

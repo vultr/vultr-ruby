@@ -1,4 +1,4 @@
-# VultRuby::InstancesApi
+# VultrRuby::InstancesApi
 
 All URIs are relative to *https://api.vultr.com/v2*
 
@@ -58,24 +58,24 @@ Attach an ISO to an Instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | 
 opts = {
-  attach_instance_iso_request: VultRuby::AttachInstanceIsoRequest.new # AttachInstanceIsoRequest | Include a JSON object in the request body with a content type of **application/json**.
+  attach_instance_iso_request: VultrRuby::AttachInstanceIsoRequest.new # AttachInstanceIsoRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Attach ISO to Instance
   result = api_instance.attach_instance_iso(instance_id, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->attach_instance_iso: #{e}"
 end
 ```
@@ -93,7 +93,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <AttachInstanceIso202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->attach_instance_iso_with_http_info: #{e}"
 end
 ```
@@ -131,23 +131,23 @@ Attach Private Network to an Instance.<br><br>**Deprecated**: use [Attach VPC to
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 opts = {
-  attach_instance_network_request: VultRuby::AttachInstanceNetworkRequest.new # AttachInstanceNetworkRequest | Include a JSON object in the request body with a content type of **application/json**.
+  attach_instance_network_request: VultrRuby::AttachInstanceNetworkRequest.new # AttachInstanceNetworkRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Attach Private Network to Instance
   api_instance.attach_instance_network(instance_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->attach_instance_network: #{e}"
 end
 ```
@@ -165,7 +165,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->attach_instance_network_with_http_info: #{e}"
 end
 ```
@@ -203,23 +203,23 @@ Attach a VPC to an Instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 opts = {
-  attach_instance_vpc_request: VultRuby::AttachInstanceVpcRequest.new # AttachInstanceVpcRequest | Include a JSON object in the request body with a content type of **application/json**.
+  attach_instance_vpc_request: VultrRuby::AttachInstanceVpcRequest.new # AttachInstanceVpcRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Attach VPC to Instance
   api_instance.attach_instance_vpc(instance_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->attach_instance_vpc: #{e}"
 end
 ```
@@ -237,7 +237,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->attach_instance_vpc_with_http_info: #{e}"
 end
 ```
@@ -275,23 +275,23 @@ Attach a VPC 2.0 Network to an Instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 opts = {
-  attach_instance_vpc2_request: VultRuby::AttachInstanceVpc2Request.new({vpc_id: 'vpc_id_example'}) # AttachInstanceVpc2Request | Include a JSON object in the request body with a content type of **application/json**.
+  attach_instance_vpc2_request: VultrRuby::AttachInstanceVpc2Request.new({vpc_id: 'vpc_id_example'}) # AttachInstanceVpc2Request | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Attach VPC 2.0 Network to Instance
   api_instance.attach_instance_vpc2(instance_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->attach_instance_vpc2: #{e}"
 end
 ```
@@ -309,7 +309,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->attach_instance_vpc2_with_http_info: #{e}"
 end
 ```
@@ -347,23 +347,23 @@ Create a new VPS Instance in a `region` with the desired `plan`. Choose one of t
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 opts = {
-  create_instance_request: VultRuby::CreateInstanceRequest.new({region: 'region_example', plan: 'plan_example'}) # CreateInstanceRequest | Include a JSON object in the request body with a content type of **application/json**.
+  create_instance_request: VultrRuby::CreateInstanceRequest.new({region: 'region_example', plan: 'plan_example'}) # CreateInstanceRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create Instance
   result = api_instance.create_instance(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->create_instance: #{e}"
 end
 ```
@@ -381,7 +381,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateInstance202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->create_instance_with_http_info: #{e}"
 end
 ```
@@ -418,23 +418,23 @@ Set the backup schedule for an Instance in UTC. The `type` is required.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 opts = {
-  create_instance_backup_schedule_request: VultRuby::CreateInstanceBackupScheduleRequest.new({type: 'type_example'}) # CreateInstanceBackupScheduleRequest | Include a JSON object in the request body with a content type of **application/json**.
+  create_instance_backup_schedule_request: VultrRuby::CreateInstanceBackupScheduleRequest.new({type: 'type_example'}) # CreateInstanceBackupScheduleRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Set Instance Backup Schedule
   api_instance.create_instance_backup_schedule(instance_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->create_instance_backup_schedule: #{e}"
 end
 ```
@@ -452,7 +452,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->create_instance_backup_schedule_with_http_info: #{e}"
 end
 ```
@@ -490,24 +490,24 @@ Create an IPv4 address for an Instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 opts = {
-  create_instance_ipv4_request: VultRuby::CreateInstanceIpv4Request.new # CreateInstanceIpv4Request | Include a JSON object in the request body with a content type of **application/json**.
+  create_instance_ipv4_request: VultrRuby::CreateInstanceIpv4Request.new # CreateInstanceIpv4Request | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create IPv4
   result = api_instance.create_instance_ipv4(instance_id, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->create_instance_ipv4: #{e}"
 end
 ```
@@ -525,7 +525,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => Object
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->create_instance_ipv4_with_http_info: #{e}"
 end
 ```
@@ -563,23 +563,23 @@ Create a reverse IPv4 entry for an Instance. The `ip` and `reverse` attributes a
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 opts = {
-  create_instance_reverse_ipv4_request: VultRuby::CreateInstanceReverseIpv4Request.new({ip: 'ip_example', reverse: 'reverse_example'}) # CreateInstanceReverseIpv4Request | Include a JSON object in the request body with a content type of **application/json**.
+  create_instance_reverse_ipv4_request: VultrRuby::CreateInstanceReverseIpv4Request.new({ip: 'ip_example', reverse: 'reverse_example'}) # CreateInstanceReverseIpv4Request | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create Instance Reverse IPv4
   api_instance.create_instance_reverse_ipv4(instance_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->create_instance_reverse_ipv4: #{e}"
 end
 ```
@@ -597,7 +597,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->create_instance_reverse_ipv4_with_http_info: #{e}"
 end
 ```
@@ -635,23 +635,23 @@ Create a reverse IPv6 entry for an Instance. The `ip` and `reverse` attributes a
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 opts = {
-  create_instance_reverse_ipv6_request: VultRuby::CreateInstanceReverseIpv6Request.new({ip: 'ip_example', reverse: 'reverse_example'}) # CreateInstanceReverseIpv6Request | Include a JSON object in the request body with a content type of **application/json**.
+  create_instance_reverse_ipv6_request: VultrRuby::CreateInstanceReverseIpv6Request.new({ip: 'ip_example', reverse: 'reverse_example'}) # CreateInstanceReverseIpv6Request | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create Instance Reverse IPv6
   api_instance.create_instance_reverse_ipv6(instance_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->create_instance_reverse_ipv6: #{e}"
 end
 ```
@@ -669,7 +669,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->create_instance_reverse_ipv6_with_http_info: #{e}"
 end
 ```
@@ -707,20 +707,20 @@ Delete an Instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 
 begin
   # Delete Instance
   api_instance.delete_instance(instance_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->delete_instance: #{e}"
 end
 ```
@@ -738,7 +738,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->delete_instance_with_http_info: #{e}"
 end
 ```
@@ -775,21 +775,21 @@ Delete an IPv4 address from an Instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 ipv4 = 'ipv4_example' # String | The IPv4 address.
 
 begin
   # Delete IPv4 Address
   api_instance.delete_instance_ipv4(instance_id, ipv4)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->delete_instance_ipv4: #{e}"
 end
 ```
@@ -807,7 +807,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->delete_instance_ipv4_with_http_info: #{e}"
 end
 ```
@@ -845,21 +845,21 @@ Delete the reverse IPv6 for an Instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 ipv6 = 'ipv6_example' # String | The IPv6 address.
 
 begin
   # Delete Instance Reverse IPv6
   api_instance.delete_instance_reverse_ipv6(instance_id, ipv6)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->delete_instance_reverse_ipv6: #{e}"
 end
 ```
@@ -877,7 +877,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->delete_instance_reverse_ipv6_with_http_info: #{e}"
 end
 ```
@@ -915,21 +915,21 @@ Detach the ISO from an Instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 
 begin
   # Detach ISO from instance
   result = api_instance.detach_instance_iso(instance_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->detach_instance_iso: #{e}"
 end
 ```
@@ -947,7 +947,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <DetachInstanceIso202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->detach_instance_iso_with_http_info: #{e}"
 end
 ```
@@ -984,23 +984,23 @@ Detach Private Network from an Instance.<br><br>**Deprecated**: use [Detach VPC 
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 opts = {
-  detach_instance_network_request: VultRuby::DetachInstanceNetworkRequest.new # DetachInstanceNetworkRequest | Include a JSON object in the request body with a content type of **application/json**.
+  detach_instance_network_request: VultrRuby::DetachInstanceNetworkRequest.new # DetachInstanceNetworkRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Detach Private Network from Instance.
   api_instance.detach_instance_network(instance_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->detach_instance_network: #{e}"
 end
 ```
@@ -1018,7 +1018,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->detach_instance_network_with_http_info: #{e}"
 end
 ```
@@ -1056,23 +1056,23 @@ Detach a VPC from an Instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 opts = {
-  detach_instance_vpc_request: VultRuby::DetachInstanceVpcRequest.new # DetachInstanceVpcRequest | Include a JSON object in the request body with a content type of **application/json**.
+  detach_instance_vpc_request: VultrRuby::DetachInstanceVpcRequest.new # DetachInstanceVpcRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Detach VPC from Instance
   api_instance.detach_instance_vpc(instance_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->detach_instance_vpc: #{e}"
 end
 ```
@@ -1090,7 +1090,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->detach_instance_vpc_with_http_info: #{e}"
 end
 ```
@@ -1128,23 +1128,23 @@ Detach a VPC 2.0 Network from an Instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 opts = {
-  detach_instance_vpc2_request: VultRuby::DetachInstanceVpc2Request.new({vpc_id: 'vpc_id_example'}) # DetachInstanceVpc2Request | Include a JSON object in the request body with a content type of **application/json**.
+  detach_instance_vpc2_request: VultrRuby::DetachInstanceVpc2Request.new({vpc_id: 'vpc_id_example'}) # DetachInstanceVpc2Request | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Detach VPC 2.0 Network from Instance
   api_instance.detach_instance_vpc2(instance_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->detach_instance_vpc2: #{e}"
 end
 ```
@@ -1162,7 +1162,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->detach_instance_vpc2_with_http_info: #{e}"
 end
 ```
@@ -1200,21 +1200,21 @@ Get information about an Instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 
 begin
   # Get Instance
   result = api_instance.get_instance(instance_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->get_instance: #{e}"
 end
 ```
@@ -1232,7 +1232,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateInstance202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->get_instance_with_http_info: #{e}"
 end
 ```
@@ -1269,21 +1269,21 @@ Get the backup schedule for an Instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 
 begin
   # Get Instance Backup Schedule
   result = api_instance.get_instance_backup_schedule(instance_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->get_instance_backup_schedule: #{e}"
 end
 ```
@@ -1301,7 +1301,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetInstanceBackupSchedule200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->get_instance_backup_schedule_with_http_info: #{e}"
 end
 ```
@@ -1338,14 +1338,14 @@ Get bandwidth information about an Instance.<br><br>The `bandwidth` object in a 
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 opts = {
   date_range: 56 # Integer | The range of days to include, represented as the number of days relative to the current date. Default 30, Minimum 1 and Max 60.
@@ -1355,7 +1355,7 @@ begin
   # Instance Bandwidth
   result = api_instance.get_instance_bandwidth(instance_id, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->get_instance_bandwidth: #{e}"
 end
 ```
@@ -1373,7 +1373,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetBandwidthBaremetal200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->get_instance_bandwidth_with_http_info: #{e}"
 end
 ```
@@ -1411,14 +1411,14 @@ List the IPv4 information for an Instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 opts = {
   public_network: true, # Boolean | If `true`, includes information about the public network adapter (such as MAC address) with the `main_ip` entry.
@@ -1430,7 +1430,7 @@ begin
   # List Instance IPv4 Information
   result = api_instance.get_instance_ipv4(instance_id, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->get_instance_ipv4: #{e}"
 end
 ```
@@ -1448,7 +1448,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetIpv4Baremetal200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->get_instance_ipv4_with_http_info: #{e}"
 end
 ```
@@ -1488,21 +1488,21 @@ Get the IPv6 information for an VPS Instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 
 begin
   # Get Instance IPv6 Information
   result = api_instance.get_instance_ipv6(instance_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->get_instance_ipv6: #{e}"
 end
 ```
@@ -1520,7 +1520,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetIpv6Baremetal200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->get_instance_ipv6_with_http_info: #{e}"
 end
 ```
@@ -1557,21 +1557,21 @@ Get the ISO status for an Instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 
 begin
   # Get Instance ISO Status
   result = api_instance.get_instance_iso_status(instance_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->get_instance_iso_status: #{e}"
 end
 ```
@@ -1589,7 +1589,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetInstanceIsoStatus200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->get_instance_iso_status_with_http_info: #{e}"
 end
 ```
@@ -1626,21 +1626,21 @@ Get a list of other instances in the same location as this Instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 
 begin
   # Get Instance neighbors
   result = api_instance.get_instance_neighbors(instance_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->get_instance_neighbors: #{e}"
 end
 ```
@@ -1658,7 +1658,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetInstanceNeighbors200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->get_instance_neighbors_with_http_info: #{e}"
 end
 ```
@@ -1695,14 +1695,14 @@ Get available upgrades for an Instance
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 opts = {
   type: 'type_example' # String | Filter upgrade by type:  - all (applications, os, plans) - applications - os - plans
@@ -1712,7 +1712,7 @@ begin
   # Get Available Instance Upgrades
   result = api_instance.get_instance_upgrades(instance_id, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->get_instance_upgrades: #{e}"
 end
 ```
@@ -1730,7 +1730,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetInstanceUpgrades200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->get_instance_upgrades_with_http_info: #{e}"
 end
 ```
@@ -1768,21 +1768,21 @@ Get the user-supplied, base64 encoded [user data](https://www.vultr.com/docs/man
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 
 begin
   # Get Instance User Data
   result = api_instance.get_instance_userdata(instance_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->get_instance_userdata: #{e}"
 end
 ```
@@ -1800,7 +1800,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetInstanceUserdata200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->get_instance_userdata_with_http_info: #{e}"
 end
 ```
@@ -1837,20 +1837,20 @@ Halt an Instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 
 begin
   # Halt Instance
   api_instance.halt_instance(instance_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->halt_instance: #{e}"
 end
 ```
@@ -1868,7 +1868,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->halt_instance_with_http_info: #{e}"
 end
 ```
@@ -1905,22 +1905,22 @@ Halt Instances.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 opts = {
-  halt_instances_request: VultRuby::HaltInstancesRequest.new # HaltInstancesRequest | Include a JSON object in the request body with a content type of **application/json**.
+  halt_instances_request: VultrRuby::HaltInstancesRequest.new # HaltInstancesRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Halt Instances
   api_instance.halt_instances(opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->halt_instances: #{e}"
 end
 ```
@@ -1938,7 +1938,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->halt_instances_with_http_info: #{e}"
 end
 ```
@@ -1975,21 +1975,21 @@ List the reverse IPv6 information for an Instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 
 begin
   # List Instance IPv6 Reverse
   result = api_instance.list_instance_ipv6_reverse(instance_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->list_instance_ipv6_reverse: #{e}"
 end
 ```
@@ -2007,7 +2007,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListInstanceIpv6Reverse200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->list_instance_ipv6_reverse_with_http_info: #{e}"
 end
 ```
@@ -2044,14 +2044,14 @@ List instance Private Networks
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 opts = {
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500.
@@ -2062,7 +2062,7 @@ begin
   # List instance Private Networks
   result = api_instance.list_instance_private_networks(instance_id, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->list_instance_private_networks: #{e}"
 end
 ```
@@ -2080,7 +2080,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListInstancePrivateNetworks200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->list_instance_private_networks_with_http_info: #{e}"
 end
 ```
@@ -2119,14 +2119,14 @@ List the VPC 2.0 networks for an Instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 opts = {
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500.
@@ -2137,7 +2137,7 @@ begin
   # List Instance VPC 2.0 Networks
   result = api_instance.list_instance_vpc2(instance_id, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->list_instance_vpc2: #{e}"
 end
 ```
@@ -2155,7 +2155,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListInstanceVpc2200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->list_instance_vpc2_with_http_info: #{e}"
 end
 ```
@@ -2194,14 +2194,14 @@ List the VPCs for an Instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 opts = {
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500.
@@ -2212,7 +2212,7 @@ begin
   # List instance VPCs
   result = api_instance.list_instance_vpcs(instance_id, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->list_instance_vpcs: #{e}"
 end
 ```
@@ -2230,7 +2230,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListInstanceVpcs200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->list_instance_vpcs_with_http_info: #{e}"
 end
 ```
@@ -2269,14 +2269,14 @@ List all VPS instances in your account.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 opts = {
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500.
   cursor: 'cursor_example', # String | Cursor for paging. See [Meta and Pagination](#section/Introduction/Meta-and-Pagination).
@@ -2291,7 +2291,7 @@ begin
   # List Instances
   result = api_instance.list_instances(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->list_instances: #{e}"
 end
 ```
@@ -2309,7 +2309,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListInstances200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->list_instances_with_http_info: #{e}"
 end
 ```
@@ -2352,23 +2352,23 @@ Set a reverse DNS entry for an IPv4 address
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 opts = {
-  post_instances_instance_id_ipv4_reverse_default_request: VultRuby::PostInstancesInstanceIdIpv4ReverseDefaultRequest.new({ip: 'ip_example'}) # PostInstancesInstanceIdIpv4ReverseDefaultRequest | Include a JSON object in the request body with a content type of **application/json**.
+  post_instances_instance_id_ipv4_reverse_default_request: VultrRuby::PostInstancesInstanceIdIpv4ReverseDefaultRequest.new({ip: 'ip_example'}) # PostInstancesInstanceIdIpv4ReverseDefaultRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Set Default Reverse DNS Entry
   api_instance.post_instances_instance_id_ipv4_reverse_default(instance_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->post_instances_instance_id_ipv4_reverse_default: #{e}"
 end
 ```
@@ -2386,7 +2386,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->post_instances_instance_id_ipv4_reverse_default_with_http_info: #{e}"
 end
 ```
@@ -2424,20 +2424,20 @@ Reboot an Instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 
 begin
   # Reboot Instance
   api_instance.reboot_instance(instance_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->reboot_instance: #{e}"
 end
 ```
@@ -2455,7 +2455,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->reboot_instance_with_http_info: #{e}"
 end
 ```
@@ -2492,22 +2492,22 @@ Reboot Instances.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 opts = {
-  reboot_instances_request: VultRuby::RebootInstancesRequest.new # RebootInstancesRequest | Include a JSON object in the request body with a content type of **application/json**.
+  reboot_instances_request: VultrRuby::RebootInstancesRequest.new # RebootInstancesRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Reboot instances
   api_instance.reboot_instances(opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->reboot_instances: #{e}"
 end
 ```
@@ -2525,7 +2525,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->reboot_instances_with_http_info: #{e}"
 end
 ```
@@ -2562,24 +2562,24 @@ Reinstall an Instance using an optional `hostname`.  **Note:** This action may t
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 opts = {
-  reinstall_instance_request: VultRuby::ReinstallInstanceRequest.new # ReinstallInstanceRequest | Include a JSON object in the request body with a content type of **application/json**.
+  reinstall_instance_request: VultrRuby::ReinstallInstanceRequest.new # ReinstallInstanceRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Reinstall Instance
   result = api_instance.reinstall_instance(instance_id, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->reinstall_instance: #{e}"
 end
 ```
@@ -2597,7 +2597,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateInstance202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->reinstall_instance_with_http_info: #{e}"
 end
 ```
@@ -2635,24 +2635,24 @@ Restore an Instance from either `backup_id` or `snapshot_id`.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 opts = {
-  restore_instance_request: VultRuby::RestoreInstanceRequest.new # RestoreInstanceRequest | Include a JSON object in the request body with a content type of **application/json**.
+  restore_instance_request: VultrRuby::RestoreInstanceRequest.new # RestoreInstanceRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Restore Instance
   result = api_instance.restore_instance(instance_id, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->restore_instance: #{e}"
 end
 ```
@@ -2670,7 +2670,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <RestoreInstance202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->restore_instance_with_http_info: #{e}"
 end
 ```
@@ -2708,20 +2708,20 @@ Start an Instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 
 begin
   # Start instance
   api_instance.start_instance(instance_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->start_instance: #{e}"
 end
 ```
@@ -2739,7 +2739,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->start_instance_with_http_info: #{e}"
 end
 ```
@@ -2776,22 +2776,22 @@ Start Instances.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 opts = {
-  start_instances_request: VultRuby::StartInstancesRequest.new # StartInstancesRequest | Include a JSON object in the request body with a content type of **application/json**.
+  start_instances_request: VultrRuby::StartInstancesRequest.new # StartInstancesRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Start instances
   api_instance.start_instances(opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->start_instances: #{e}"
 end
 ```
@@ -2809,7 +2809,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->start_instances_with_http_info: #{e}"
 end
 ```
@@ -2846,24 +2846,24 @@ Update information for an Instance. All attributes are optional. If not set, the
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::InstancesApi.new
+api_instance = VultrRuby::InstancesApi.new
 instance_id = 'instance_id_example' # String | The [Instance ID](#operation/list-instances).
 opts = {
-  update_instance_request: VultRuby::UpdateInstanceRequest.new # UpdateInstanceRequest | Include a JSON object in the request body with a content type of **application/json**.
+  update_instance_request: VultrRuby::UpdateInstanceRequest.new # UpdateInstanceRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Update Instance
   result = api_instance.update_instance(instance_id, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->update_instance: #{e}"
 end
 ```
@@ -2881,7 +2881,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateInstance202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling InstancesApi->update_instance_with_http_info: #{e}"
 end
 ```

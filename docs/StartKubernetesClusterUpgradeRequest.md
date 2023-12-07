@@ -1,4 +1,4 @@
-# VultRuby::StartKubernetesClusterUpgradeRequest
+# VultrRuby::StartKubernetesClusterUpgradeRequest
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::StartKubernetesClusterUpgradeRequest.new(
+instance = VultrRuby::StartKubernetesClusterUpgradeRequest.new(
   upgrade_version: null
 )
 ```

@@ -1,4 +1,4 @@
-# VultRuby::ListBaremetals200Response
+# VultrRuby::ListBaremetals200Response
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ListBaremetals200Response.new(
+instance = VultrRuby::ListBaremetals200Response.new(
   bare_metals: null,
   meta: null
 )

@@ -1,4 +1,4 @@
-# VultRuby::ListLoadBalancers200Response
+# VultrRuby::ListLoadBalancers200Response
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ListLoadBalancers200Response.new(
+instance = VultrRuby::ListLoadBalancers200Response.new(
   load_balancers: null,
   meta: null
 )

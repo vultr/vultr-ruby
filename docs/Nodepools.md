@@ -1,4 +1,4 @@
-# VultRuby::Nodepools
+# VultrRuby::Nodepools
 
 ## Properties
 
@@ -20,9 +20,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::Nodepools.new(
+instance = VultrRuby::Nodepools.new(
   id: null,
   date_created: null,
   label: null,

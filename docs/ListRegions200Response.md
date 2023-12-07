@@ -1,4 +1,4 @@
-# VultRuby::ListRegions200Response
+# VultrRuby::ListRegions200Response
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ListRegions200Response.new(
+instance = VultrRuby::ListRegions200Response.new(
   regions: null,
   meta: null
 )

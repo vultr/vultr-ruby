@@ -1,4 +1,4 @@
-# VultRuby::CreateRegistryRequest
+# VultrRuby::CreateRegistryRequest
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateRegistryRequest.new(
+instance = VultrRuby::CreateRegistryRequest.new(
   name: null,
   public: null,
   region: null,

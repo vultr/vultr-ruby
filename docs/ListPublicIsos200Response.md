@@ -1,4 +1,4 @@
-# VultRuby::ListPublicIsos200Response
+# VultrRuby::ListPublicIsos200Response
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ListPublicIsos200Response.new(
+instance = VultrRuby::ListPublicIsos200Response.new(
   public_isos: null,
   meta: null
 )

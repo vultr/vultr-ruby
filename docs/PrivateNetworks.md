@@ -1,4 +1,4 @@
-# VultRuby::PrivateNetworks
+# VultrRuby::PrivateNetworks
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::PrivateNetworks.new(
+instance = VultrRuby::PrivateNetworks.new(
   id: null,
   mac_address: null,
   ip_address: null

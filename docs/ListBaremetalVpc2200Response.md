@@ -1,4 +1,4 @@
-# VultRuby::ListBaremetalVpc2200Response
+# VultrRuby::ListBaremetalVpc2200Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ListBaremetalVpc2200Response.new(
+instance = VultrRuby::ListBaremetalVpc2200Response.new(
   vpcs: null
 )
 ```

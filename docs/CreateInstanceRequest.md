@@ -1,4 +1,4 @@
-# VultRuby::CreateInstanceRequest
+# VultrRuby::CreateInstanceRequest
 
 ## Properties
 
@@ -37,9 +37,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateInstanceRequest.new(
+instance = VultrRuby::CreateInstanceRequest.new(
   region: null,
   plan: null,
   os_id: null,

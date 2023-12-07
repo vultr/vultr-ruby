@@ -1,4 +1,4 @@
-# VultRuby::PlansApi
+# VultrRuby::PlansApi
 
 All URIs are relative to *https://api.vultr.com/v2*
 
@@ -20,9 +20,9 @@ Get a list of all Bare Metal plans at Vultr.  The response is an array of JSON `
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 
-api_instance = VultRuby::PlansApi.new
+api_instance = VultrRuby::PlansApi.new
 opts = {
   per_page: 'per_page_example', # String | Number of items requested per page. Default is 100 and Max is 500.
   cursor: 'cursor_example' # String | Cursor for paging. See [Meta and Pagination](#section/Introduction/Meta-and-Pagination).
@@ -32,7 +32,7 @@ begin
   # List Bare Metal Plans
   result = api_instance.list_metal_plans(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling PlansApi->list_metal_plans: #{e}"
 end
 ```
@@ -50,7 +50,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListMetalPlans200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling PlansApi->list_metal_plans_with_http_info: #{e}"
 end
 ```
@@ -88,9 +88,9 @@ Get a list of all VPS plans at Vultr.  The response is an array of JSON `plan` o
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 
-api_instance = VultRuby::PlansApi.new
+api_instance = VultrRuby::PlansApi.new
 opts = {
   type: 'type_example', # String | Filter the results by type.  | **Type** | **Description** | |----------|-----------------| | all | All available types | | vc2 | Cloud Compute | | vdc | Dedicated Cloud | | vhf | High Frequency Compute | | vhp | High Performance | | voc | All Optimized Cloud types | | voc-g | General Purpose Optimized Cloud | | voc-c | CPU Optimized Cloud | | voc-m | Memory Optimized Cloud | | voc-s | Storage Optimized Cloud | | vcg | Cloud GPU |
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500.
@@ -102,7 +102,7 @@ begin
   # List Plans
   result = api_instance.list_plans(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling PlansApi->list_plans: #{e}"
 end
 ```
@@ -120,7 +120,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListPlans200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling PlansApi->list_plans_with_http_info: #{e}"
 end
 ```

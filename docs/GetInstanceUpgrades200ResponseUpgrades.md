@@ -1,4 +1,4 @@
-# VultRuby::GetInstanceUpgrades200ResponseUpgrades
+# VultrRuby::GetInstanceUpgrades200ResponseUpgrades
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetInstanceUpgrades200ResponseUpgrades.new(
+instance = VultrRuby::GetInstanceUpgrades200ResponseUpgrades.new(
   applications: null,
   plans: null,
   os: null

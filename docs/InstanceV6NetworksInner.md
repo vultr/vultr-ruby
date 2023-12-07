@@ -1,4 +1,4 @@
-# VultRuby::InstanceV6NetworksInner
+# VultrRuby::InstanceV6NetworksInner
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::InstanceV6NetworksInner.new(
+instance = VultrRuby::InstanceV6NetworksInner.new(
   network: null,
   main_ip: null,
   network_size: null

@@ -1,4 +1,4 @@
-# VultRuby::ListDatabasePlans200Response
+# VultrRuby::ListDatabasePlans200Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ListDatabasePlans200Response.new(
+instance = VultrRuby::ListDatabasePlans200Response.new(
   plans: null
 )
 ```

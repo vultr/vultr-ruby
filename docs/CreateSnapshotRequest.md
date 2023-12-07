@@ -1,4 +1,4 @@
-# VultRuby::CreateSnapshotRequest
+# VultrRuby::CreateSnapshotRequest
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateSnapshotRequest.new(
+instance = VultrRuby::CreateSnapshotRequest.new(
   instance_id: null,
   description: null
 )

@@ -1,4 +1,4 @@
-# VultRuby::Meta
+# VultrRuby::Meta
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::Meta.new(
+instance = VultrRuby::Meta.new(
   total: null,
   links: null
 )

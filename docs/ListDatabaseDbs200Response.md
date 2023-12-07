@@ -1,4 +1,4 @@
-# VultRuby::ListDatabaseDbs200Response
+# VultrRuby::ListDatabaseDbs200Response
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ListDatabaseDbs200Response.new(
+instance = VultrRuby::ListDatabaseDbs200Response.new(
   dbs: null,
   meta: null
 )

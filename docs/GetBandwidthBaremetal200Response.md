@@ -1,4 +1,4 @@
-# VultRuby::GetBandwidthBaremetal200Response
+# VultrRuby::GetBandwidthBaremetal200Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetBandwidthBaremetal200Response.new(
+instance = VultrRuby::GetBandwidthBaremetal200Response.new(
   bandwidth: null
 )
 ```

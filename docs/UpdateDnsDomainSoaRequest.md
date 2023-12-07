@@ -1,4 +1,4 @@
-# VultRuby::UpdateDnsDomainSoaRequest
+# VultrRuby::UpdateDnsDomainSoaRequest
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::UpdateDnsDomainSoaRequest.new(
+instance = VultrRuby::UpdateDnsDomainSoaRequest.new(
   nsprimary: null,
   email: null
 )

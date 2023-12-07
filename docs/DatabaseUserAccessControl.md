@@ -1,4 +1,4 @@
-# VultRuby::DatabaseUserAccessControl
+# VultrRuby::DatabaseUserAccessControl
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::DatabaseUserAccessControl.new(
+instance = VultrRuby::DatabaseUserAccessControl.new(
   redis_acl_categories: null,
   redis_acl_channels: null,
   redis_acl_commands: null,

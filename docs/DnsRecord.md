@@ -1,4 +1,4 @@
-# VultRuby::DnsRecord
+# VultrRuby::DnsRecord
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::DnsRecord.new(
+instance = VultrRuby::DnsRecord.new(
   id: null,
   type: null,
   name: null,

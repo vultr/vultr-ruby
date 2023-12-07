@@ -1,4 +1,4 @@
-# VultRuby::IsoPublic
+# VultrRuby::IsoPublic
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::IsoPublic.new(
+instance = VultrRuby::IsoPublic.new(
   id: null,
   name: null,
   description: null,

@@ -1,4 +1,4 @@
-# VultRuby::DatabaseUsageMemory
+# VultrRuby::DatabaseUsageMemory
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::DatabaseUsageMemory.new(
+instance = VultrRuby::DatabaseUsageMemory.new(
   current_mb: null,
   max_mb: null,
   percentage: null

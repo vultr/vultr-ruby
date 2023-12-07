@@ -1,4 +1,4 @@
-# VultRuby::ListLoadBalancerForwardingRules200Response
+# VultrRuby::ListLoadBalancerForwardingRules200Response
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ListLoadBalancerForwardingRules200Response.new(
+instance = VultrRuby::ListLoadBalancerForwardingRules200Response.new(
   forwarding_rules: null,
   meta: null
 )

@@ -1,4 +1,4 @@
-# VultRuby::Network
+# VultrRuby::Network
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::Network.new(
+instance = VultrRuby::Network.new(
   id: null,
   region: null,
   date_created: null,

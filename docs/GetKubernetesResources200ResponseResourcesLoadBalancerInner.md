@@ -1,4 +1,4 @@
-# VultRuby::GetKubernetesResources200ResponseResourcesLoadBalancerInner
+# VultrRuby::GetKubernetesResources200ResponseResourcesLoadBalancerInner
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetKubernetesResources200ResponseResourcesLoadBalancerInner.new(
+instance = VultrRuby::GetKubernetesResources200ResponseResourcesLoadBalancerInner.new(
   id: null,
   label: null,
   date_created: null,

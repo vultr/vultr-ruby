@@ -1,4 +1,4 @@
-# VultRuby::Clusters
+# VultrRuby::Clusters
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::Clusters.new(
+instance = VultrRuby::Clusters.new(
   id: null,
   region: null,
   hostname: null,

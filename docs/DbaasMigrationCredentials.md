@@ -1,4 +1,4 @@
-# VultRuby::DbaasMigrationCredentials
+# VultrRuby::DbaasMigrationCredentials
 
 ## Properties
 
@@ -15,9 +15,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::DbaasMigrationCredentials.new(
+instance = VultrRuby::DbaasMigrationCredentials.new(
   host: null,
   port: null,
   username: null,

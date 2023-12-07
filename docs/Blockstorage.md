@@ -1,4 +1,4 @@
-# VultRuby::Blockstorage
+# VultrRuby::Blockstorage
 
 ## Properties
 
@@ -17,9 +17,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::Blockstorage.new(
+instance = VultrRuby::Blockstorage.new(
   id: null,
   cost: null,
   status: null,

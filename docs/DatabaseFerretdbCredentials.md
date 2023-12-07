@@ -1,4 +1,4 @@
-# VultRuby::DatabaseFerretdbCredentials
+# VultrRuby::DatabaseFerretdbCredentials
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::DatabaseFerretdbCredentials.new(
+instance = VultrRuby::DatabaseFerretdbCredentials.new(
   host: null,
   port: null,
   username: null,

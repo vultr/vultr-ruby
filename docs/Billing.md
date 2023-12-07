@@ -1,4 +1,4 @@
-# VultRuby::Billing
+# VultrRuby::Billing
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::Billing.new(
+instance = VultrRuby::Billing.new(
   id: null,
   date: null,
   type: null,

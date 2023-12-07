@@ -1,4 +1,4 @@
-# VultRuby::DetachInstanceIso202Response
+# VultrRuby::DetachInstanceIso202Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::DetachInstanceIso202Response.new(
+instance = VultrRuby::DetachInstanceIso202Response.new(
   iso_status: null
 )
 ```

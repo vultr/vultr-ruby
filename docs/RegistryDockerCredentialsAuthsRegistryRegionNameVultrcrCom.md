@@ -1,4 +1,4 @@
-# VultRuby::RegistryDockerCredentialsAuthsRegistryRegionNameVultrcrCom
+# VultrRuby::RegistryDockerCredentialsAuthsRegistryRegionNameVultrcrCom
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::RegistryDockerCredentialsAuthsRegistryRegionNameVultrcrCom.new(
+instance = VultrRuby::RegistryDockerCredentialsAuthsRegistryRegionNameVultrcrCom.new(
   auth: null
 )
 ```

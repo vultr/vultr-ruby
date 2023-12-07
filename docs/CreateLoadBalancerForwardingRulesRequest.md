@@ -1,4 +1,4 @@
-# VultRuby::CreateLoadBalancerForwardingRulesRequest
+# VultrRuby::CreateLoadBalancerForwardingRulesRequest
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateLoadBalancerForwardingRulesRequest.new(
+instance = VultrRuby::CreateLoadBalancerForwardingRulesRequest.new(
   frontend_protocol: null,
   frontend_port: null,
   backend_protocol: null,

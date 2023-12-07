@@ -1,4 +1,4 @@
-# VultRuby::ListObjectStorageClusters200Response
+# VultrRuby::ListObjectStorageClusters200Response
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ListObjectStorageClusters200Response.new(
+instance = VultrRuby::ListObjectStorageClusters200Response.new(
   clusters: null,
   meta: null
 )

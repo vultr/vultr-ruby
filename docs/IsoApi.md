@@ -1,4 +1,4 @@
-# VultRuby::IsoApi
+# VultrRuby::IsoApi
 
 All URIs are relative to *https://api.vultr.com/v2*
 
@@ -23,23 +23,23 @@ Create a new ISO in your account from `url`.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::IsoApi.new
+api_instance = VultrRuby::IsoApi.new
 opts = {
-  create_iso_request: VultRuby::CreateIsoRequest.new({url: 'url_example'}) # CreateIsoRequest | Include a JSON object in the request body with a content type of **application/json**.
+  create_iso_request: VultrRuby::CreateIsoRequest.new({url: 'url_example'}) # CreateIsoRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create ISO
   result = api_instance.create_iso(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling IsoApi->create_iso: #{e}"
 end
 ```
@@ -57,7 +57,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateIso201Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling IsoApi->create_iso_with_http_info: #{e}"
 end
 ```
@@ -94,20 +94,20 @@ Delete an ISO.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::IsoApi.new
+api_instance = VultrRuby::IsoApi.new
 iso_id = 'iso_id_example' # String | The [ISO id](#operation/list-isos).
 
 begin
   # Delete ISO
   api_instance.delete_iso(iso_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling IsoApi->delete_iso: #{e}"
 end
 ```
@@ -125,7 +125,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling IsoApi->delete_iso_with_http_info: #{e}"
 end
 ```
@@ -162,21 +162,21 @@ Get information for an ISO.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::IsoApi.new
+api_instance = VultrRuby::IsoApi.new
 iso_id = 'iso_id_example' # String | The [ISO id](#operation/list-isos).
 
 begin
   # Get ISO
   result = api_instance.iso_get(iso_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling IsoApi->iso_get: #{e}"
 end
 ```
@@ -194,7 +194,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateIso201Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling IsoApi->iso_get_with_http_info: #{e}"
 end
 ```
@@ -231,14 +231,14 @@ Get the ISOs in your account.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::IsoApi.new
+api_instance = VultrRuby::IsoApi.new
 opts = {
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500.
   cursor: 'cursor_example' # String | Cursor for paging. See [Meta and Pagination](#section/Introduction/Meta-and-Pagination).
@@ -248,7 +248,7 @@ begin
   # List ISOs
   result = api_instance.list_isos(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling IsoApi->list_isos: #{e}"
 end
 ```
@@ -266,7 +266,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListIsos200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling IsoApi->list_isos_with_http_info: #{e}"
 end
 ```
@@ -304,15 +304,15 @@ List all Vultr Public ISOs.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 
-api_instance = VultRuby::IsoApi.new
+api_instance = VultrRuby::IsoApi.new
 
 begin
   # List Public ISOs
   result = api_instance.list_public_isos
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling IsoApi->list_public_isos: #{e}"
 end
 ```
@@ -330,7 +330,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListPublicIsos200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling IsoApi->list_public_isos_with_http_info: #{e}"
 end
 ```

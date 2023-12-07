@@ -1,4 +1,4 @@
-# VultRuby::ListServiceAlertsRequest
+# VultrRuby::ListServiceAlertsRequest
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ListServiceAlertsRequest.new(
+instance = VultrRuby::ListServiceAlertsRequest.new(
   period: null
 )
 ```

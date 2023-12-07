@@ -1,4 +1,4 @@
-# VultRuby::RegenerateObjectStorageKeys201Response
+# VultrRuby::RegenerateObjectStorageKeys201Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::RegenerateObjectStorageKeys201Response.new(
+instance = VultrRuby::RegenerateObjectStorageKeys201Response.new(
   s3_credentials: null
 )
 ```

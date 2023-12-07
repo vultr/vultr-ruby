@@ -1,4 +1,4 @@
-# VultRuby::RegistryKubernetesDockerCredentialsMetadata
+# VultrRuby::RegistryKubernetesDockerCredentialsMetadata
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::RegistryKubernetesDockerCredentialsMetadata.new(
+instance = VultrRuby::RegistryKubernetesDockerCredentialsMetadata.new(
   name: null
 )
 ```

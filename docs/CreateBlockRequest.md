@@ -1,4 +1,4 @@
-# VultRuby::CreateBlockRequest
+# VultrRuby::CreateBlockRequest
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateBlockRequest.new(
+instance = VultrRuby::CreateBlockRequest.new(
   region: null,
   size_gb: null,
   label: null,

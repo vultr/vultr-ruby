@@ -1,4 +1,4 @@
-# VultRuby::DatabaseAddReadReplicaRequest
+# VultrRuby::DatabaseAddReadReplicaRequest
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::DatabaseAddReadReplicaRequest.new(
+instance = VultrRuby::DatabaseAddReadReplicaRequest.new(
   region: null,
   label: null
 )

@@ -1,4 +1,4 @@
-# VultRuby::CreateObjectStorageRequest
+# VultrRuby::CreateObjectStorageRequest
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateObjectStorageRequest.new(
+instance = VultrRuby::CreateObjectStorageRequest.new(
   cluster_id: null,
   label: null
 )

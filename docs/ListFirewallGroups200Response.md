@@ -1,4 +1,4 @@
-# VultRuby::ListFirewallGroups200Response
+# VultrRuby::ListFirewallGroups200Response
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ListFirewallGroups200Response.new(
+instance = VultrRuby::ListFirewallGroups200Response.new(
   firewall_groups: null,
   meta: null
 )

@@ -1,4 +1,4 @@
-# VultRuby::ConvertReservedIpRequest
+# VultrRuby::ConvertReservedIpRequest
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::ConvertReservedIpRequest.new(
+instance = VultrRuby::ConvertReservedIpRequest.new(
   ip_address: null,
   label: null
 )

@@ -1,4 +1,4 @@
-# VultRuby::UpdateVpc2Request
+# VultrRuby::UpdateVpc2Request
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::UpdateVpc2Request.new(
+instance = VultrRuby::UpdateVpc2Request.new(
   description: null
 )
 ```

@@ -1,4 +1,4 @@
-# VultRuby::KubernetesApi
+# VultrRuby::KubernetesApi
 
 All URIs are relative to *https://api.vultr.com/v2*
 
@@ -36,23 +36,23 @@ Create Kubernetes Cluster
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::KubernetesApi.new
+api_instance = VultrRuby::KubernetesApi.new
 opts = {
-  create_kubernetes_cluster_request: VultRuby::CreateKubernetesClusterRequest.new({region: 'region_example', version: 'version_example'}) # CreateKubernetesClusterRequest | Request Body
+  create_kubernetes_cluster_request: VultrRuby::CreateKubernetesClusterRequest.new({region: 'region_example', version: 'version_example'}) # CreateKubernetesClusterRequest | Request Body
 }
 
 begin
   # Create Kubernetes Cluster
   result = api_instance.create_kubernetes_cluster(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->create_kubernetes_cluster: #{e}"
 end
 ```
@@ -70,7 +70,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateKubernetesCluster201Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->create_kubernetes_cluster_with_http_info: #{e}"
 end
 ```
@@ -107,24 +107,24 @@ Create NodePool for a Existing Kubernetes Cluster
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::KubernetesApi.new
+api_instance = VultrRuby::KubernetesApi.new
 vke_id = 'vke_id_example' # String | The [VKE ID](#operation/list-kubernetes-clusters).
 opts = {
-  create_nodepools_request: VultRuby::CreateNodepoolsRequest.new({node_quantity: 37, label: 'label_example', plan: 'plan_example'}) # CreateNodepoolsRequest | Request Body
+  create_nodepools_request: VultrRuby::CreateNodepoolsRequest.new({node_quantity: 37, label: 'label_example', plan: 'plan_example'}) # CreateNodepoolsRequest | Request Body
 }
 
 begin
   # Create NodePool
   result = api_instance.create_nodepools(vke_id, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->create_nodepools: #{e}"
 end
 ```
@@ -142,7 +142,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateNodepools201Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->create_nodepools_with_http_info: #{e}"
 end
 ```
@@ -180,20 +180,20 @@ Delete Kubernetes Cluster
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::KubernetesApi.new
+api_instance = VultrRuby::KubernetesApi.new
 vke_id = 'vke_id_example' # String | The [VKE ID](#operation/list-kubernetes-clusters).
 
 begin
   # Delete Kubernetes Cluster
   api_instance.delete_kubernetes_cluster(vke_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->delete_kubernetes_cluster: #{e}"
 end
 ```
@@ -211,7 +211,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->delete_kubernetes_cluster_with_http_info: #{e}"
 end
 ```
@@ -248,20 +248,20 @@ Delete Kubernetes Cluster and all related resources.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::KubernetesApi.new
+api_instance = VultrRuby::KubernetesApi.new
 vke_id = 'vke_id_example' # String | 
 
 begin
   # Delete VKE Cluster and All Related Resources
   api_instance.delete_kubernetes_cluster_vke_id_delete_with_linked_resources(vke_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->delete_kubernetes_cluster_vke_id_delete_with_linked_resources: #{e}"
 end
 ```
@@ -279,7 +279,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->delete_kubernetes_cluster_vke_id_delete_with_linked_resources_with_http_info: #{e}"
 end
 ```
@@ -316,21 +316,21 @@ Delete a NodePool from a Kubernetes Cluster
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::KubernetesApi.new
+api_instance = VultrRuby::KubernetesApi.new
 vke_id = 'vke_id_example' # String | The [VKE ID](#operation/list-kubernetes-clusters).
 nodepool_id = 'nodepool_id_example' # String | The [NodePool ID](#operation/get-nodepools).
 
 begin
   # Delete Nodepool
   api_instance.delete_nodepool(vke_id, nodepool_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->delete_nodepool: #{e}"
 end
 ```
@@ -348,7 +348,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->delete_nodepool_with_http_info: #{e}"
 end
 ```
@@ -386,14 +386,14 @@ Delete a single nodepool instance from a given Nodepool
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::KubernetesApi.new
+api_instance = VultrRuby::KubernetesApi.new
 vke_id = 'vke_id_example' # String | The [VKE ID](#operation/list-kubernetes-clusters).
 nodepool_id = 'nodepool_id_example' # String | The [NodePool ID](#operation/get-nodepools).
 node_id = 'node_id_example' # String | The [Instance ID](#operation/list-instances).
@@ -401,7 +401,7 @@ node_id = 'node_id_example' # String | The [Instance ID](#operation/list-instanc
 begin
   # Delete NodePool Instance
   api_instance.delete_nodepool_instance(vke_id, nodepool_id, node_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->delete_nodepool_instance: #{e}"
 end
 ```
@@ -419,7 +419,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->delete_nodepool_instance_with_http_info: #{e}"
 end
 ```
@@ -458,21 +458,21 @@ Get the available upgrades for the specified Kubernetes cluster.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::KubernetesApi.new
+api_instance = VultrRuby::KubernetesApi.new
 vke_id = 'vke_id_example' # String | The [VKE ID](#operation/list-kubernetes-clusters).
 
 begin
   # Get Kubernetes Available Upgrades
   result = api_instance.get_kubernetes_available_upgrades(vke_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->get_kubernetes_available_upgrades: #{e}"
 end
 ```
@@ -490,7 +490,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetKubernetesAvailableUpgrades200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->get_kubernetes_available_upgrades_with_http_info: #{e}"
 end
 ```
@@ -527,21 +527,21 @@ Get Kubernetes Cluster
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::KubernetesApi.new
+api_instance = VultrRuby::KubernetesApi.new
 vke_id = 'vke_id_example' # String | The [VKE ID](#operation/list-kubernetes-clusters).
 
 begin
   # Get Kubernetes Cluster
   result = api_instance.get_kubernetes_clusters(vke_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->get_kubernetes_clusters: #{e}"
 end
 ```
@@ -559,7 +559,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateKubernetesCluster201Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->get_kubernetes_clusters_with_http_info: #{e}"
 end
 ```
@@ -596,21 +596,21 @@ Get Kubernetes Cluster Kubeconfig
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::KubernetesApi.new
+api_instance = VultrRuby::KubernetesApi.new
 vke_id = 'vke_id_example' # String | The [VKE ID](#operation/list-kubernetes-clusters).
 
 begin
   # Get Kubernetes Cluster Kubeconfig
   result = api_instance.get_kubernetes_clusters_config(vke_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->get_kubernetes_clusters_config: #{e}"
 end
 ```
@@ -628,7 +628,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetKubernetesClustersConfig200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->get_kubernetes_clusters_config_with_http_info: #{e}"
 end
 ```
@@ -665,21 +665,21 @@ Get the block storage volumes and load balancers deployed by the specified Kuber
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::KubernetesApi.new
+api_instance = VultrRuby::KubernetesApi.new
 vke_id = 'vke_id_example' # String | The [VKE ID](#operation/list-kubernetes-clusters).
 
 begin
   # Get Kubernetes Resources
   result = api_instance.get_kubernetes_resources(vke_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->get_kubernetes_resources: #{e}"
 end
 ```
@@ -697,7 +697,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetKubernetesResources200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->get_kubernetes_resources_with_http_info: #{e}"
 end
 ```
@@ -734,15 +734,15 @@ Get a list of supported Kubernetes versions
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 
-api_instance = VultRuby::KubernetesApi.new
+api_instance = VultrRuby::KubernetesApi.new
 
 begin
   # Get Kubernetes Versions
   result = api_instance.get_kubernetes_versions
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->get_kubernetes_versions: #{e}"
 end
 ```
@@ -760,7 +760,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetKubernetesVersions200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->get_kubernetes_versions_with_http_info: #{e}"
 end
 ```
@@ -795,14 +795,14 @@ Get Nodepool from a Kubernetes Cluster
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::KubernetesApi.new
+api_instance = VultrRuby::KubernetesApi.new
 vke_id = 'vke_id_example' # String | The [VKE ID](#operation/list-kubernetes-clusters).
 nodepool_id = 'nodepool_id_example' # String | The [NodePool ID](#operation/get-nodepools).
 
@@ -810,7 +810,7 @@ begin
   # Get NodePool
   result = api_instance.get_nodepool(vke_id, nodepool_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->get_nodepool: #{e}"
 end
 ```
@@ -828,7 +828,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateNodepools201Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->get_nodepool_with_http_info: #{e}"
 end
 ```
@@ -866,21 +866,21 @@ List all available NodePools on a Kubernetes Cluster
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::KubernetesApi.new
+api_instance = VultrRuby::KubernetesApi.new
 vke_id = 'vke_id_example' # String | The [VKE ID](#operation/list-kubernetes-clusters).
 
 begin
   # List NodePools
   result = api_instance.get_nodepools(vke_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->get_nodepools: #{e}"
 end
 ```
@@ -898,7 +898,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetNodepools200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->get_nodepools_with_http_info: #{e}"
 end
 ```
@@ -935,20 +935,20 @@ List all Kubernetes clusters currently deployed
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::KubernetesApi.new
+api_instance = VultrRuby::KubernetesApi.new
 
 begin
   # List all Kubernetes Clusters
   result = api_instance.list_kubernetes_clusters
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->list_kubernetes_clusters: #{e}"
 end
 ```
@@ -966,7 +966,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListKubernetesClusters200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->list_kubernetes_clusters_with_http_info: #{e}"
 end
 ```
@@ -1001,14 +1001,14 @@ Recycle a specific NodePool Instance
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::KubernetesApi.new
+api_instance = VultrRuby::KubernetesApi.new
 vke_id = 'vke_id_example' # String | The [VKE ID](#operation/list-kubernetes-clusters).
 nodepool_id = 'nodepool_id_example' # String | The [NodePool ID](#operation/get-nodepools).
 node_id = 'node_id_example' # String | Node ID
@@ -1016,7 +1016,7 @@ node_id = 'node_id_example' # String | Node ID
 begin
   # Recycle a NodePool Instance
   api_instance.recycle_nodepool_instance(vke_id, nodepool_id, node_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->recycle_nodepool_instance: #{e}"
 end
 ```
@@ -1034,7 +1034,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->recycle_nodepool_instance_with_http_info: #{e}"
 end
 ```
@@ -1073,23 +1073,23 @@ Start a Kubernetes cluster upgrade.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::KubernetesApi.new
+api_instance = VultrRuby::KubernetesApi.new
 vke_id = 'vke_id_example' # String | The [VKE ID](#operation/list-kubernetes-clusters).
 opts = {
-  start_kubernetes_cluster_upgrade_request: VultRuby::StartKubernetesClusterUpgradeRequest.new({upgrade_version: 'upgrade_version_example'}) # StartKubernetesClusterUpgradeRequest | Request Body
+  start_kubernetes_cluster_upgrade_request: VultrRuby::StartKubernetesClusterUpgradeRequest.new({upgrade_version: 'upgrade_version_example'}) # StartKubernetesClusterUpgradeRequest | Request Body
 }
 
 begin
   # Start Kubernetes Cluster Upgrade
   api_instance.start_kubernetes_cluster_upgrade(vke_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->start_kubernetes_cluster_upgrade: #{e}"
 end
 ```
@@ -1107,7 +1107,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->start_kubernetes_cluster_upgrade_with_http_info: #{e}"
 end
 ```
@@ -1145,23 +1145,23 @@ Update Kubernetes Cluster
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::KubernetesApi.new
+api_instance = VultrRuby::KubernetesApi.new
 vke_id = 'vke_id_example' # String | The [VKE ID](#operation/list-kubernetes-clusters).
 opts = {
-  update_kubernetes_cluster_request: VultRuby::UpdateKubernetesClusterRequest.new({label: 'label_example'}) # UpdateKubernetesClusterRequest | Request Body
+  update_kubernetes_cluster_request: VultrRuby::UpdateKubernetesClusterRequest.new({label: 'label_example'}) # UpdateKubernetesClusterRequest | Request Body
 }
 
 begin
   # Update Kubernetes Cluster
   api_instance.update_kubernetes_cluster(vke_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->update_kubernetes_cluster: #{e}"
 end
 ```
@@ -1179,7 +1179,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->update_kubernetes_cluster_with_http_info: #{e}"
 end
 ```
@@ -1217,25 +1217,25 @@ Update a Nodepool on a Kubernetes Cluster
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::KubernetesApi.new
+api_instance = VultrRuby::KubernetesApi.new
 vke_id = 'vke_id_example' # String | The [VKE ID](#operation/list-kubernetes-clusters).
 nodepool_id = 'nodepool_id_example' # String | The [NodePool ID](#operation/get-nodepools).
 opts = {
-  update_nodepool_request: VultRuby::UpdateNodepoolRequest.new # UpdateNodepoolRequest | Request Body
+  update_nodepool_request: VultrRuby::UpdateNodepoolRequest.new # UpdateNodepoolRequest | Request Body
 }
 
 begin
   # Update Nodepool
   result = api_instance.update_nodepool(vke_id, nodepool_id, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->update_nodepool: #{e}"
 end
 ```
@@ -1253,7 +1253,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateNodepools201Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling KubernetesApi->update_nodepool_with_http_info: #{e}"
 end
 ```

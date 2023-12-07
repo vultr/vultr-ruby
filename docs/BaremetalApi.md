@@ -1,4 +1,4 @@
-# VultRuby::BaremetalApi
+# VultrRuby::BaremetalApi
 
 All URIs are relative to *https://api.vultr.com/v2*
 
@@ -39,23 +39,23 @@ Attach a VPC 2.0 Network to a Bare Metal Instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BaremetalApi.new
+api_instance = VultrRuby::BaremetalApi.new
 baremetal_id = 'baremetal_id_example' # String | The [Bare Metal ID](#operation/list-baremetals).
 opts = {
-  attach_baremetals_vpc2_request: VultRuby::AttachBaremetalsVpc2Request.new # AttachBaremetalsVpc2Request | Include a JSON object in the request body with a content type of **application/json**.
+  attach_baremetals_vpc2_request: VultrRuby::AttachBaremetalsVpc2Request.new # AttachBaremetalsVpc2Request | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Attach VPC 2.0 Network to Bare Metal Instance
   api_instance.attach_baremetals_vpc2(baremetal_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->attach_baremetals_vpc2: #{e}"
 end
 ```
@@ -73,7 +73,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->attach_baremetals_vpc2_with_http_info: #{e}"
 end
 ```
@@ -111,23 +111,23 @@ Create a new Bare Metal instance in a `region` with the desired `plan`. Choose o
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BaremetalApi.new
+api_instance = VultrRuby::BaremetalApi.new
 opts = {
-  create_baremetal_request: VultRuby::CreateBaremetalRequest.new({region: 'region_example', plan: 'plan_example'}) # CreateBaremetalRequest | Include a JSON object in the request body with a content type of **application/json**.
+  create_baremetal_request: VultrRuby::CreateBaremetalRequest.new({region: 'region_example', plan: 'plan_example'}) # CreateBaremetalRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create Bare Metal Instance
   result = api_instance.create_baremetal(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->create_baremetal: #{e}"
 end
 ```
@@ -145,7 +145,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <CreateBaremetal202Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->create_baremetal_with_http_info: #{e}"
 end
 ```
@@ -182,20 +182,20 @@ Delete a Bare Metal instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BaremetalApi.new
+api_instance = VultrRuby::BaremetalApi.new
 baremetal_id = 'baremetal_id_example' # String | The [Bare Metal id](#operation/list-baremetals).
 
 begin
   # Delete Bare Metal
   api_instance.delete_baremetal(baremetal_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->delete_baremetal: #{e}"
 end
 ```
@@ -213,7 +213,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->delete_baremetal_with_http_info: #{e}"
 end
 ```
@@ -250,23 +250,23 @@ Detach a VPC 2.0 Network from an Bare Metal Instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BaremetalApi.new
+api_instance = VultrRuby::BaremetalApi.new
 baremetal_id = 'baremetal_id_example' # String | The [bare-metal ID](#operation/list-baremetals).
 opts = {
-  detach_baremetal_vpc2_request: VultRuby::DetachBaremetalVpc2Request.new # DetachBaremetalVpc2Request | Include a JSON object in the request body with a content type of **application/json**.
+  detach_baremetal_vpc2_request: VultrRuby::DetachBaremetalVpc2Request.new # DetachBaremetalVpc2Request | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Detach VPC 2.0 Network from Bare Metal Instance
   api_instance.detach_baremetal_vpc2(baremetal_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->detach_baremetal_vpc2: #{e}"
 end
 ```
@@ -284,7 +284,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->detach_baremetal_vpc2_with_http_info: #{e}"
 end
 ```
@@ -322,21 +322,21 @@ Get bandwidth information for the Bare Metal instance.<br><br>The `bandwidth` ob
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BaremetalApi.new
+api_instance = VultrRuby::BaremetalApi.new
 baremetal_id = 'baremetal_id_example' # String | The [Bare Metal id](#operation/list-baremetals).
 
 begin
   # Bare Metal Bandwidth
   result = api_instance.get_bandwidth_baremetal(baremetal_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->get_bandwidth_baremetal: #{e}"
 end
 ```
@@ -354,7 +354,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetBandwidthBaremetal200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->get_bandwidth_baremetal_with_http_info: #{e}"
 end
 ```
@@ -391,21 +391,21 @@ Get the user-supplied, base64 encoded [user data](https://www.vultr.com/docs/man
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BaremetalApi.new
+api_instance = VultrRuby::BaremetalApi.new
 baremetal_id = 'baremetal_id_example' # String | The [Bare Metal id](#operation/list-baremetals).
 
 begin
   # Get Bare Metal User Data
   result = api_instance.get_bare_metal_userdata(baremetal_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->get_bare_metal_userdata: #{e}"
 end
 ```
@@ -423,7 +423,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetBareMetalUserdata200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->get_bare_metal_userdata_with_http_info: #{e}"
 end
 ```
@@ -460,21 +460,21 @@ Get the VNC URL for a Bare Metal
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BaremetalApi.new
+api_instance = VultrRuby::BaremetalApi.new
 baremetal_id = 'baremetal_id_example' # String | The [Bare Metal id](#operation/list-baremetals).
 
 begin
   # Get VNC URL for a Bare Metal
   result = api_instance.get_bare_metal_vnc(baremetal_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->get_bare_metal_vnc: #{e}"
 end
 ```
@@ -492,7 +492,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetBareMetalVnc200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->get_bare_metal_vnc_with_http_info: #{e}"
 end
 ```
@@ -529,14 +529,14 @@ Get available upgrades for a Bare Metal
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BaremetalApi.new
+api_instance = VultrRuby::BaremetalApi.new
 baremetal_id = 'baremetal_id_example' # String | The [Bare Metal id](#operation/list-baremetals).
 opts = {
   type: 'type_example' # String | Filter upgrade by type:  - all (applications, plans) - applications - os
@@ -546,7 +546,7 @@ begin
   # Get Available Bare Metal Upgrades
   result = api_instance.get_bare_metals_upgrades(baremetal_id, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->get_bare_metals_upgrades: #{e}"
 end
 ```
@@ -564,7 +564,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetBareMetalsUpgrades200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->get_bare_metals_upgrades_with_http_info: #{e}"
 end
 ```
@@ -602,21 +602,21 @@ Get information for a Bare Metal instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BaremetalApi.new
+api_instance = VultrRuby::BaremetalApi.new
 baremetal_id = 'baremetal_id_example' # String | The [Bare Metal id](#operation/list-baremetals).
 
 begin
   # Get Bare Metal
   result = api_instance.get_baremetal(baremetal_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->get_baremetal: #{e}"
 end
 ```
@@ -634,7 +634,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetBaremetal200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->get_baremetal_with_http_info: #{e}"
 end
 ```
@@ -671,21 +671,21 @@ Get the IPv4 information for the Bare Metal instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BaremetalApi.new
+api_instance = VultrRuby::BaremetalApi.new
 baremetal_id = 'baremetal_id_example' # String | The [Bare Metal id](#operation/list-baremetals).
 
 begin
   # Bare Metal IPv4 Addresses
   result = api_instance.get_ipv4_baremetal(baremetal_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->get_ipv4_baremetal: #{e}"
 end
 ```
@@ -703,7 +703,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetIpv4Baremetal200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->get_ipv4_baremetal_with_http_info: #{e}"
 end
 ```
@@ -740,21 +740,21 @@ Get the IPv6 information for the Bare Metal instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BaremetalApi.new
+api_instance = VultrRuby::BaremetalApi.new
 baremetal_id = 'baremetal_id_example' # String | The [Bare Metal id](#operation/list-baremetals).
 
 begin
   # Bare Metal IPv6 Addresses
   result = api_instance.get_ipv6_baremetal(baremetal_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->get_ipv6_baremetal: #{e}"
 end
 ```
@@ -772,7 +772,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetIpv6Baremetal200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->get_ipv6_baremetal_with_http_info: #{e}"
 end
 ```
@@ -809,20 +809,20 @@ Halt the Bare Metal instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BaremetalApi.new
+api_instance = VultrRuby::BaremetalApi.new
 baremetal_id = 'baremetal_id_example' # String | The [Bare Metal id](#operation/list-baremetals).
 
 begin
   # Halt Bare Metal
   api_instance.halt_baremetal(baremetal_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->halt_baremetal: #{e}"
 end
 ```
@@ -840,7 +840,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->halt_baremetal_with_http_info: #{e}"
 end
 ```
@@ -877,22 +877,22 @@ Halt Bare Metals.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BaremetalApi.new
+api_instance = VultrRuby::BaremetalApi.new
 opts = {
-  halt_baremetals_request: VultRuby::HaltBaremetalsRequest.new # HaltBaremetalsRequest | Include a JSON object in the request body with a content type of **application/json**.
+  halt_baremetals_request: VultrRuby::HaltBaremetalsRequest.new # HaltBaremetalsRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Halt Bare Metals
   api_instance.halt_baremetals(opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->halt_baremetals: #{e}"
 end
 ```
@@ -910,7 +910,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->halt_baremetals_with_http_info: #{e}"
 end
 ```
@@ -947,21 +947,21 @@ List the VPC 2.0 networks for a Bare Metal Instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BaremetalApi.new
+api_instance = VultrRuby::BaremetalApi.new
 baremetal_id = 'baremetal_id_example' # String | The [Bare Metal ID](#operation/list-baremetals).
 
 begin
   # List Bare Metal Instance VPC 2.0 Networks
   result = api_instance.list_baremetal_vpc2(baremetal_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->list_baremetal_vpc2: #{e}"
 end
 ```
@@ -979,7 +979,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListBaremetalVpc2200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->list_baremetal_vpc2_with_http_info: #{e}"
 end
 ```
@@ -1016,14 +1016,14 @@ List all Bare Metal instances in your account.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BaremetalApi.new
+api_instance = VultrRuby::BaremetalApi.new
 opts = {
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500. 
   cursor: 'cursor_example' # String | Cursor for paging. See [Meta and Pagination](#section/Introduction/Meta-and-Pagination).
@@ -1033,7 +1033,7 @@ begin
   # List Bare Metal Instances
   result = api_instance.list_baremetals(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->list_baremetals: #{e}"
 end
 ```
@@ -1051,7 +1051,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListBaremetals200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->list_baremetals_with_http_info: #{e}"
 end
 ```
@@ -1089,22 +1089,22 @@ Reboot Bare Metals.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BaremetalApi.new
+api_instance = VultrRuby::BaremetalApi.new
 opts = {
-  halt_baremetals_request: VultRuby::HaltBaremetalsRequest.new # HaltBaremetalsRequest | Include a JSON object in the request body with a content type of **application/json**.
+  halt_baremetals_request: VultrRuby::HaltBaremetalsRequest.new # HaltBaremetalsRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Reboot Bare Metals
   api_instance.reboot_bare_metals(opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->reboot_bare_metals: #{e}"
 end
 ```
@@ -1122,7 +1122,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->reboot_bare_metals_with_http_info: #{e}"
 end
 ```
@@ -1159,20 +1159,20 @@ Reboot the Bare Metal instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BaremetalApi.new
+api_instance = VultrRuby::BaremetalApi.new
 baremetal_id = 'baremetal_id_example' # String | The [Bare Metal id](#operation/list-baremetals).
 
 begin
   # Reboot Bare Metal
   api_instance.reboot_baremetal(baremetal_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->reboot_baremetal: #{e}"
 end
 ```
@@ -1190,7 +1190,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->reboot_baremetal_with_http_info: #{e}"
 end
 ```
@@ -1227,24 +1227,24 @@ Reinstall the Bare Metal instance using an optional `hostname`.   **Note:** This
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BaremetalApi.new
+api_instance = VultrRuby::BaremetalApi.new
 baremetal_id = 'baremetal_id_example' # String | The [Bare Metal id](#operation/list-baremetals).
 opts = {
-  reinstall_baremetal_request: VultRuby::ReinstallBaremetalRequest.new # ReinstallBaremetalRequest | Include a JSON object in the request body with a content type of **application/json**.
+  reinstall_baremetal_request: VultrRuby::ReinstallBaremetalRequest.new # ReinstallBaremetalRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Reinstall Bare Metal
   result = api_instance.reinstall_baremetal(baremetal_id, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->reinstall_baremetal: #{e}"
 end
 ```
@@ -1262,7 +1262,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetBaremetal200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->reinstall_baremetal_with_http_info: #{e}"
 end
 ```
@@ -1300,22 +1300,22 @@ Start Bare Metals.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BaremetalApi.new
+api_instance = VultrRuby::BaremetalApi.new
 opts = {
-  halt_baremetals_request: VultRuby::HaltBaremetalsRequest.new # HaltBaremetalsRequest | Include a JSON object in the request body with a content type of **application/json**.
+  halt_baremetals_request: VultrRuby::HaltBaremetalsRequest.new # HaltBaremetalsRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Start Bare Metals
   api_instance.start_bare_metals(opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->start_bare_metals: #{e}"
 end
 ```
@@ -1333,7 +1333,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->start_bare_metals_with_http_info: #{e}"
 end
 ```
@@ -1370,20 +1370,20 @@ Start the Bare Metal instance.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BaremetalApi.new
+api_instance = VultrRuby::BaremetalApi.new
 baremetal_id = 'baremetal_id_example' # String | The [Bare Metal id](#operation/list-baremetals).
 
 begin
   # Start Bare Metal
   api_instance.start_baremetal(baremetal_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->start_baremetal: #{e}"
 end
 ```
@@ -1401,7 +1401,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->start_baremetal_with_http_info: #{e}"
 end
 ```
@@ -1438,24 +1438,24 @@ Update a Bare Metal instance. All attributes are optional. If not set, the attri
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::BaremetalApi.new
+api_instance = VultrRuby::BaremetalApi.new
 baremetal_id = 'baremetal_id_example' # String | The [Bare Metal id](#operation/list-baremetals).
 opts = {
-  update_baremetal_request: VultRuby::UpdateBaremetalRequest.new # UpdateBaremetalRequest | Include a JSON object in the request body with a content type of **application/json**.
+  update_baremetal_request: VultrRuby::UpdateBaremetalRequest.new # UpdateBaremetalRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Update Bare Metal
   result = api_instance.update_baremetal(baremetal_id, opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->update_baremetal: #{e}"
 end
 ```
@@ -1473,7 +1473,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetBaremetal200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling BaremetalApi->update_baremetal_with_http_info: #{e}"
 end
 ```

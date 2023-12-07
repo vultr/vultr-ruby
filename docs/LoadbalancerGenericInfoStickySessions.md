@@ -1,4 +1,4 @@
-# VultRuby::LoadbalancerGenericInfoStickySessions
+# VultrRuby::LoadbalancerGenericInfoStickySessions
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::LoadbalancerGenericInfoStickySessions.new(
+instance = VultrRuby::LoadbalancerGenericInfoStickySessions.new(
   cookie_name: null
 )
 ```

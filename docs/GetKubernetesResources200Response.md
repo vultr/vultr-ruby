@@ -1,4 +1,4 @@
-# VultRuby::GetKubernetesResources200Response
+# VultrRuby::GetKubernetesResources200Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetKubernetesResources200Response.new(
+instance = VultrRuby::GetKubernetesResources200Response.new(
   resources: null
 )
 ```

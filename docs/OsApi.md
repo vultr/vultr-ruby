@@ -1,4 +1,4 @@
-# VultRuby::OsApi
+# VultrRuby::OsApi
 
 All URIs are relative to *https://api.vultr.com/v2*
 
@@ -19,9 +19,9 @@ List the OS images available for installation at Vultr.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 
-api_instance = VultRuby::OsApi.new
+api_instance = VultrRuby::OsApi.new
 opts = {
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500. 
   cursor: 'cursor_example' # String | Cursor for paging. See [Meta and Pagination](#section/Introduction/Meta-and-Pagination).
@@ -31,7 +31,7 @@ begin
   # List OS
   result = api_instance.list_os(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling OsApi->list_os: #{e}"
 end
 ```
@@ -49,7 +49,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListOs200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling OsApi->list_os_with_http_info: #{e}"
 end
 ```

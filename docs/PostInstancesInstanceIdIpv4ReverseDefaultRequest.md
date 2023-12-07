@@ -1,4 +1,4 @@
-# VultRuby::PostInstancesInstanceIdIpv4ReverseDefaultRequest
+# VultrRuby::PostInstancesInstanceIdIpv4ReverseDefaultRequest
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::PostInstancesInstanceIdIpv4ReverseDefaultRequest.new(
+instance = VultrRuby::PostInstancesInstanceIdIpv4ReverseDefaultRequest.new(
   ip: null
 )
 ```

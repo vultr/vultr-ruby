@@ -1,4 +1,4 @@
-# VultRuby::CreateConnectionPool202Response
+# VultrRuby::CreateConnectionPool202Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateConnectionPool202Response.new(
+instance = VultrRuby::CreateConnectionPool202Response.new(
   connection_pool: null
 )
 ```

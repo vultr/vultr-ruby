@@ -1,4 +1,4 @@
-# VultRuby::CreateUserRequest
+# VultrRuby::CreateUserRequest
 
 ## Properties
 
@@ -13,9 +13,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateUserRequest.new(
+instance = VultrRuby::CreateUserRequest.new(
   email: null,
   name: null,
   password: null,

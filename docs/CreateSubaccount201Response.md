@@ -1,4 +1,4 @@
-# VultRuby::CreateSubaccount201Response
+# VultrRuby::CreateSubaccount201Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::CreateSubaccount201Response.new(
+instance = VultrRuby::CreateSubaccount201Response.new(
   subaccount: null
 )
 ```

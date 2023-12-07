@@ -1,4 +1,4 @@
-# VultRuby::RestoreInstanceRequest
+# VultrRuby::RestoreInstanceRequest
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::RestoreInstanceRequest.new(
+instance = VultrRuby::RestoreInstanceRequest.new(
   backup_id: null,
   snapshot_id: null
 )

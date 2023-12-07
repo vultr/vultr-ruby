@@ -1,4 +1,4 @@
-# VultRuby::UpdateStartupScriptRequest
+# VultrRuby::UpdateStartupScriptRequest
 
 ## Properties
 
@@ -11,9 +11,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::UpdateStartupScriptRequest.new(
+instance = VultrRuby::UpdateStartupScriptRequest.new(
   name: null,
   script: null,
   type: null

@@ -12,51 +12,51 @@ OpenAPI Generator version: 7.2.0-SNAPSHOT
 
 require 'spec_helper'
 
-describe VultRuby::ApiClient do
+describe VultrRuby::ApiClient do
   context 'initialization' do
     context 'URL stuff' do
       context 'host' do
         it 'removes http from host' do
-          VultRuby.configure { |c| c.host = 'http://example.com' }
-          expect(VultRuby::Configuration.default.host).to eq('example.com')
+          VultrRuby.configure { |c| c.host = 'http://example.com' }
+          expect(VultrRuby::Configuration.default.host).to eq('example.com')
         end
 
         it 'removes https from host' do
-          VultRuby.configure { |c| c.host = 'https://wookiee.com' }
-          expect(VultRuby::ApiClient.default.config.host).to eq('wookiee.com')
+          VultrRuby.configure { |c| c.host = 'https://wookiee.com' }
+          expect(VultrRuby::ApiClient.default.config.host).to eq('wookiee.com')
         end
 
         it 'removes trailing path from host' do
-          VultRuby.configure { |c| c.host = 'hobo.com/v4' }
-          expect(VultRuby::Configuration.default.host).to eq('hobo.com')
+          VultrRuby.configure { |c| c.host = 'hobo.com/v4' }
+          expect(VultrRuby::Configuration.default.host).to eq('hobo.com')
         end
       end
 
       context 'base_path' do
         it "prepends a slash to base_path" do
-          VultRuby.configure { |c| c.base_path = 'v4/dog' }
-          expect(VultRuby::Configuration.default.base_path).to eq('/v4/dog')
+          VultrRuby.configure { |c| c.base_path = 'v4/dog' }
+          expect(VultrRuby::Configuration.default.base_path).to eq('/v4/dog')
         end
 
         it "doesn't prepend a slash if one is already there" do
-          VultRuby.configure { |c| c.base_path = '/v4/dog' }
-          expect(VultRuby::Configuration.default.base_path).to eq('/v4/dog')
+          VultrRuby.configure { |c| c.base_path = '/v4/dog' }
+          expect(VultrRuby::Configuration.default.base_path).to eq('/v4/dog')
         end
 
         it "ends up as a blank string if nil" do
-          VultRuby.configure { |c| c.base_path = nil }
-          expect(VultRuby::Configuration.default.base_path).to eq('')
+          VultrRuby.configure { |c| c.base_path = nil }
+          expect(VultrRuby::Configuration.default.base_path).to eq('')
         end
       end
     end
   end
 
   describe 'params_encoding in #build_request' do
-    let(:config) { VultRuby::Configuration.new }
-    let(:api_client) { VultRuby::ApiClient.new(config) }
+    let(:config) { VultrRuby::Configuration.new }
+    let(:api_client) { VultrRuby::ApiClient.new(config) }
 
     it 'defaults to nil' do
-      expect(VultRuby::Configuration.default.params_encoding).to eq(nil)
+      expect(VultrRuby::Configuration.default.params_encoding).to eq(nil)
       expect(config.params_encoding).to eq(nil)
 
       request = api_client.build_request(:get, '/test')
@@ -71,11 +71,11 @@ describe VultRuby::ApiClient do
   end
 
   describe 'timeout in #build_request' do
-    let(:config) { VultRuby::Configuration.new }
-    let(:api_client) { VultRuby::ApiClient.new(config) }
+    let(:config) { VultrRuby::Configuration.new }
+    let(:api_client) { VultrRuby::ApiClient.new(config) }
 
     it 'defaults to 0' do
-      expect(VultRuby::Configuration.default.timeout).to eq(0)
+      expect(VultrRuby::Configuration.default.timeout).to eq(0)
       expect(config.timeout).to eq(0)
 
       request = api_client.build_request(:get, '/test')
@@ -93,7 +93,7 @@ describe VultRuby::ApiClient do
 
   describe '#deserialize' do
     it "handles Array<Integer>" do
-      api_client = VultRuby::ApiClient.new
+      api_client = VultrRuby::ApiClient.new
       headers = { 'Content-Type' => 'application/json' }
       response = double('response', headers: headers, body: '[12, 34]')
       data = api_client.deserialize(response, 'Array<Integer>')
@@ -102,7 +102,7 @@ describe VultRuby::ApiClient do
     end
 
     it 'handles Array<Array<Integer>>' do
-      api_client = VultRuby::ApiClient.new
+      api_client = VultrRuby::ApiClient.new
       headers = { 'Content-Type' => 'application/json' }
       response = double('response', headers: headers, body: '[[12, 34], [56]]')
       data = api_client.deserialize(response, 'Array<Array<Integer>>')
@@ -111,7 +111,7 @@ describe VultRuby::ApiClient do
     end
 
     it 'handles Hash<String, String>' do
-      api_client = VultRuby::ApiClient.new
+      api_client = VultrRuby::ApiClient.new
       headers = { 'Content-Type' => 'application/json' }
       response = double('response', headers: headers, body: '{"message": "Hello"}')
       data = api_client.deserialize(response, 'Hash<String, String>')
@@ -123,8 +123,8 @@ describe VultRuby::ApiClient do
   describe "#object_to_hash" do
     it 'ignores nils and includes empty arrays' do
       # uncomment below to test object_to_hash for model
-      # api_client = VultRuby::ApiClient.new
-      # _model = VultRuby::ModelName.new
+      # api_client = VultrRuby::ApiClient.new
+      # _model = VultrRuby::ModelName.new
       # update the model attribute below
       # _model.id = 1
       # update the expected value (hash) below
@@ -135,7 +135,7 @@ describe VultRuby::ApiClient do
 
   describe '#build_collection_param' do
     let(:param) { ['aa', 'bb', 'cc'] }
-    let(:api_client) { VultRuby::ApiClient.new }
+    let(:api_client) { VultrRuby::ApiClient.new }
 
     it 'works for csv' do
       expect(api_client.build_collection_param(param, :csv)).to eq('aa,bb,cc')
@@ -163,7 +163,7 @@ describe VultRuby::ApiClient do
   end
 
   describe '#json_mime?' do
-    let(:api_client) { VultRuby::ApiClient.new }
+    let(:api_client) { VultrRuby::ApiClient.new }
 
     it 'works' do
       expect(api_client.json_mime?(nil)).to eq false
@@ -180,7 +180,7 @@ describe VultRuby::ApiClient do
   end
 
   describe '#select_header_accept' do
-    let(:api_client) { VultRuby::ApiClient.new }
+    let(:api_client) { VultrRuby::ApiClient.new }
 
     it 'works' do
       expect(api_client.select_header_accept(nil)).to be_nil
@@ -196,7 +196,7 @@ describe VultRuby::ApiClient do
   end
 
   describe '#select_header_content_type' do
-    let(:api_client) { VultRuby::ApiClient.new }
+    let(:api_client) { VultrRuby::ApiClient.new }
 
     it 'works' do
       expect(api_client.select_header_content_type(nil)).to be_nil
@@ -211,7 +211,7 @@ describe VultRuby::ApiClient do
   end
 
   describe '#sanitize_filename' do
-    let(:api_client) { VultRuby::ApiClient.new }
+    let(:api_client) { VultrRuby::ApiClient.new }
 
     it 'works' do
       expect(api_client.sanitize_filename('sun')).to eq('sun')

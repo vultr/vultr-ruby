@@ -1,4 +1,4 @@
-# VultRuby::AttachInstanceIso202Response
+# VultrRuby::AttachInstanceIso202Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::AttachInstanceIso202Response.new(
+instance = VultrRuby::AttachInstanceIso202Response.new(
   iso_status: null
 )
 ```

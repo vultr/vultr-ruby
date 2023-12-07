@@ -1,4 +1,4 @@
-# VultRuby::DbaasMigration
+# VultrRuby::DbaasMigration
 
 ## Properties
 
@@ -12,9 +12,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::DbaasMigration.new(
+instance = VultrRuby::DbaasMigration.new(
   status: null,
   method: null,
   error: null,

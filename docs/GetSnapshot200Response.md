@@ -1,4 +1,4 @@
-# VultRuby::GetSnapshot200Response
+# VultrRuby::GetSnapshot200Response
 
 ## Properties
 
@@ -9,9 +9,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::GetSnapshot200Response.new(
+instance = VultrRuby::GetSnapshot200Response.new(
   snapshot: null
 )
 ```

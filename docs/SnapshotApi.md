@@ -1,4 +1,4 @@
-# VultRuby::SnapshotApi
+# VultrRuby::SnapshotApi
 
 All URIs are relative to *https://api.vultr.com/v2*
 
@@ -24,23 +24,23 @@ Create a new Snapshot for `instance_id`.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::SnapshotApi.new
+api_instance = VultrRuby::SnapshotApi.new
 opts = {
-  create_snapshot_request: VultRuby::CreateSnapshotRequest.new({instance_id: 'instance_id_example'}) # CreateSnapshotRequest | Include a JSON object in the request body with a content type of **application/json**.
+  create_snapshot_request: VultrRuby::CreateSnapshotRequest.new({instance_id: 'instance_id_example'}) # CreateSnapshotRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create Snapshot
   result = api_instance.create_snapshot(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling SnapshotApi->create_snapshot: #{e}"
 end
 ```
@@ -58,7 +58,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetSnapshot200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling SnapshotApi->create_snapshot_with_http_info: #{e}"
 end
 ```
@@ -95,23 +95,23 @@ Create a new Snapshot from a RAW image located at `url`.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::SnapshotApi.new
+api_instance = VultrRuby::SnapshotApi.new
 opts = {
-  create_snapshot_create_from_url_request: VultRuby::CreateSnapshotCreateFromUrlRequest.new({url: 'url_example'}) # CreateSnapshotCreateFromUrlRequest | Include a JSON object in the request body with a content type of **application/json**.
+  create_snapshot_create_from_url_request: VultrRuby::CreateSnapshotCreateFromUrlRequest.new({url: 'url_example'}) # CreateSnapshotCreateFromUrlRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Create Snapshot from URL
   result = api_instance.create_snapshot_create_from_url(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling SnapshotApi->create_snapshot_create_from_url: #{e}"
 end
 ```
@@ -129,7 +129,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetSnapshot200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling SnapshotApi->create_snapshot_create_from_url_with_http_info: #{e}"
 end
 ```
@@ -166,20 +166,20 @@ Delete a Snapshot.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::SnapshotApi.new
+api_instance = VultrRuby::SnapshotApi.new
 snapshot_id = 'snapshot_id_example' # String | The [Snapshot id](#operation/list-snapshots).
 
 begin
   # Delete Snapshot
   api_instance.delete_snapshot(snapshot_id)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling SnapshotApi->delete_snapshot: #{e}"
 end
 ```
@@ -197,7 +197,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling SnapshotApi->delete_snapshot_with_http_info: #{e}"
 end
 ```
@@ -234,21 +234,21 @@ Get information about a Snapshot.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::SnapshotApi.new
+api_instance = VultrRuby::SnapshotApi.new
 snapshot_id = 'snapshot_id_example' # String | The [Snapshot id](#operation/list-snapshots).
 
 begin
   # Get Snapshot
   result = api_instance.get_snapshot(snapshot_id)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling SnapshotApi->get_snapshot: #{e}"
 end
 ```
@@ -266,7 +266,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <GetSnapshot200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling SnapshotApi->get_snapshot_with_http_info: #{e}"
 end
 ```
@@ -303,14 +303,14 @@ Get information about all Snapshots in your account.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::SnapshotApi.new
+api_instance = VultrRuby::SnapshotApi.new
 opts = {
   description: 'description_example', # String | Filter the list of Snapshots by `description`
   per_page: 56, # Integer | Number of items requested per page. Default is 100 and Max is 500.
@@ -321,7 +321,7 @@ begin
   # List Snapshots
   result = api_instance.list_snapshots(opts)
   p result
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling SnapshotApi->list_snapshots: #{e}"
 end
 ```
@@ -339,7 +339,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ListSnapshots200Response>
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling SnapshotApi->list_snapshots_with_http_info: #{e}"
 end
 ```
@@ -378,23 +378,23 @@ Update the description for a Snapshot.
 
 ```ruby
 require 'time'
-require 'vult_ruby'
+require 'vultr_ruby'
 # setup authorization
-VultRuby.configure do |config|
+VultrRuby.configure do |config|
   # Configure Bearer authorization: API Key
   config.access_token = 'YOUR_BEARER_TOKEN'
 end
 
-api_instance = VultRuby::SnapshotApi.new
+api_instance = VultrRuby::SnapshotApi.new
 snapshot_id = 'snapshot_id_example' # String | The [Snapshot id](#operation/list-snapshots).
 opts = {
-  put_snapshots_snapshot_id_request: VultRuby::PutSnapshotsSnapshotIdRequest.new({description: 'description_example'}) # PutSnapshotsSnapshotIdRequest | Include a JSON object in the request body with a content type of **application/json**.
+  put_snapshots_snapshot_id_request: VultrRuby::PutSnapshotsSnapshotIdRequest.new({description: 'description_example'}) # PutSnapshotsSnapshotIdRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
   # Update Snapshot
   api_instance.put_snapshots_snapshot_id(snapshot_id, opts)
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling SnapshotApi->put_snapshots_snapshot_id: #{e}"
 end
 ```
@@ -412,7 +412,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue VultRuby::ApiError => e
+rescue VultrRuby::ApiError => e
   puts "Error when calling SnapshotApi->put_snapshots_snapshot_id_with_http_info: #{e}"
 end
 ```

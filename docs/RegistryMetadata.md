@@ -1,4 +1,4 @@
-# VultRuby::RegistryMetadata
+# VultrRuby::RegistryMetadata
 
 ## Properties
 
@@ -10,9 +10,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::RegistryMetadata.new(
+instance = VultrRuby::RegistryMetadata.new(
   region: null,
   subscription: null
 )

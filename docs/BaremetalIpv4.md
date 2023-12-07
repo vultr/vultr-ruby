@@ -1,4 +1,4 @@
-# VultRuby::BaremetalIpv4
+# VultrRuby::BaremetalIpv4
 
 ## Properties
 
@@ -14,9 +14,9 @@
 ## Example
 
 ```ruby
-require 'vult_ruby'
+require 'vultr_ruby'
 
-instance = VultRuby::BaremetalIpv4.new(
+instance = VultrRuby::BaremetalIpv4.new(
   ip: null,
   netmask: null,
   gateway: null,
