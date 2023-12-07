@@ -1,9 +1,6 @@
 name: "Code Generation"
 
-on:
-  push:
-    tags:
-      - *
+on: workflow_dispatch
 
 permissions:
   contents: write
