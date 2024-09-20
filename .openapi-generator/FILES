@@ -680,7 +680,5 @@ lib/vultr_ruby/models/vke_cluster.rb
 lib/vultr_ruby/models/vpc.rb
 lib/vultr_ruby/models/vpc2.rb
 lib/vultr_ruby/version.rb
-spec/api_client_spec.rb
-spec/configuration_spec.rb
 spec/spec_helper.rb
 vultr_ruby.gemspec

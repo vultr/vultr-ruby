@@ -4,7 +4,7 @@
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **description** | [**Description**](Description.md) |  | [optional] |
+| **description** | **String** | User defined description of this repository | [optional] |
 
 ## Example
 

@@ -40,7 +40,7 @@ end
 
 api_instance = VultrRuby::ContainerRegistryApi.new
 opts = {
-  create_registry_request: VultrRuby::CreateRegistryRequest.new({name: TODO, public: TODO, region: 'region_example', plan: 'plan_example'}) # CreateRegistryRequest | 
+  create_registry_request: VultrRuby::CreateRegistryRequest.new({name: 'name_example', public: false, region: 'region_example', plan: 'plan_example'}) # CreateRegistryRequest | 
 }
 
 begin

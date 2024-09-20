@@ -36,7 +36,7 @@ end
 api_instance = VultrRuby::VPC2Api.new
 vpc_id = 'vpc_id_example' # String | The [VPC ID](#operation/list-vpcs).
 opts = {
-  attach_vpc2_nodes_request: VultrRuby::AttachVpc2NodesRequest.new({nodes: 3.56}) # AttachVpc2NodesRequest | Include a JSON object in the request body with a content type of **application/json**.
+  attach_vpc2_nodes_request: VultrRuby::AttachVpc2NodesRequest.new({nodes: ['nodes_example']}) # AttachVpc2NodesRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
@@ -247,7 +247,7 @@ end
 api_instance = VultrRuby::VPC2Api.new
 vpc_id = 'vpc_id_example' # String | The [VPC ID](#operation/list-vpcs).
 opts = {
-  detach_vpc2_nodes_request: VultrRuby::DetachVpc2NodesRequest.new({nodes: 3.56}) # DetachVpc2NodesRequest | Include a JSON object in the request body with a content type of **application/json**.
+  detach_vpc2_nodes_request: VultrRuby::DetachVpc2NodesRequest.new({nodes: ['nodes_example']}) # DetachVpc2NodesRequest | Include a JSON object in the request body with a content type of **application/json**.
 }
 
 begin
